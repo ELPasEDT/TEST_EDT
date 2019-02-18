@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="45b89fc3-2223-44ad-b809-86f9db20fa8d">
+  <name>ДобавлениеИзменениеРеквизитовПаспортаОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Добавление и изменение реквизитов паспорта оборудования</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c294b88a-48c1-42c8-80b6-d8eb4a301359">
+  <producedTypes>
+    <refType typeId="5ed32705-9b22-49e2-85bd-3023b61a2b89" valueTypeId="8d2165be-89ab-40db-9c70-7d1c6b6b79fa"/>
+    <listType typeId="af79269b-3fb9-4dac-b9f2-92480c502b0e" valueTypeId="85f6f9ea-eb1f-44b1-b6ad-ac78386cbf9b"/>
+    <managerType typeId="f12ce124-5b01-4952-beae-ab486e4c077b" valueTypeId="c6f5b12a-ae48-40e1-b1ee-327b8addeedc"/>
+  </producedTypes>
+  <name>СтатусыОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы оборудования</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="375dd2e1-8353-4031-93d1-20d9437ff997">
+    <name>ОборудованиеВРемонте</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оборудование в ремонте</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="31529acc-ad41-45ab-bc5f-1e2c63f9fa7f">
+    <name>ОборудованиеТребующееПовышенногоВнимания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оборудование требующее повышенного внимания</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="b4ab9922-c832-440f-a076-bc3d2f6d4dcb">
+    <name>ПланируемыеПереключения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Планируемые переключения</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="8c8fc098-f131-4f12-875b-8838479cf259">
+    <name>ЗаписьОЖ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запись оперативного журнала</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

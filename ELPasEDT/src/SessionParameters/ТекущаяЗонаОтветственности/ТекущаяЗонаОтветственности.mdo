@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:SessionParameter xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7335f867-5bb8-4953-9cc8-ea312f8d22e7">
+  <name>ТекущаяЗонаОтветственности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Текущая зона ответственности</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>CatalogRef.ЗоныОтветственности</types>
+  </type>
+</mdclass:SessionParameter>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f7b8bfca-e4cb-4e7e-9514-7b27affe355d">
+  <name>ИспользоватьАнализСостоянияОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ состояния оборудования</value>
+  </synonym>
+  <comment></comment>
+  <location>Constant.ИспользоватьАнализСостоянияОборудования</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Catalog.ВидыОборудования.TabularSection.ПоказателиОценкиСостоянияОборудования</content>
+  <content>InformationRegister.ВесовыеКоэффициентыЗначенийПоказателейОценкиСостоянияОборудования</content>
+  <content>Catalog.ВидыОборудования.TabularSection.КритерииОценкиСостоянияОборудования</content>
+  <content>InformationRegister.КлассификацияОборудованияПоУровнямРисков</content>
+  <content>InformationRegister.ЗначенияПоказателейОценткиСостоянияОборудования</content>
+</mdclass:FunctionalOption>

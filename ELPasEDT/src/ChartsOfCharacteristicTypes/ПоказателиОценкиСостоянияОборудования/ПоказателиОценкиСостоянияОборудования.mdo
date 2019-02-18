@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCharacteristicTypes xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6124f3b5-4783-4c61-bd1c-7ac83c71a958">
+  <producedTypes>
+    <objectType typeId="928d9a94-7d6f-41ff-8836-d687b35ffd69" valueTypeId="3d2b36f5-3ace-4456-aa2e-8421184bb72f"/>
+    <refType typeId="e7d0687a-0019-4f3e-960d-ed2c11ad6e54" valueTypeId="b168cc53-5e49-4642-b930-cd7ebb664116"/>
+    <selectionType typeId="b5845b3b-1604-438b-8891-23ac9f805feb" valueTypeId="cb983bba-f639-4178-b90a-9635bd5b3df0"/>
+    <listType typeId="073285dc-59ae-435b-b5ec-ee92dec92a64" valueTypeId="aec07107-7a60-4386-a6a6-cd3f0849bba8"/>
+    <managerType typeId="bfc147ab-0b10-4e9d-af2c-1539f14578df" valueTypeId="54c395a3-4eb6-45a5-88f9-a6714a9d6c8c"/>
+    <containerType typeId="33d22572-4191-44bf-a9d9-275592ca024d" valueTypeId="2079c6d7-4fbd-4d6c-9941-9a101405d89c"/>
+  </producedTypes>
+  <name>ПоказателиОценкиСостоянияОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Показатели оценки состояния оборудования</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCharacteristicTypes.ПоказателиОценкиСостоянияОборудования.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfCharacteristicTypes.ПоказателиОценкиСостоянияОборудования.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <characteristicExtValues>Catalog.ЗначенияПоказателейОценткиСостоянияОборудования</characteristicExtValues>
+  <type>
+    <types>Boolean</types>
+    <types>String</types>
+    <types>Number</types>
+    <types>CatalogRef.ЗначенияПоказателейОценткиСостоянияОборудования</types>
+    <numberQualifiers>
+      <precision>10</precision>
+    </numberQualifiers>
+    <stringQualifiers>
+      <length>10</length>
+    </stringQualifiers>
+  </type>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>25</descriptionLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:ChartOfCharacteristicTypes>

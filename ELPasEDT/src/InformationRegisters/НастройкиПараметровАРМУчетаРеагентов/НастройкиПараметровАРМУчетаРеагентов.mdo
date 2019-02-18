@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2c0d059c-57e0-43e9-8d78-cd4094be354f">
+  <producedTypes>
+    <selectionType typeId="1890d0cc-73c7-4a94-ba8d-40d43232e92d" valueTypeId="cb608186-7d5f-4a77-8d3b-77a506446424"/>
+    <listType typeId="e2014e79-5805-49c5-b1f8-0084d1ec8e53" valueTypeId="bd259b79-d59b-4fa1-95b5-d66b762f1b00"/>
+    <managerType typeId="94d59a4d-8971-4d21-b2d7-90d7cd303d92" valueTypeId="3e6906ba-5457-499c-abf8-67ca52c3c3ab"/>
+    <recordSetType typeId="3ba018c1-d69d-4292-950d-d4431cd956a9" valueTypeId="b213717e-4dc5-4789-b766-93e651e35ef9"/>
+    <recordKeyType typeId="2e42254f-7b3f-4d65-9f38-38b41a53fb52" valueTypeId="0376461b-56cb-48b8-b987-4e46fb0eb9b0"/>
+    <recordType typeId="5b25d1bb-0c13-41d4-b716-0f0a1068c838" valueTypeId="312ae2dd-6f93-4e69-8cf1-f608162b9b18"/>
+    <recordManagerType typeId="9f72ebbb-9ce5-49fe-9007-14b3512c22f9" valueTypeId="73dfd155-ffa0-40e2-ad41-eb3d5acede5c"/>
+  </producedTypes>
+  <name>НастройкиПараметровАРМУчетаРеагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки параметров АРМ учета реагентов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.НастройкиПараметровАРМУчетаРеагентов.Form.ФормаЗаписи</defaultRecordForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="6388f148-4dea-44ba-9b71-7c1a55c55954">
+    <name>ЕдиницаИзмеренияКонцентрацииРаствора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ед. изм. концентрации раствора</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ЕдиницыИзмерения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="52a068dc-f637-460c-9b07-7e17e8f0bd9c">
+    <name>ЕдиницаИзмеренияПлотностиРаствора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ед. изм. плотности раствора</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ЕдиницыИзмерения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="467e2797-df05-464f-85bc-2b1ef2f3749a">
+    <name>ВыполнятьКонтрольУровня</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнять контроль уровня</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="badbc76c-c7a9-4711-8b93-ac5306b3a666">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организационная единица</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="fa30a083-5f48-4136-b0d2-af0dd1443b15">
+    <name>Реагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реагент</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Реагенты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="fa675faf-7a32-4eae-ba72-5838efd94180">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="7c0cac4b-04ab-4e43-8534-47f778a24b5b">
+    <name>ОткрытьСписокНастроек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки параметров АРМ учета реагентов</value>
+    </synonym>
+    <comment></comment>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:InformationRegister>

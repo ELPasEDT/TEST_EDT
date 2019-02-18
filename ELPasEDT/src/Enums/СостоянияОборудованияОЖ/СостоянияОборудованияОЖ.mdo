@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="23733c4f-cce8-46ed-b12a-d94db7e91b95">
+  <producedTypes>
+    <refType typeId="77cc8d4c-e9a7-4268-a5e6-25d9046e82e9" valueTypeId="c0f1d322-7996-458d-96d9-4d8e92469777"/>
+    <listType typeId="ef792178-1b68-4ecd-ab15-5f8a52ff48ee" valueTypeId="d9cfab1a-06d4-4941-a822-8d418312323d"/>
+    <managerType typeId="6b94b9f6-6d3b-4b39-a5aa-53d7806874c8" valueTypeId="be2999b2-5542-4841-866a-88e0df3d89aa"/>
+  </producedTypes>
+  <name>СостоянияОборудованияОЖ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния оборудования ОЖ</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="f90fec8d-5f2b-4492-89ac-b45db45f24a0">
+    <name>ОборудованиеВРаботе</name>
+    <synonym>
+      <key>ru</key>
+      <value>ВКЛ</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="f73745ec-b81b-4ea3-b650-5ecf4837168e">
+    <name>ОборудованиеВРезерве</name>
+    <synonym>
+      <key>ru</key>
+      <value>РЕЗ</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="668e7a60-926f-4657-b8e3-9af62a7d32ac">
+    <name>ОборудованиеВРемонте</name>
+    <synonym>
+      <key>ru</key>
+      <value>РЕМ</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="ec3185c9-129c-4b0b-8a92-f574a9570cd2">
+    <name>НаКонсервации</name>
+    <synonym>
+      <key>ru</key>
+      <value>КС</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="06d4ecd3-0360-42e5-a270-5ab0becfc6fe">
+    <name>ВынужденныйПростой</name>
+    <synonym>
+      <key>ru</key>
+      <value>ВПр</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="0939c2ab-5fd4-4e1a-b981-cd5233a63880">
+    <name>ОборудованиеТребующееПовышенногоВнимания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оборудование требующее повышенного внимания</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

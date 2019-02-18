@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8a2fb611-ff22-4633-b5f2-1c174440ec52">
+  <producedTypes>
+    <selectionType typeId="c538681b-6795-4b7b-8590-4e634ece0d6f" valueTypeId="df8e3190-a25b-465b-8e18-d3c9c501af01"/>
+    <listType typeId="a2a7f934-c387-488a-b37f-9b6b0edf4669" valueTypeId="a41a8f4c-d018-4f2a-b905-848dbf0f46e4"/>
+    <managerType typeId="5c678a64-1d56-4020-90d5-81dd4984bfb1" valueTypeId="625d4bb9-cb99-4352-b78a-9e963ced76f3"/>
+    <recordSetType typeId="f2f6c989-5fd0-4e0d-9cdf-bd48ccb67d8f" valueTypeId="4e5cd36c-f5e0-4d16-b266-05c1e9cd3e22"/>
+    <recordKeyType typeId="472f5299-cc4e-4646-9e69-ee419e2cbf80" valueTypeId="b9508b2e-d569-4b55-a527-a9698c0f292c"/>
+    <recordType typeId="e7f43a50-01b3-48ac-b452-ebadb1f6d5bc" valueTypeId="e0025509-aa20-46af-a875-fde82096271d"/>
+    <recordManagerType typeId="21291496-8087-4214-94f8-d5d876c27c87" valueTypeId="d750cd2c-cfa8-4ec8-aff8-00b1439de9e8"/>
+  </producedTypes>
+  <name>КлассификацияОборудованияПоУровнямРисков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Классификация оборудования по уровням рисков</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="ab1fea27-aa8f-4486-a4c5-cdeda2aba11c">
+    <name>Уровень</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уровень</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.УровниРисковОтказаОборудования</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <dimensions uuid="fd6156d1-31a4-44db-b27f-f1c1a5fb0e07">
+    <name>Оборудование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оборудование</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Оборудование</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

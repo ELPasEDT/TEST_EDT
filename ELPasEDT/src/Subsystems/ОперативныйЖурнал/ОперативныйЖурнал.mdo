@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a4c9860f-c9bb-4510-bdc0-cdab4d7a9307">
+  <name>ОперативныйЖурнал</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оперативный журнал</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.ОперативныйЖурнал</content>
+  <content>Catalog.Вахты</content>
+  <content>Catalog.ВидыЗаписей</content>
+  <content>Catalog.ГруппыОповещения</content>
+  <content>Catalog.Смены</content>
+  <content>Catalog.События</content>
+  <content>Report.ОборудованиеНаКонтроле</content>
+  <content>Report.УчетНеисправностиОборудования</content>
+  <content>InformationRegister.НастройкиИспользованияЭЦППоОрганизациям</content>
+  <content>InformationRegister.ШаблоныТекстаЗаписейОЖ</content>
+  <content>InformationRegister.РазрешенияНаПринудительноеЗавершениеСмены</content>
+  <content>DataProcessor.ЗаполнениеДатыКонтроляЗнаний</content>
+  <content>Document.ЗакреплениеСотрудниковЗаВахтами</content>
+  <content>Catalog.ПоказателиЧекЛиста</content>
+  <content>Document.ЗакреплениеПоказателейЧекЛистовЗаПодразделениями</content>
+  <content>Document.ЗакреплениеВидаЗаписиИСобытийЗаПодразделением</content>
+  <content>Role.ПросмотрДокументаЗакреплениеВидаЗаписиИСобытий</content>
+  <content>Role.ДобавлениеИзменениеПроведениеДокументаЗакреплениеВидаЗаписиИСобытий</content>
+  <content>Role.ПросмотрИзменениеРегистраВидыЗаписейСобытияПоПодразделениям</content>
+  <content>Role.ПросмотрРегистраВидыЗаписейСобытияПоПодразделениям</content>
+  <content>Role.ДобавлениеИзменениеПроведениеДокументаЗакреплениеПоказателейЧекЛистов</content>
+  <content>Role.ПросмотрДокументаЗакреплениеПоказателейЧекЛистов</content>
+  <content>Role.ПросмотрРегистраПоказателиЧекЛистовПоПодразделениям</content>
+  <content>Role.ПросмотрИзменениеРегистраПоказателиЧекЛистовПоПодразделениям</content>
+  <content>Role.ДобавлениеИзменениеПроведениеДокументаЗакреплениеСотрудниковЗаВахтами</content>
+  <content>Role.ПросмотрДокументаЗакреплениеСотрудниковЗаВахтами</content>
+  <content>Role.ПросмотрРегистраСобытияОперативногоЖурнала</content>
+  <content>Role.ПросмотрРегистраОборудованиеНаКонтроле</content>
+  <content>Role.ПросмотрИзменениеШаблоновТекстаЗаписейОЖ</content>
+  <content>Role.ПросмотрШаблоновТекстаЗаписейОЖ</content>
+  <content>Role.ДобавлениеИзменениеПроведениеДокументаОперативныйЖурнал</content>
+  <content>Role.ПросмотрДокументаОперативныйЖурнал</content>
+  <content>Role.ДоступКПодсистемеОперативныйЖурнал</content>
+  <content>Role.ИспользованиеМастераВводаЗаписиОЖ</content>
+  <content>Role.ПросмотрПоказателейЧекЛистов</content>
+  <content>Role.ЧтениеРегистраАктивныеСмены</content>
+  <content>Role.ПросмотрРегистраСостояниеОборудования</content>
+  <content>Role.ПросмотрИзменениеРегистраСостояниеОборудования</content>
+  <content>Role.ПросмотрИзменениеРегистраРаспоряжения</content>
+  <content>Role.ПросмотрИзменениеРегистраЗмечанияКонтролера</content>
+  <content>Role.ПросмотрОтчетаПоОборудованиюНаКонтроле</content>
+  <content>Role.ДобавлениеИзменениеПоказателейЧекЛистов</content>
+  <content>Role.ПросмотрРуководителем</content>
+  <content>Role.ИспользованиеОбработкиЗаполнениеДатыКонтроляЗнаний</content>
+  <content>Report.ПросмотрОперативногоЖурнала</content>
+  <content>Report.ОперативныйОтчет</content>
+</mdclass:Subsystem>

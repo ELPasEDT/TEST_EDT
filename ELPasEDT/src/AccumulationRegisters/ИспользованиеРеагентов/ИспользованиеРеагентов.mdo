@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1d1b1b84-d17a-4663-a789-351af0c16cec">
+  <producedTypes>
+    <selectionType typeId="5e4ae56d-8207-4c10-9867-c37a15f13340" valueTypeId="47050953-d7f4-4428-8b04-ec85fc60795b"/>
+    <listType typeId="e268fbfa-8cc6-497f-b060-3cdd1ba07096" valueTypeId="f361184b-7c27-4ce7-b0aa-6170a186a0d1"/>
+    <managerType typeId="d7c04248-db80-4763-a566-c8ce755bbca4" valueTypeId="b1366086-22c8-43ae-88ed-3d0b3115de06"/>
+    <recordSetType typeId="6e799b25-6ec9-4e23-92b1-cf2dde3a748d" valueTypeId="38531097-6f6c-4706-8840-152016078b53"/>
+    <recordKeyType typeId="bd81a69c-31c4-4b4b-b394-5daa761dfc35" valueTypeId="23ab9c79-0402-4150-9f9f-decadb381303"/>
+    <recordType typeId="c8bd9b2a-8314-40ab-bbd2-1b8a7bb07c7a" valueTypeId="08576861-116d-4a5f-b0f1-0aa366959643"/>
+  </producedTypes>
+  <name>ИспользованиеРеагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использование реагентов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="6db0c1f8-b786-441d-bd93-8ed15d257399">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество (в ед. изм. партии)</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>6</scale>
+      </numberQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ЧЦ=15; ЧДЦ=4</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ЧЦ=15; ЧДЦ=4</value>
+    </editFormat>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="149a9b9b-cf06-46b3-92cb-bfb5117d9dd1">
+    <name>КоличествоВБазовойЕдинице</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество (в базовой ед. изм.)</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>6</scale>
+      </numberQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ЧЦ=15; ЧДЦ=4</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ЧЦ=15; ЧДЦ=4</value>
+    </editFormat>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="396e3a9d-4e1a-4230-9c4c-e3d74240d963">
+    <name>КоличествоМоногидратаВБазовойЕдинице</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество 100% реагента (в базовой ед. изм.)</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>6</scale>
+      </numberQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ЧЦ=15; ЧДЦ=4</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ЧЦ=15; ЧДЦ=4</value>
+    </editFormat>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="b9794bee-f205-49dd-be07-2b80cbfff0ed">
+    <name>ОбъемСработанного</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объем сработанного</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>6</scale>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="ec735af9-e746-4118-9566-5b9ca8617e38">
+    <name>Сценарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сценарий</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.СценарииПланирования</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="6a973e21-4c70-45a6-9263-e8cbe6fae7b6">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организационная единица</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="9dbe1827-5f42-4cef-9c42-05998a6da298">
+    <name>Реагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реагент</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Реагенты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="9e09f53a-380d-4b3d-b13e-b1c5173fd7ca">
+    <name>Оборудование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оборудование</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Оборудование</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="1997690d-3b56-4bbb-8d88-743b2b51d08f">
+    <name>ВидРасхода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид расхода</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВидыРасходаРеагентов</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="6ef93a99-cd99-4ed2-900b-f459e2fe1f4e">
+    <name>НаправлениеРасхода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Напр. расхода</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.НаправленияРасходаРеагентов</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="11bc1819-f832-4294-8608-78544f825c0f">
+    <name>Партия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партия</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>DocumentRef.ПриходРеагента</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="44094662-c1cf-4b87-bf53-ec33d362a0e2">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

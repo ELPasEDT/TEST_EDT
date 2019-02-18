@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="01f9b488-06ac-4631-8e94-b939ed8cfa34">
+  <producedTypes>
+    <objectType typeId="fece387a-f6af-4dde-b004-8378c07f8ba4" valueTypeId="03ccf3bc-9586-496c-a51f-e09b4c10ee5c"/>
+    <refType typeId="93c406af-0fbc-48d4-966c-a4388aab7c10" valueTypeId="18689950-1332-4ffc-af12-4724100879de"/>
+    <selectionType typeId="3880b11b-b334-451e-bd08-9ccc64c07c86" valueTypeId="3d672ca6-5379-47af-8350-492d43cc89fc"/>
+    <listType typeId="7aa5955e-ba0c-4743-8ec5-f9cf550a0bf3" valueTypeId="9607d24f-a033-49fb-9375-aa599dd85178"/>
+    <managerType typeId="25faec3f-a648-477e-9b94-28f62c10f900" valueTypeId="e42d4760-32fa-4663-a476-8a2008d0fd2f"/>
+  </producedTypes>
+  <name>СоставыСмен</name>
+  <synonym>
+    <key>ru</key>
+    <value>Составы смен</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.СоставыСмен.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.СоставыСмен.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="a35cbf9d-eaeb-4694-9947-82a59aecf2e0">
+    <name>Смена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Смена</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>DocumentRef.Смена</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ec3961ce-36c4-49de-b669-f4be56e16b7d">
+    <name>ДатаИзменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата изменения</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

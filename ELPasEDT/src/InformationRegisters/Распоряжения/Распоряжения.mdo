@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="14b2542f-23b9-498f-a0d9-1ae78aeef5d5">
+  <producedTypes>
+    <selectionType typeId="a650f064-6367-4de7-85c9-b8f84c4778e0" valueTypeId="65ca9cc1-5bd5-43b3-9be7-a5d42456b9f1"/>
+    <listType typeId="4327ad40-629d-4cf6-b2d7-daf2c3799b00" valueTypeId="576d79a9-97b2-43b0-8974-c12d32ab5cf0"/>
+    <managerType typeId="f8279ea9-2502-4f28-b90c-b81c8b20927f" valueTypeId="ba52436a-ca40-4b83-bfe0-819d4ed7b5a3"/>
+    <recordSetType typeId="45bc5d3a-0367-44c2-a215-2370a80eb4e0" valueTypeId="363ff9de-2bfd-4ba7-9d94-e1c3a7097797"/>
+    <recordKeyType typeId="9542a4fd-a948-44fa-b3b3-5fb9b13603dc" valueTypeId="a095afca-e0c6-408e-a7d7-94ab87c45081"/>
+    <recordType typeId="fb320ec2-eafe-484d-8f11-961cb5446acf" valueTypeId="b8e51439-e795-43c9-a59a-56336352eb36"/>
+    <recordManagerType typeId="956f504a-6ae3-4cbf-b00e-b8d36f6c652e" valueTypeId="6013b9dc-a38a-4cb0-be4e-3a3d6e2d203f"/>
+  </producedTypes>
+  <name>Распоряжения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Распоряжения</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="d1130366-4f01-48e1-88bf-d6ec3991bdf7">
+    <name>ТекстРаспоряжения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст распоряжения</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="cdddff43-e202-4513-86c9-40ce198eed3e">
+    <name>Распоряжение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Распоряжение</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>DocumentRef.ОперативныйЖурнал</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="32e80f60-0083-4454-8f2d-b41daff08ebf">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1f9b0945-9cca-48c6-ba1e-e4f971482aaa">
+    <name>ДатаРаспоряжения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата распоряжения</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="315d7f80-12ae-4ea0-af2a-2dad37e37d0b">
+    <name>ДатаИсполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата исполнения</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f05e68ce-2d9d-46bb-8030-687b214393ce">
+    <name>Ознакомился</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ознакомился</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

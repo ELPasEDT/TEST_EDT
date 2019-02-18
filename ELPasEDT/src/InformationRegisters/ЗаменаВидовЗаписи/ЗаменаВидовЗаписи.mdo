@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="54cbb781-cc28-4310-b83d-735a96f8057e">
+  <producedTypes>
+    <selectionType typeId="7f38b8dc-0150-4307-b8e1-5a2b77a16d1f" valueTypeId="336310e1-7a5c-4b79-8dcd-124fe2d17259"/>
+    <listType typeId="dace619c-81e0-49d4-ad9b-5cab929269a1" valueTypeId="22f50b93-97b6-4163-aaa3-9630410033d3"/>
+    <managerType typeId="a8bce022-8485-497d-814e-92bea2eeb9fd" valueTypeId="b6e39b13-61b5-4feb-95fc-9ddaa3989f8f"/>
+    <recordSetType typeId="226f0455-e17e-4789-a451-16c0acab142e" valueTypeId="239303e3-1059-4bd8-bfd7-d954f0332e4a"/>
+    <recordKeyType typeId="83759fc0-b5e5-4262-9b87-f9de5fd42aff" valueTypeId="48c85850-55f8-4ee8-b7a9-db35c45ef205"/>
+    <recordType typeId="32632a4f-689d-49f2-a603-6a92a9e49895" valueTypeId="6dba55d1-bef8-48e8-9c50-4a4b5bd370c7"/>
+    <recordManagerType typeId="1bcae028-0636-49a1-9a18-5b77626834d3" valueTypeId="9175e873-3049-42f1-ad51-4b1cfa23f81b"/>
+  </producedTypes>
+  <name>ЗаменаВидовЗаписи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Замена видов записи</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="232aab38-ed1d-4a2a-b3cc-299cffedc7b8">
+    <name>ЧтоМеняем</name>
+    <synonym>
+      <key>ru</key>
+      <value>Что меняем</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВидыЗаписей</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c21d09e4-9817-49a8-8bcb-c1d4f31441b6">
+    <name>НаЧтоМеняем</name>
+    <synonym>
+      <key>ru</key>
+      <value>На что меняем</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВидыЗаписей</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

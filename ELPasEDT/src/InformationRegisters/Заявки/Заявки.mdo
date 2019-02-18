@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c229d06b-ebdb-48dd-9904-f2d0fb3d530a">
+  <producedTypes>
+    <selectionType typeId="0ba6dc20-65c9-47dd-b5ad-a919db88d2e2" valueTypeId="e35a5d0e-873f-418e-9878-43dea94fb35f"/>
+    <listType typeId="48f6a989-e8db-43a9-bcd9-e6adaa8de80f" valueTypeId="34a5183a-a54f-4e21-997e-c75672a696f9"/>
+    <managerType typeId="58340f03-cdf0-44d0-b092-cd17f34c2963" valueTypeId="8c80cc69-435d-4ada-9937-65936ab90c6a"/>
+    <recordSetType typeId="a5cef07b-d801-4e66-b07f-1c286b8b4adb" valueTypeId="ed3e9be6-4df7-4157-8b40-59341f080f52"/>
+    <recordKeyType typeId="f7eb9aab-6a84-44da-b1dd-14dd6aa80c66" valueTypeId="c0f3e604-c61c-4388-a98a-4fb44b61cd83"/>
+    <recordType typeId="ea619e15-075a-4e2c-a60b-4745b734e4ec" valueTypeId="cb157db3-508d-4ae8-87aa-dac408a4421d"/>
+    <recordManagerType typeId="7d84847f-9109-4d58-92d7-7fc9305476de" valueTypeId="8892ac9b-3c68-4281-a296-964955ca7fdb"/>
+  </producedTypes>
+  <name>Заявки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заявки</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="8b4f74cd-9694-4f65-bb87-3a6f21d2e11c">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="5005d317-40bb-4d8a-8a91-abdb5b27793f">
+    <name>Ссылка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ссылка</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ЗаводыИзготовители</types>
+      <types>CatalogRef.КлассификаторЕдиницИзмерения</types>
+      <types>ChartOfCharacteristicTypesRef.РеквизитыПаспортовОборудования</types>
+      <types>CatalogRef.События</types>
+      <types>CatalogRef.МаркиОборудования</types>
+      <types>CatalogRef.ВидыОборудования</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

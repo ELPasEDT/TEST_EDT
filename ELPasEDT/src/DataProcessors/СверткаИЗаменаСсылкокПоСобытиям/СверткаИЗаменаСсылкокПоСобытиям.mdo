@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2dad6945-4f34-4ef0-8fe5-e813436a4df9">
+  <producedTypes>
+    <objectType typeId="1761f8bc-d6ee-4871-9863-2c4590c47471" valueTypeId="b18997ce-5788-4d39-8946-43854fe3c6c6"/>
+    <managerType typeId="8b71cd0d-2f30-4660-87f9-185f7f179dc4" valueTypeId="bc105d3c-794b-4d7b-95b5-a94c83a36391"/>
+  </producedTypes>
+  <name>СверткаИЗаменаСсылкокПоСобытиям</name>
+  <synonym>
+    <key>ru</key>
+    <value>1 Шаг. Свертка и замена ссылкок по событиям</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.СверткаИЗаменаСсылкокПоСобытиям.Form.Форма</defaultForm>
+  <tabularSections uuid="a91ff60d-5752-4a81-b461-01006ced84ea">
+    <producedTypes>
+      <objectType typeId="df8233ac-71fc-4daa-8327-9b06618028ef" valueTypeId="7bbb0002-d247-4ae0-ba01-8bf0be895a7b"/>
+      <rowType typeId="e5fd0ef3-019e-4dc3-b1c1-a31e7355ad9c" valueTypeId="a6107d73-1e4f-4e0f-ae6e-f10cfd20e447"/>
+    </producedTypes>
+    <name>ВсеСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Все события</value>
+    </synonym>
+    <comment></comment>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <comment></comment>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="5bb3d95b-427c-4f24-bee6-d908bbe9cf80">
+      <name>Код</name>
+      <synonym>
+        <key>ru</key>
+        <value>Код</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>9</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="fa49e550-6124-4dd4-8271-f139c437d2ff">
+      <name>Событие</name>
+      <synonym>
+        <key>ru</key>
+        <value>Событие</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.События</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a5ca187e-cd16-4f52-be8e-da8023564b55">
+      <name>Наименование</name>
+      <synonym>
+        <key>ru</key>
+        <value>Наименование</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="d1aa772c-19f9-4a13-ba1d-eec026a4ee73">
+      <name>Номер</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>2</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="0de9549e-f603-455e-9663-87eac53c2d6e">
+      <name>Предопределенный</name>
+      <synonym>
+        <key>ru</key>
+        <value>Предопределенный</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="65df8b01-1461-4329-9994-62941d26e713">
+    <producedTypes>
+      <objectType typeId="b2f77d2a-d7f4-489c-9576-a77d8388ae50" valueTypeId="9316897a-542f-4e7c-a536-12e5d31f8773"/>
+      <rowType typeId="f6ebfb9a-7032-4a5e-aab2-1817fc0140b7" valueTypeId="eadaa9f6-f455-4200-abe3-33c19cc1ad18"/>
+    </producedTypes>
+    <name>ОсновныеСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основные события</value>
+    </synonym>
+    <comment></comment>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <comment></comment>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="d9bc2a4c-566c-4efd-934b-5fe6f3f84325">
+      <name>Код</name>
+      <synonym>
+        <key>ru</key>
+        <value>Код</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>9</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="001350ee-6c53-48dd-8859-10188d347e7b">
+      <name>Событие</name>
+      <synonym>
+        <key>ru</key>
+        <value>Событие</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.События</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="cd729e54-029d-491c-a2b4-3d4d2aa96302">
+      <name>Наименование</name>
+      <synonym>
+        <key>ru</key>
+        <value>Наименование</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="a954ad38-312a-469f-b372-f1a544039492">
+      <name>Предопределенный</name>
+      <synonym>
+        <key>ru</key>
+        <value>Предопределенный</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="bc6759ca-0a9e-4705-a68e-921ea1a5bd8d">
+    <producedTypes>
+      <objectType typeId="fa6f2717-63b5-4e14-8fe3-a9e021142ac3" valueTypeId="22bc1846-6cbc-40e6-8782-181d2effc1bc"/>
+      <rowType typeId="75c45ed1-690d-4321-bcd0-7a1b50d4cbc5" valueTypeId="d7c0a032-d432-4462-8ff9-607643c7e4db"/>
+    </producedTypes>
+    <name>СобытияКЗамене</name>
+    <synonym>
+      <key>ru</key>
+      <value>События к замене</value>
+    </synonym>
+    <comment></comment>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <comment></comment>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="9bb41326-a9f1-4a34-8b13-30c06e8ece0d">
+      <name>Код</name>
+      <synonym>
+        <key>ru</key>
+        <value>Код</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>9</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="d158949b-c606-4501-a961-df4b98566976">
+      <name>Событие</name>
+      <synonym>
+        <key>ru</key>
+        <value>Событие</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.События</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a9d061b3-2f92-4eab-939d-041e224a0d45">
+      <name>Наименование</name>
+      <synonym>
+        <key>ru</key>
+        <value>Наименование</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="3d6efcf9-f13c-4984-9637-053e9cb8cb27">
+      <name>ПометкаУдаления</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пометка удаления</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="1f989039-dd8e-4e7c-a2fb-6d5477a56aa6">
+      <name>Предопределенный</name>
+      <synonym>
+        <key>ru</key>
+        <value>Предопределенный</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="f1ce0603-1e21-4190-adff-06453b746e9c">
+    <producedTypes>
+      <objectType typeId="5c27159f-4576-45bb-bde9-5e0763e85d8c" valueTypeId="a8ec0f10-a800-4de8-b9b4-9552eb1e5e09"/>
+      <rowType typeId="77b53382-5109-479a-a782-5653da2690fb" valueTypeId="c0209896-5aea-43fe-b7f3-9c20148373ec"/>
+    </producedTypes>
+    <name>СобытияКорректировки</name>
+    <synonym>
+      <key>ru</key>
+      <value>События корректировки</value>
+    </synonym>
+    <comment></comment>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <comment></comment>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="b597b33b-d9d0-4737-b2ef-f0fea4668b92">
+      <name>Код</name>
+      <synonym>
+        <key>ru</key>
+        <value>Код</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>9</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="d11d8b4a-669b-40df-8319-d675d8a1aa67">
+      <name>Событие</name>
+      <synonym>
+        <key>ru</key>
+        <value>Событие</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.События</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="d04bcb81-db29-45dd-a526-5efa89bf14b8">
+      <name>КодОсновногоСобытия</name>
+      <synonym>
+        <key>ru</key>
+        <value>Код основного</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>9</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="5f35c4fb-8fff-4289-bd0b-6da3337a65c7">
+      <name>СобытиеОсновное</name>
+      <synonym>
+        <key>ru</key>
+        <value>Событие основное</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.События</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="a15dd649-455e-4db1-9357-4e19cc2918fe">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

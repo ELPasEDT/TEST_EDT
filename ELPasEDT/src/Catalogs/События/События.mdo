@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9098eece-5938-4c6f-a30c-a0b68469093e">
+  <producedTypes>
+    <objectType typeId="6fbbd588-2ca0-44ed-85a4-680dfcb79b53" valueTypeId="f6b55a68-8d1a-4752-b3b4-22fd26347687"/>
+    <refType typeId="ec181f2c-d2fd-43c5-ad89-23a48eb27e0a" valueTypeId="2bc5a80a-6f5e-44fc-9276-5a6f150aaec9"/>
+    <selectionType typeId="0679ebae-e8da-4418-83ea-8485910036a7" valueTypeId="de328617-f439-42a6-aebe-ca6a4b858ade"/>
+    <listType typeId="0cbaa8d6-d94c-4247-a3da-da3f209b7715" valueTypeId="20ef7805-9787-407a-af1e-88199c028a36"/>
+    <managerType typeId="d298daa7-4bbf-4e82-bd3e-ce4e63aa264c" valueTypeId="1bc700a0-950b-4149-8c06-623fbe3e4148"/>
+  </producedTypes>
+  <name>События</name>
+  <synonym>
+    <key>ru</key>
+    <value>События</value>
+  </synonym>
+  <comment>(ПОГ и ЭЖ)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.События.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.События.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <comment></comment>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <comment></comment>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Событие</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="d47be2c9-8be0-4a11-ba44-8a893316ea81">
+      <name>НачатьРаботы</name>
+      <description>Начать работы (авария)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000008</value>
+      </code>
+    </items>
+    <items id="86229ace-06cb-4643-8db1-bc544e899b4c">
+      <name>ОбращениеВыполнено</name>
+      <description>Обращение выполнено</description>
+      <code xsi:type="core:StringValue">
+        <value>000000012</value>
+      </code>
+    </items>
+    <items id="52b9fb42-6ed7-4ab3-8294-b525b25d73da">
+      <name>ОбращениеНеВыполнено</name>
+      <description>Обращение не выполнено</description>
+      <code xsi:type="core:StringValue">
+        <value>000000013</value>
+      </code>
+    </items>
+    <items id="56bedd6b-7d28-4322-938c-a8d7768b73e7">
+      <name>ОтданоРаспоряжение</name>
+      <description>Отдано распоряжение</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="531f73b6-0949-4de5-b606-0d1ee182f46c">
+      <name>ПолученоОбращение</name>
+      <description>Получено обращение</description>
+      <code xsi:type="core:StringValue">
+        <value>000000010</value>
+      </code>
+    </items>
+    <items id="edeac588-6fef-482a-b07f-d403d6259669">
+      <name>ПолученоРаспоряжение</name>
+      <description>Получено распоряжение</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+    <items id="dfb13d18-ed4f-4db8-b091-2dc73ab82b34">
+      <name>ПринятоОбращение</name>
+      <description>Принято обращение</description>
+      <code xsi:type="core:StringValue">
+        <value>000000011</value>
+      </code>
+    </items>
+    <items id="fa1ed8f0-8c1d-4ee6-9b0e-c11563e725ad">
+      <name>ПринятоРаспоряжение</name>
+      <description>Принято распоряжение</description>
+      <code xsi:type="core:StringValue">
+        <value>000000006</value>
+      </code>
+    </items>
+    <items id="ca67e5f3-435b-4abe-893f-b012bb15a83e">
+      <name>Прочее</name>
+      <description>Прочее</description>
+      <code xsi:type="core:StringValue">
+        <value>000000014</value>
+      </code>
+    </items>
+    <items id="b66c6715-a142-4af0-a29f-564487abaab7">
+      <name>РаспоряжениеВыполнено</name>
+      <description>Распоряжение выполнено</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="068fdea3-e6cd-4250-8cd8-237ce819b218">
+      <name>РаспоряжениеНеВыполнено</name>
+      <description>Распоряжение не выполнено</description>
+      <code xsi:type="core:StringValue">
+        <value>000000007</value>
+      </code>
+    </items>
+    <items id="584234c1-5024-4c61-8ca9-6df3027f9f6f">
+      <name>СменуПринял</name>
+      <description>Смену принял</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="04d938b7-03a2-4f62-86ff-013cd2036c2f">
+      <name>СменуСдал</name>
+      <description>Смену сдал</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="2f203d7e-4ad0-43f9-8831-bd5967cbc32a">
+      <name>СформированоОбращение</name>
+      <description>Сформировано обращение</description>
+      <code xsi:type="core:StringValue">
+        <value>000000009</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.События.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.События.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="61e20d52-cb65-411e-8e4a-84d6d5758c68">
+    <name>ОповещениеНСС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оповещение НСС</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4b4042e5-5850-4b9d-b50a-984af27525fe">
+    <name>СобытиеВЖурналеНСС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Событие в журнале НСС</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.События</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ПометкаУдаления</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="98cc2c69-a1cb-4e8e-a471-f357db461e0a">
+    <name>УдалитьОрганизация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организационная единица (удалить)</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e1d2051b-f516-4064-9427-82f63e689862">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.СтатусыЗаявокСокращенный</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="df722d90-bbec-4279-9ced-53f46cfce93d">
+    <name>СсылкаДляИзменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменяем</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.События</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="0597bbba-1b67-416a-87ff-7a395d26cba3">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c7297b8e-da93-4d34-9908-ee446053b16d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

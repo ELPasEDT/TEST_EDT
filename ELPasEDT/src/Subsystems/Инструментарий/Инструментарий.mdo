@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9742c6c0-8229-4d17-beec-c53212132131">
+  <name>Инструментарий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Инструментарий</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Инструментарий</picture>
+  </picture>
+  <content>DataProcessor.ПереносВидовЗаписейИСобытийВДокументы</content>
+  <content>DataProcessor.КонсольЗапросов_82</content>
+  <content>DataProcessor.УниверсальныеПодборИОбработкаОбъектов</content>
+  <content>DataProcessor.ОбработкаВидовЗаписи</content>
+  <content>DataProcessor.СверткаИЗаменаСсылкокПоСобытиям</content>
+  <content>DataProcessor.ПереносВидовЗаписейИСобытийВДокументы_2_0</content>
+  <content>DataProcessor.ЗагрузкаДанныхИзТабличногоДокумента_УФ</content>
+  <content>DataProcessor.ВыгрузкаЗагрузкаДанныхXML</content>
+  <content>DataProcessor.ЗагрузкаИзЕСС</content>
+</mdclass:Subsystem>

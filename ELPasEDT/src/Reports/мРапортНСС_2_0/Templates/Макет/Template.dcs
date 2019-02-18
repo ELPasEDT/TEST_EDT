@@ -1,0 +1,2234 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТемператураНаружногоВоздуха</dataPath>
+			<field>ТемператураНаружногоВоздуха</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Т нар. возд. С</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Дата</dataPath>
+			<field>Дата</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ=dd.MM.yyyy</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИнформацияОРезкихИзмененияхВПогодныхУсловиях</dataPath>
+			<field>ИнформацияОРезкихИзмененияхВПогодныхУсловиях</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Время</dataPath>
+			<field>Время</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДЛФ=T</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	РапортНСС.Дата КАК Дата,
+	РапортНСС.Дата КАК Время,
+	РапортНСС.ТемператураНаружногоВоздуха КАК ТемператураНаружногоВоздуха,
+	РапортНСС.ИнформацияОРезкихИзмененияхВПогодныхУсловиях КАК ИнформацияОРезкихИзмененияхВПогодныхУсловиях
+ИЗ
+	Документ.РапортНСС КАК РапортНСС
+ГДЕ
+	(РапортНСС.Проведен
+				И (РапортНСС.Дата МЕЖДУ &amp;Дата1 И КОНЕЦПЕРИОДА(&amp;Дата1, ДЕНЬ))
+				И (РапортНСС.Организация В ИЕРАРХИИ (&amp;Организация)
+			ИЛИ &amp;Организация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)))</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных2</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭлектрическаяНагрузкаФакт</dataPath>
+			<field>ЭлектрическаяНагрузкаФакт</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СобственныеНужныПроцент</dataPath>
+			<field>СобственныеНужныПроцент</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Факт, %</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипУстановки</dataPath>
+			<field>ТипУстановки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СобственныеНужныФакт</dataPath>
+			<field>СобственныеНужныФакт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Факт, МВт</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭлектрическаяНагрузкаГрафик</dataPath>
+			<field>ЭлектрическаяНагрузкаГрафик</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	РапортНССЭлектрическаяНагрузка.ТипУстановки КАК ТипУстановки,
+	РапортНССЭлектрическаяНагрузка.ЭлектрическаяНагрузкаГрафик КАК ЭлектрическаяНагрузкаГрафик,
+	РапортНССЭлектрическаяНагрузка.ЭлектрическаяНагрузкаФакт КАК ЭлектрическаяНагрузкаФакт,
+	РапортНССЭлектрическаяНагрузка.СобственныеНужныФакт КАК СобственныеНужныФакт,
+	РапортНССЭлектрическаяНагрузка.СобственныеНужныПроцент КАК СобственныеНужныПроцент
+ИЗ
+	Документ.РапортНСС.ЭлектрическаяНагрузка КАК РапортНССЭлектрическаяНагрузка
+ГДЕ
+	(РапортНССЭлектрическаяНагрузка.Ссылка.Проведен
+				И (РапортНССЭлектрическаяНагрузка.Ссылка.Дата МЕЖДУ &amp;Дата1 И КОНЕЦПЕРИОДА(&amp;Дата1, ДЕНЬ))
+				И (РапортНССЭлектрическаяНагрузка.Ссылка.Организация В ИЕРАРХИИ (&amp;Организация)
+			ИЛИ &amp;Организация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)))</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных3</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВлияниеНаНадежность</dataPath>
+			<field>ВлияниеНаНадежность</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Влияние на надёжность, экономичность работы ТЭЦ, выработку Э.Э. и ТЭ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Оборудование</dataPath>
+			<field>Оборудование</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Замечание</dataPath>
+			<field>Замечание</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерСтроки</dataPath>
+			<field>НомерСтроки</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	РапортНССЗамечания.Оборудование КАК Оборудование,
+	РапортНССЗамечания.Замечание КАК Замечание,
+	РапортНССЗамечания.ВлияниеНаНадежность КАК ВлияниеНаНадежность,
+	РапортНССЗамечания.НомерСтроки КАК НомерСтроки
+ИЗ
+	Документ.РапортНСС.Замечания КАК РапортНССЗамечания
+ГДЕ
+	(РапортНССЗамечания.Ссылка.Проведен
+				И (РапортНССЗамечания.Ссылка.Дата МЕЖДУ &amp;Дата1 И КОНЕЦПЕРИОДА(&amp;Дата1, ДЕНЬ))
+				И (РапортНССЗамечания.Ссылка.Организация В ИЕРАРХИИ (&amp;Организация)
+			ИЛИ &amp;Организация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)))</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных4</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТепловаяНагрузкаТеплосеть</dataPath>
+			<field>ТепловаяНагрузкаТеплосеть</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТемпераПара</dataPath>
+			<field>ТемпераПара</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РасходНаСН</dataPath>
+			<field>РасходНаСН</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТепловаяНагрузкаПар</dataPath>
+			<field>ТепловаяНагрузкаПар</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПодпиткаТССырВода</dataPath>
+			<field>ПодпиткаТССырВода</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПодпиткаТСХВО</dataPath>
+			<field>ПодпиткаТСХВО</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДавлениеПара</dataPath>
+			<field>ДавлениеПара</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Дата</dataPath>
+			<field>Дата</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтпускПара</dataPath>
+			<field>ОтпускПара</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	РапортНСКТЦ.Дата КАК Дата,
+	РапортНСКТЦ.ТепловаяНагрузкаТеплосеть КАК ТепловаяНагрузкаТеплосеть,
+	РапортНСКТЦ.ТепловаяНагрузкаПар КАК ТепловаяНагрузкаПар,
+	РапортНСКТЦ.РасходНаСН КАК РасходНаСН,
+	РапортНСКТЦ.ПодпиткаТСХВО КАК ПодпиткаТСХВО,
+	РапортНСКТЦ.ПодпиткаТССырВода КАК ПодпиткаТССырВода,
+	РапортНСКТЦ.ОтпускПара КАК ОтпускПара,
+	РапортНСКТЦ.ТемпераПара КАК ТемпераПара,
+	РапортНСКТЦ.ДавлениеПара КАК ДавлениеПара
+ИЗ
+	Документ.РапортНСКТЦ КАК РапортНСКТЦ
+ГДЕ
+	(РапортНСКТЦ.Проведен
+				И (РапортНСКТЦ.Дата МЕЖДУ &amp;Дата1 И КОНЕЦПЕРИОДА(&amp;Дата1, ДЕНЬ))
+				И (РапортНСКТЦ.Организация В ИЕРАРХИИ (&amp;Организация)
+			ИЛИ &amp;Организация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)))</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных5</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗначениеПоказателя1</dataPath>
+			<field>ЗначениеПоказателя1</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>БЗК №1</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗначениеПоказателя2</dataPath>
+			<field>ЗначениеПоказателя2</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>БЗК №2</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗначениеПоказателя3</dataPath>
+			<field>ЗначениеПоказателя3</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>БЗК №3</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПоказательТеплосети</dataPath>
+			<field>ПоказательТеплосети</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗначениеПоказателя4</dataPath>
+			<field>ЗначениеПоказателя4</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>БГК</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	РапортНСКТЦТеплосети.ПоказательТеплосети.НаименованиеПолное КАК ПоказательТеплосети,
+	РапортНСКТЦТеплосети.ЗначениеПоказателя1 КАК ЗначениеПоказателя1,
+	РапортНСКТЦТеплосети.ЗначениеПоказателя2 КАК ЗначениеПоказателя2,
+	РапортНСКТЦТеплосети.ЗначениеПоказателя3 КАК ЗначениеПоказателя3,
+	РапортНСКТЦТеплосети.ЗначениеПоказателя4 КАК ЗначениеПоказателя4
+ИЗ
+	Документ.РапортНСКТЦ.Теплосети КАК РапортНСКТЦТеплосети
+ГДЕ
+	РапортНСКТЦТеплосети.Ссылка.Проведен
+	И РапортНСКТЦТеплосети.Ссылка.Дата МЕЖДУ &amp;Дата1 И КОНЕЦПЕРИОДА(&amp;Дата1, ДЕНЬ)
+	И (РапортНСКТЦТеплосети.Ссылка.Организация В ИЕРАРХИИ (&amp;Организация)
+			ИЛИ &amp;Организация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка))</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных6</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>к_ЗначениеПоказателя3</dataPath>
+			<field>к_ЗначениеПоказателя3</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Г.Г.</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>к_ЗначениеПоказателя4</dataPath>
+			<field>к_ЗначениеПоказателя4</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>М.Ф.</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>к_ЗначениеПоказателя5</dataPath>
+			<field>к_ЗначениеПоказателя5</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояние (раб, рез, рем, конс)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>к_ЗначениеПоказателя6</dataPath>
+			<field>к_ЗначениеПоказателя6</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>У.Г.</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>к_ЗначениеПоказателя7</dataPath>
+			<field>к_ЗначениеПоказателя7</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата и время начала действия заявки на изменение состояния</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>к_ЗначениеПоказателя8</dataPath>
+			<field>к_ЗначениеПоказателя8</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата и время окончания действия заявки или время включения</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>к_ЗначениеПоказателя1</dataPath>
+			<field>к_ЗначениеПоказателя1</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Dпп</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>к_ЗначениеПоказателя2</dataPath>
+			<field>к_ЗначениеПоказателя2</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>t пв</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>к_НомерСтроки</dataPath>
+			<field>к_НомерСтроки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ст.№</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	РапортКотлыДанынеПоКотлам.ЗначениеПоказателя1 КАК к_ЗначениеПоказателя1,
+	РапортКотлыДанынеПоКотлам.ЗначениеПоказателя2 КАК к_ЗначениеПоказателя2,
+	РапортКотлыДанынеПоКотлам.ЗначениеПоказателя3 КАК к_ЗначениеПоказателя3,
+	РапортКотлыДанынеПоКотлам.ЗначениеПоказателя4 КАК к_ЗначениеПоказателя4,
+	РапортКотлыДанынеПоКотлам.ЗначениеПоказателя5 КАК к_ЗначениеПоказателя5,
+	РапортКотлыДанынеПоКотлам.ЗначениеПоказателя6 КАК к_ЗначениеПоказателя6,
+	РапортКотлыДанынеПоКотлам.ЗначениеПоказателя7 КАК к_ЗначениеПоказателя7,
+	РапортКотлыДанынеПоКотлам.ЗначениеПоказателя8 КАК к_ЗначениеПоказателя8,
+	РапортКотлыДанынеПоКотлам.НомерСтроки КАК к_НомерСтроки
+ИЗ
+	Документ.РапортКотлы.ДанынеПоКотлам КАК РапортКотлыДанынеПоКотлам
+ГДЕ
+	(РапортКотлыДанынеПоКотлам.Ссылка.Проведен
+				И (РапортКотлыДанынеПоКотлам.Ссылка.Дата МЕЖДУ &amp;Дата1 И КОНЕЦПЕРИОДА(&amp;Дата1, ДЕНЬ))
+				И (РапортКотлыДанынеПоКотлам.Ссылка.Организация В ИЕРАРХИИ (&amp;Организация)
+			ИЛИ &amp;Организация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)))</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных7</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>т_ЗначениеПоказателя9</dataPath>
+			<field>т_ЗначениеПоказателя9</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата и время окончания действия заявки или время включения</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>т_НомерСтроки</dataPath>
+			<field>т_НомерСтроки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ст.№</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>т_ЗначениеПоказателя1</dataPath>
+			<field>т_ЗначениеПоказателя1</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Nэл. (МВтч)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>т_ЗначениеПоказателя2</dataPath>
+			<field>т_ЗначениеПоказателя2</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>D0 (т/ч)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>т_ЗначениеПоказателя3</dataPath>
+			<field>т_ЗначениеПоказателя3</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>W (кгс/см²)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>т_ЗначениеПоказателя4</dataPath>
+			<field>т_ЗначениеПоказателя4</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Диафрагма (%)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>т_ЗначениеПоказателя5</dataPath>
+			<field>т_ЗначениеПоказателя5</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПСГ 1(А) Расход/РЕЗ/РЕМ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>т_ЗначениеПоказателя6</dataPath>
+			<field>т_ЗначениеПоказателя6</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПСГ 1(Б) Расход/РЕЗ/РЕМ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>т_ЗначениеПоказателя7</dataPath>
+			<field>т_ЗначениеПоказателя7</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояние (раб, рез, рем, конс)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>т_ЗначениеПоказателя8</dataPath>
+			<field>т_ЗначениеПоказателя8</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата и время начала действия заявки на изменение состояния</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	РапортТурбиныДанынеПоТурбинам.ЗначениеПоказателя1 КАК т_ЗначениеПоказателя1,
+	РапортТурбиныДанынеПоТурбинам.ЗначениеПоказателя2 КАК т_ЗначениеПоказателя2,
+	РапортТурбиныДанынеПоТурбинам.ЗначениеПоказателя3 КАК т_ЗначениеПоказателя3,
+	РапортТурбиныДанынеПоТурбинам.ЗначениеПоказателя4 КАК т_ЗначениеПоказателя4,
+	РапортТурбиныДанынеПоТурбинам.ЗначениеПоказателя5 КАК т_ЗначениеПоказателя5,
+	РапортТурбиныДанынеПоТурбинам.ЗначениеПоказателя6 КАК т_ЗначениеПоказателя6,
+	РапортТурбиныДанынеПоТурбинам.ЗначениеПоказателя7 КАК т_ЗначениеПоказателя7,
+	РапортТурбиныДанынеПоТурбинам.ЗначениеПоказателя8 КАК т_ЗначениеПоказателя8,
+	РапортТурбиныДанынеПоТурбинам.ЗначениеПоказателя9 КАК т_ЗначениеПоказателя9,
+	РапортТурбиныДанынеПоТурбинам.НомерСтроки КАК т_НомерСтроки
+ИЗ
+	Документ.РапортТурбины.ДанынеПоТурбинам КАК РапортТурбиныДанынеПоТурбинам
+ГДЕ
+	(РапортТурбиныДанынеПоТурбинам.Ссылка.Проведен
+				И (РапортТурбиныДанынеПоТурбинам.Ссылка.Дата МЕЖДУ &amp;Дата1 И КОНЕЦПЕРИОДА(&amp;Дата1, ДЕНЬ))
+				И (РапортТурбиныДанынеПоТурбинам.Ссылка.Организация В ИЕРАРХИИ (&amp;Организация)
+			ИЛИ &amp;Организация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)))</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных8</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УгольОстаток</dataPath>
+			<field>УгольОстаток</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остаток</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МазутНорматив</dataPath>
+			<field>МазутНорматив</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Норматив</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГазРасход</dataPath>
+			<field>ГазРасход</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расход</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МазутОстаток</dataPath>
+			<field>МазутОстаток</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остаток</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГазДавление</dataPath>
+			<field>ГазДавление</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Давление</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УгольПриход</dataPath>
+			<field>УгольПриход</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приход</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МазутПриход</dataPath>
+			<field>МазутПриход</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приход</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УгольНорматив</dataPath>
+			<field>УгольНорматив</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Норматив</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УгольРасход</dataPath>
+			<field>УгольРасход</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расход</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МазутРасход</dataPath>
+			<field>МазутРасход</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расход</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	РапортТопливо.ГазРасход КАК ГазРасход,
+	РапортТопливо.ГазДавление КАК ГазДавление,
+	РапортТопливо.МазутРасход КАК МазутРасход,
+	РапортТопливо.МазутПриход КАК МазутПриход,
+	РапортТопливо.МазутОстаток КАК МазутОстаток,
+	РапортТопливо.МазутНорматив КАК МазутНорматив,
+	РапортТопливо.УгольРасход КАК УгольРасход,
+	РапортТопливо.УгольПриход КАК УгольПриход,
+	РапортТопливо.УгольОстаток КАК УгольОстаток,
+	РапортТопливо.УгольНорматив КАК УгольНорматив
+ИЗ
+	Документ.РапортТопливо КАК РапортТопливо
+ГДЕ
+	(РапортТопливо.Проведен
+				И (РапортТопливо.Дата МЕЖДУ &amp;Дата1 И КОНЕЦПЕРИОДА(&amp;Дата1, ДЕНЬ))
+				И (РапортТопливо.Организация В ИЕРАРХИИ (&amp;Организация)
+			ИЛИ &amp;Организация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)))</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных9</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>тсо_ЗначениеПоказателя4</dataPath>
+			<field>тсо_ЗначениеПоказателя4</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>4</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>тсо_ГруппаОборудования</dataPath>
+			<field>тсо_ГруппаОборудования</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа оборудования</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>тсо_ЗначениеПоказателя1</dataPath>
+			<field>тсо_ЗначениеПоказателя1</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>1</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>тсо_ЗначениеПоказателя2</dataPath>
+			<field>тсо_ЗначениеПоказателя2</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>2</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>тсо_ЗначениеПоказателя3</dataPath>
+			<field>тсо_ЗначениеПоказателя3</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>3</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	РапортТеплосетевоеОборудованиеЗначенияПоказателей.ГруппаОборудования КАК тсо_ГруппаОборудования,
+	РапортТеплосетевоеОборудованиеЗначенияПоказателей.ЗначениеПоказателя1 КАК тсо_ЗначениеПоказателя1,
+	РапортТеплосетевоеОборудованиеЗначенияПоказателей.ЗначениеПоказателя2 КАК тсо_ЗначениеПоказателя2,
+	РапортТеплосетевоеОборудованиеЗначенияПоказателей.ЗначениеПоказателя3 КАК тсо_ЗначениеПоказателя3,
+	РапортТеплосетевоеОборудованиеЗначенияПоказателей.ЗначениеПоказателя4 КАК тсо_ЗначениеПоказателя4
+ИЗ
+	Документ.РапортТеплосетевоеОборудование.ЗначенияПоказателей КАК РапортТеплосетевоеОборудованиеЗначенияПоказателей
+ГДЕ
+	РапортТеплосетевоеОборудованиеЗначенияПоказателей.Ссылка.Проведен
+	И РапортТеплосетевоеОборудованиеЗначенияПоказателей.Ссылка.Дата МЕЖДУ &amp;Дата1 И КОНЕЦПЕРИОДА(&amp;Дата1, ДЕНЬ)
+	И (РапортТеплосетевоеОборудованиеЗначенияПоказателей.Ссылка.Организация В ИЕРАРХИИ (&amp;Организация)
+			ИЛИ &amp;Организация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка))</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных10</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Резерв</dataPath>
+			<field>Резерв</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>РЕЗ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Аварийный</dataPath>
+			<field>Аварийный</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>АВР</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ремонт</dataPath>
+			<field>Ремонт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>РЕМ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГруппаОборудования</dataPath>
+			<field>ГруппаОборудования</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа оборудования</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВРаботе</dataPath>
+			<field>ВРаботе</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>РАБ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Примечание</dataPath>
+			<field>Примечание</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Примечание</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	РапортМеханизмыОборудование.ГруппаОборудования КАК ГруппаОборудования,
+	РапортМеханизмыОборудование.ВРаботе КАК ВРаботе,
+	РапортМеханизмыОборудование.Аварийный КАК Аварийный,
+	РапортМеханизмыОборудование.Резерв КАК Резерв,
+	РапортМеханизмыОборудование.Ремонт КАК Ремонт,
+	РапортМеханизмыОборудование.Примечание КАК Примечание
+ИЗ
+	Документ.РапортМеханизмы.Оборудование КАК РапортМеханизмыОборудование
+ГДЕ
+	(РапортМеханизмыОборудование.Ссылка.Проведен
+				И (РапортМеханизмыОборудование.Ссылка.Дата МЕЖДУ &amp;Дата1 И КОНЕЦПЕРИОДА(&amp;Дата1, ДЕНЬ))
+				И (РапортМеханизмыОборудование.Ссылка.Организация В ИЕРАРХИИ (&amp;Организация)
+			ИЛИ &amp;Организация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)))</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных11</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Выключатель</dataPath>
+			<field>Выключатель</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>лСостояниеВоздушнойЛинии</dataPath>
+			<field>лСостояниеВоздушнойЛинии</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояние воздушной линии</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>лОборудование</dataPath>
+			<field>лОборудование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оборудование</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	РапортГлавнаяСхемаВоздушныеЛинии.Оборудование КАК лОборудование,
+	РапортГлавнаяСхемаВоздушныеЛинии.СостояниеВоздушнойЛинии КАК лСостояниеВоздушнойЛинии,
+	РапортГлавнаяСхемаВоздушныеЛинии.Выключатель КАК Выключатель
+ИЗ
+	Документ.РапортГлавнаяСхема.ВоздушныеЛинии КАК РапортГлавнаяСхемаВоздушныеЛинии
+ГДЕ
+	(РапортГлавнаяСхемаВоздушныеЛинии.Ссылка.Проведен
+				И (РапортГлавнаяСхемаВоздушныеЛинии.Ссылка.Дата МЕЖДУ &amp;Дата1 И КОНЕЦПЕРИОДА(&amp;Дата1, ДЕНЬ))
+				И (РапортГлавнаяСхемаВоздушныеЛинии.Ссылка.Организация В ИЕРАРХИИ (&amp;Организация)
+			ИЛИ &amp;Организация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)))</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных12</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>шСостояниеСистемыШин</dataPath>
+			<field>шСостояниеСистемыШин</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояние системы шин</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>шОборудование</dataPath>
+			<field>шОборудование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оборудование</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	РапортГлавнаяСхемаСистемыШин.Оборудование КАК шОборудование,
+	РапортГлавнаяСхемаСистемыШин.СостояниеСистемыШин КАК шСостояниеСистемыШин
+ИЗ
+	Документ.РапортГлавнаяСхема.СистемыШин КАК РапортГлавнаяСхемаСистемыШин
+ГДЕ
+	(РапортГлавнаяСхемаСистемыШин.Ссылка.Проведен
+				И (РапортГлавнаяСхемаСистемыШин.Ссылка.Дата МЕЖДУ &amp;Дата1 И КОНЕЦПЕРИОДА(&amp;Дата1, ДЕНЬ))
+				И (РапортГлавнаяСхемаСистемыШин.Ссылка.Организация В ИЕРАРХИИ (&amp;Организация)
+			ИЛИ &amp;Организация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)))</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных13</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УровеньВБАЗК1</dataPath>
+			<field>УровеньВБАЗК1</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УровеньВБАЗК2</dataPath>
+			<field>УровеньВБАЗК2</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УровеньВБАЗК3</dataPath>
+			<field>УровеньВБАЗК3</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УровеньВБАЗК4</dataPath>
+			<field>УровеньВБАЗК4</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УровеньВБАЗК5</dataPath>
+			<field>УровеньВБАЗК5</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РасходВоды1</dataPath>
+			<field>РасходВоды1</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расход ХОВ на подпитку ТС</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РасходВоды2</dataPath>
+			<field>РасходВоды2</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расход ХОВ на испарители</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	РапортХВО.УровеньВБАЗК1 КАК УровеньВБАЗК1,
+	РапортХВО.УровеньВБАЗК2 КАК УровеньВБАЗК2,
+	РапортХВО.УровеньВБАЗК3 КАК УровеньВБАЗК3,
+	РапортХВО.УровеньВБАЗК4 КАК УровеньВБАЗК4,
+	РапортХВО.УровеньВБАЗК5 КАК УровеньВБАЗК5,
+	РапортХВО.РасходВоды1 КАК РасходВоды1,
+	РапортХВО.РасходВоды2 КАК РасходВоды2
+ИЗ
+	Документ.РапортХВО КАК РапортХВО
+ГДЕ
+	РапортХВО.Проведен
+	И РапортХВО.Дата МЕЖДУ &amp;Дата1 И КОНЕЦПЕРИОДА(&amp;Дата1, ДЕНЬ)
+	И (РапортХВО.Организация В ИЕРАРХИИ (&amp;Организация)
+			ИЛИ &amp;Организация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка))</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных14</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ф_Резерв</dataPath>
+			<field>ф_Резерв</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>РЕЗ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ф_Аварийный</dataPath>
+			<field>ф_Аварийный</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аварийный</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ф_Примечание</dataPath>
+			<field>ф_Примечание</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Примечание</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ф_Ремонт</dataPath>
+			<field>ф_Ремонт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>РЕМ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ф_ВРаботе</dataPath>
+			<field>ф_ВРаботе</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>РАБ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ф_ГруппаОборудования</dataPath>
+			<field>ф_ГруппаОборудования</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Осветлители и фильтры</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	РапортХВООсветителиИФильтры.ГруппаОборудования КАК ф_ГруппаОборудования,
+	РапортХВООсветителиИФильтры.ВРаботе КАК ф_ВРаботе,
+	РапортХВООсветителиИФильтры.Аварийный КАК ф_Аварийный,
+	РапортХВООсветителиИФильтры.Резерв КАК ф_Резерв,
+	РапортХВООсветителиИФильтры.Ремонт КАК ф_Ремонт,
+	РапортХВООсветителиИФильтры.Примечание КАК ф_Примечание
+ИЗ
+	Документ.РапортХВО.ОсветителиИФильтры КАК РапортХВООсветителиИФильтры
+ГДЕ
+	(РапортХВООсветителиИФильтры.Ссылка.Проведен
+				И (РапортХВООсветителиИФильтры.Ссылка.Дата МЕЖДУ &amp;Дата1 И КОНЕЦПЕРИОДА(&amp;Дата1, ДЕНЬ))
+				И (РапортХВООсветителиИФильтры.Ссылка.Организация В ИЕРАРХИИ (&amp;Организация)
+			ИЛИ &amp;Организация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)))</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных15</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>пгуВРаботе</dataPath>
+			<field>пгуВРаботе</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>РАБ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>пгуРезерв</dataPath>
+			<field>пгуРезерв</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>РЕЗ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>пгуАварийный</dataPath>
+			<field>пгуАварийный</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>АВР</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>пгуПримечание</dataPath>
+			<field>пгуПримечание</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Примечание</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>пгуГруппаОборудования</dataPath>
+			<field>пгуГруппаОборудования</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Механизмы блока</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>пгуРемонт</dataPath>
+			<field>пгуРемонт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>РЕМ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	РапортМеханизмыОборудование.ГруппаОборудования КАК пгуГруппаОборудования,
+	РапортМеханизмыОборудование.ВРаботе КАК пгуВРаботе,
+	РапортМеханизмыОборудование.Аварийный КАК пгуАварийный,
+	РапортМеханизмыОборудование.Резерв КАК пгуРезерв,
+	РапортМеханизмыОборудование.Ремонт КАК пгуРемонт,
+	РапортМеханизмыОборудование.Примечание КАК пгуПримечание
+ИЗ
+	Документ.РапортПГУ.Оборудование КАК РапортМеханизмыОборудование
+ГДЕ
+	(РапортМеханизмыОборудование.Ссылка.Проведен
+				И (РапортМеханизмыОборудование.Ссылка.Дата МЕЖДУ &amp;Дата1 И КОНЕЦПЕРИОДА(&amp;Дата1, ДЕНЬ))
+				И (РапортМеханизмыОборудование.Ссылка.Организация В ИЕРАРХИИ (&amp;Организация)
+			ИЛИ &amp;Организация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)))</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных16</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГТУВНАПроцент</dataPath>
+			<field>ГТУВНАПроцент</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ВНА, %</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГТУNэлМВт</dataPath>
+			<field>ГТУNэлМВт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Nэл, МВт</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПСГ12Расход</dataPath>
+			<field>ПСГ12Расход</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПСГ-1,2 (Расход, т/ч)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПБ</dataPath>
+			<field>ПБ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПБ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПТУDПараНДтч</dataPath>
+			<field>ПТУDПараНДтч</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>D пара НД, т/ч</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПТУВакуумкгссм2</dataPath>
+			<field>ПТУВакуумкгссм2</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вакуум, кгс/см2</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГТУGгазатм3</dataPath>
+			<field>ГТУGгазатм3</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Gгаза, т.м3</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГТУТВоздухаКомпрессор</dataPath>
+			<field>ГТУТВоздухаКомпрессор</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Т возд. компр.</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПБРасход</dataPath>
+			<field>ПБРасход</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПБ (Расход, т/ч)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПТУДиафрагмамм</dataPath>
+			<field>ПТУДиафрагмамм</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Диафрагма, мм</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтпускТеплаГКалЧас</dataPath>
+			<field>ОтпускТеплаГКалЧас</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отпуск тепла, Гкал/ч</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПСГ12</dataPath>
+			<field>ПСГ12</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПСГ-1,2</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВВТО</dataPath>
+			<field>ВВТО</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ВВТО</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПТУNэлМВт</dataPath>
+			<field>ПТУNэлМВт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Nэл, МВт</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГТУПерепадНаКВОУПА</dataPath>
+			<field>ГТУПерепадНаКВОУПА</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>перепад на КВОУ, Па</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВВТОРасход</dataPath>
+			<field>ВВТОРасход</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ВВТО (Расход, т/ч)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПТУDПараВДтч</dataPath>
+			<field>ПТУDПараВДтч</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>D пара ВД, т/ч</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	РапортПГУ.ГТУNэлМВт КАК ГТУNэлМВт,
+	РапортПГУ.ГТУGгазатм3 КАК ГТУGгазатм3,
+	РапортПГУ.ГТУВНАПроцент КАК ГТУВНАПроцент,
+	РапортПГУ.ГТУПерепадНаКВОУПА КАК ГТУПерепадНаКВОУПА,
+	РапортПГУ.ГТУТВоздухаКомпрессор КАК ГТУТВоздухаКомпрессор,
+	РапортПГУ.ПТУNэлМВт КАК ПТУNэлМВт,
+	РапортПГУ.ПТУDПараВДтч КАК ПТУDПараВДтч,
+	РапортПГУ.ПТУDПараНДтч КАК ПТУDПараНДтч,
+	РапортПГУ.ПТУДиафрагмамм КАК ПТУДиафрагмамм,
+	РапортПГУ.ПТУВакуумкгссм2 КАК ПТУВакуумкгссм2,
+	РапортПГУ.ОтпускТеплаГКалЧас КАК ОтпускТеплаГКалЧас,
+	РапортПГУ.ПСГ12 КАК ПСГ12,
+	РапортПГУ.ВВТО КАК ВВТО,
+	РапортПГУ.ПБ КАК ПБ,
+	РапортПГУ.ПСГ12Расход КАК ПСГ12Расход,
+	РапортПГУ.ВВТОРасход КАК ВВТОРасход,
+	РапортПГУ.ПБРасход КАК ПБРасход
+ИЗ
+	Документ.РапортПГУ КАК РапортПГУ
+ГДЕ
+	РапортПГУ.Ссылка.Проведен
+	И РапортПГУ.Ссылка.Дата МЕЖДУ &amp;Дата1 И КОНЕЦПЕРИОДА(&amp;Дата1, ДЕНЬ)
+	И (РапортПГУ.Организация В ИЕРАРХИИ (&amp;Организация)
+			ИЛИ &amp;Организация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка))</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных17</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УровеньВБакахКонденсата1</dataPath>
+			<field>УровеньВБакахКонденсата1</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УровеньВБакахКонденсата2</dataPath>
+			<field>УровеньВБакахКонденсата2</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УровеньВБакахКонденсата3</dataPath>
+			<field>УровеньВБакахКонденсата3</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УровеньВБакахКонденсата4</dataPath>
+			<field>УровеньВБакахКонденсата4</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УровеньВБакахКонденсата5</dataPath>
+			<field>УровеньВБакахКонденсата5</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	РапортТеплосетевоеОборудование.УровеньВБакахКонденсата1 КАК УровеньВБакахКонденсата1,
+	РапортТеплосетевоеОборудование.УровеньВБакахКонденсата2 КАК УровеньВБакахКонденсата2,
+	РапортТеплосетевоеОборудование.УровеньВБакахКонденсата3 КАК УровеньВБакахКонденсата3,
+	РапортТеплосетевоеОборудование.УровеньВБакахКонденсата4 КАК УровеньВБакахКонденсата4,
+	РапортТеплосетевоеОборудование.УровеньВБакахКонденсата5 КАК УровеньВБакахКонденсата5
+ИЗ
+	Документ.РапортТеплосетевоеОборудование КАК РапортТеплосетевоеОборудование
+ГДЕ
+	РапортТеплосетевоеОборудование.Ссылка.Проведен
+	И РапортТеплосетевоеОборудование.Ссылка.Дата МЕЖДУ &amp;Дата1 И КОНЕЦПЕРИОДА(&amp;Дата1, ДЕНЬ)
+	И (РапортТеплосетевоеОборудование.Ссылка.Организация В ИЕРАРХИИ (&amp;Организация)
+			ИЛИ &amp;Организация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка))</query>
+	</dataSet>
+	<parameter>
+		<name>Дата1</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата составления рапорта</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаНачала</expression>
+		<inputParameters>
+			<dcscor:item>
+				<dcscor:parameter>БыстрыйВыбор</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</inputParameters>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<parameter>
+		<name>Организация</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Организация</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Организации</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<inputParameters>
+			<dcscor:item>
+				<dcscor:parameter>БыстрыйВыбор</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</inputParameters>
+		<use>Always</use>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Рапорт НСС</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Дата</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Время</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТемператураНаружногоВоздуха</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ИнформацияОРезкихИзмененияхВПогодныхУсловиях</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Дата1</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>b6c955a0-9198-4421-bfd8-34341fcd506b</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Организация</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>e4070923-286a-41ae-ba80-79fcace5c792</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Дата</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Время</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ТемператураНаружногоВоздуха</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ИнформацияОРезкихИзмененияхВПогодныхУсловиях</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>МакетОформления</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">МакетРапорт</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Блок "Дата и погода"</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ТипУстановки</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Электрическая нагрузка</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ЭлектрическаяНагрузкаГрафик</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ЭлектрическаяНагрузкаФакт</dcsset:field>
+						</dcsset:item>
+						<dcsset:placement>Auto</dcsset:placement>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Собственные нужды</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>СобственныеНужныФакт</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>СобственныеНужныПроцент</dcsset:field>
+						</dcsset:item>
+						<dcsset:placement>Auto</dcsset:placement>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>МакетОформления</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">МакетРапорт</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Блок "Эл. нагрузка"</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>НомерСтроки</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Оборудование</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Замечание</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ВлияниеНаНадежность</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>МакетОформления</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">МакетРапорт</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Блок "Замечания"</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ТепловаяНагрузкаТеплосеть</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ТепловаяНагрузкаПар</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>РасходНаСН</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПодпиткаТСХВО</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПодпиткаТССырВода</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ОтпускПара</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ТемпераПара</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ДавлениеПара</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>МакетОформления</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">МакетРапорт</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Блок "Теплосети"</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПоказательТеплосети</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ЗначениеПоказателя1</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ЗначениеПоказателя2</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ЗначениеПоказателя3</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ЗначениеПоказателя4</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>МакетОформления</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">МакетРапорт</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Блок "Запасы конденсата и ХВО"</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>к_НомерСтроки</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>к_ЗначениеПоказателя1</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>к_ЗначениеПоказателя2</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>к_ЗначениеПоказателя3</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>к_ЗначениеПоказателя4</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>к_ЗначениеПоказателя5</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>к_ЗначениеПоказателя6</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>к_ЗначениеПоказателя7</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>к_ЗначениеПоказателя8</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>МакетОформления</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">МакетРапорт</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Блок "Котлы"</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>т_НомерСтроки</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>т_ЗначениеПоказателя1</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>т_ЗначениеПоказателя2</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>т_ЗначениеПоказателя3</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>т_ЗначениеПоказателя4</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>т_ЗначениеПоказателя5</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>т_ЗначениеПоказателя6</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>т_ЗначениеПоказателя7</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>т_ЗначениеПоказателя8</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>т_ЗначениеПоказателя9</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>МакетОформления</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">МакетРапорт</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Блок "Турбины"</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ГазРасход</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ГазДавление</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>МакетОформления</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">МакетРапорт</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Блок "Топливо" Газ</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>МазутРасход</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>МазутПриход</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>МазутОстаток</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>МазутНорматив</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>МакетОформления</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">МакетРапорт</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Мазут</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>УгольРасход</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>УгольПриход</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>УгольОстаток</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>УгольНорматив</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>МакетОформления</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">МакетРапорт</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Уголь</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>тсо_ГруппаОборудования</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>тсо_ЗначениеПоказателя1</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>тсо_ЗначениеПоказателя2</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>тсо_ЗначениеПоказателя3</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>тсо_ЗначениеПоказателя4</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>МакетОформления</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">МакетРапорт</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Блок "Теплосетевое оборудование"</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>УровеньВБакахКонденсата1</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>УровеньВБакахКонденсата2</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>УровеньВБакахКонденсата3</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>УровеньВБакахКонденсата4</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>УровеньВБакахКонденсата5</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>МакетОформления</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">МакетРапорт</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Блок "Запасы конденсата и ХВО"</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ГруппаОборудования</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ВРаботе</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Аварийный</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Резерв</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Ремонт</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Примечание</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>МакетОформления</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">МакетРапорт</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Блок "Механизмы неблочной части"</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>лОборудование</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>лСостояниеВоздушнойЛинии</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Выключатель</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>МакетОформления</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">МакетРапорт</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Блок "Главная схема" Воздушные линии</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>шОборудование</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>шСостояниеСистемыШин</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>МакетОформления</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">МакетРапорт</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Системы шин</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>УровеньВБАЗК1</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>УровеньВБАЗК2</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>УровеньВБАЗК3</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>УровеньВБАЗК4</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>УровеньВБАЗК5</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>МакетОформления</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">МакетРапорт</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>РасходВоды1</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>РасходВоды2</dcsset:field>
+						</dcsset:item>
+						<dcsset:placement>Horizontally</dcsset:placement>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>МакетОформления</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">МакетРапорт</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ф_ГруппаОборудования</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ф_ВРаботе</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:use>false</dcsset:use>
+						<dcsset:field>ф_Аварийный</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ф_Резерв</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ф_Ремонт</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ф_Примечание</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>МакетОформления</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">МакетРапорт</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Блок "Осветлители и фильтры"</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ГТУ</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ГТУNэлМВт</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ГТУGгазатм3</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ГТУВНАПроцент</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ГТУПерепадНаКВОУПА</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ГТУТВоздухаКомпрессор</dcsset:field>
+						</dcsset:item>
+						<dcsset:placement>Horizontally</dcsset:placement>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ПТУ</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПТУNэлМВт</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПТУDПараВДтч</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПТУDПараНДтч</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПТУДиафрагмамм</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПТУВакуумкгссм2</dcsset:field>
+						</dcsset:item>
+						<dcsset:placement>Horizontally</dcsset:placement>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>МакетОформления</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">МакетРапорт</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Блок "ПГУ"</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ОтпускТеплаГКалЧас</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПСГ12Расход</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ВВТОРасход</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПБРасход</dcsset:field>
+						</dcsset:item>
+						<dcsset:placement>Horizontally</dcsset:placement>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПСГ12</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ВВТО</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПБ</dcsset:field>
+						</dcsset:item>
+						<dcsset:placement>Horizontally</dcsset:placement>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>МакетОформления</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">МакетРапорт</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>пгуГруппаОборудования</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>пгуВРаботе</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>пгуАварийный</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>пгуРезерв</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>пгуРемонт</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>пгуПримечание</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>МакетОформления</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">МакетРапорт</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Блок "ПГУ"</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

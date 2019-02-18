@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3e5a8393-63b4-471e-be96-883a197787d5">
+  <name>ПаспортизацияОбъектовГенерации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Паспортизация объектов генерации</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Журналы</content>
+  <content>DataProcessor.ЗаполнениеПаспортаОборудования</content>
+  <content>Report.ОтчетПоОборудованию</content>
+  <content>Catalog.КлассификаторЕдиницИзмерения</content>
+  <content>Report.ЗаполнениеДанныхПоОборудованию</content>
+  <content>Report.ПланФактВводаДанныхПоОборудованию</content>
+  <content>Catalog.ГруппыКолонокПаспорта</content>
+  <content>Catalog.КатегорииВидовОборудования</content>
+  <content>Catalog.ВидыЗаписей</content>
+  <content>Catalog.ПараметрыИРежимы</content>
+  <content>Catalog.События</content>
+  <content>DataProcessor.НазначениеОтветственныхЗаОборудование</content>
+  <content>Catalog.Оборудование</content>
+  <content>Catalog.ВидыОборудования</content>
+  <content>ChartOfCharacteristicTypes.РеквизитыПаспортовОборудования</content>
+  <content>Catalog.ЗаводыИзготовители</content>
+  <content>Catalog.МаркиОборудования</content>
+  <content>Catalog.НастройкиСогласованияЗаявок</content>
+</mdclass:Subsystem>

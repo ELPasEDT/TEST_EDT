@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eccfc806-24b7-4aaf-ba6b-6886794a7a44">
+  <producedTypes>
+    <refType typeId="d25a9ca1-8671-4f58-be22-61c2bd6f4c8b" valueTypeId="1094cd64-772b-4360-8487-c2199bc24aa7"/>
+    <listType typeId="9eb78f1d-2639-4436-b83c-7be48766d759" valueTypeId="d7ebb05b-3e83-49cf-a892-06b234af029f"/>
+    <managerType typeId="d8f36c13-5df6-4e31-97f5-65deb7db6007" valueTypeId="8671beef-6770-4c73-bcea-6ee0273d3a09"/>
+  </producedTypes>
+  <name>ТипыУстановок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы установок</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="69d69e0c-7a7f-4b5e-a9ae-9cf4df39557f">
+    <name>ПГУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПГУ</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="ddc4d228-d537-4e53-8b02-38a9cd39ad7b">
+    <name>ПСУ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПСУ</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

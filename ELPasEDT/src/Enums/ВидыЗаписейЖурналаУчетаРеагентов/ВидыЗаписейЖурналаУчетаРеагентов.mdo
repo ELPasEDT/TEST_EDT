@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6e2a4472-c978-4c91-8f2c-5ec3ef83a105">
+  <producedTypes>
+    <refType typeId="66afbe4c-2eb9-412e-a460-942a1ef705bf" valueTypeId="be90e745-71ab-4d7c-b17b-1bb3a2f2219d"/>
+    <listType typeId="47f75b2b-eab4-4b43-9b41-cfc9d140d705" valueTypeId="9f127428-642a-46b6-9346-fd27a0269cb6"/>
+    <managerType typeId="3116d8d5-d48f-4720-803d-6a7ec6b5e41c" valueTypeId="7e9656ff-5460-470b-ba10-c5d68570a0d5"/>
+  </producedTypes>
+  <name>ВидыЗаписейЖурналаУчетаРеагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды записей журнала учета реагентов</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="ce78ed55-2514-4880-bd4b-00ccd4848a21">
+    <name>Закачка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Закачка</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="6427cc0b-43bb-4fb5-9e43-e8f502dfd30b">
+    <name>Расход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4805c32e-2f96-41ea-8fb3-20b7e3067554">
+  <producedTypes>
+    <selectionType typeId="e5b0d71b-1330-4f52-8bfe-4e887065625a" valueTypeId="1ec87740-0fb0-4f5d-a958-7e12de2227ac"/>
+    <listType typeId="8c7bef98-40d0-476f-a6cb-c115e660d3dd" valueTypeId="e79bf837-68f4-4820-929b-dbae34af560e"/>
+    <managerType typeId="0f8af18b-2e0e-4c4b-8c95-c1ca0d02b64a" valueTypeId="39e9e76a-56b1-4d82-8623-955c50ffbb15"/>
+    <recordSetType typeId="a909c1d2-e45a-4c5e-bad9-e25b5cc7551d" valueTypeId="48acfad5-4999-49dc-ae39-cc7288e9629f"/>
+    <recordKeyType typeId="9416fdf2-1554-47ad-8af1-41d5fa056eab" valueTypeId="cedfd1ca-1549-4064-8a62-ba8ab95919ca"/>
+    <recordType typeId="5f8aa6f4-3871-468e-bc6a-987b25011a46" valueTypeId="e82efcb6-5b8c-47cd-aa4b-23934f46b1c2"/>
+    <recordManagerType typeId="23d9cec8-2742-4584-b0ad-528721ff1c0d" valueTypeId="f828cb85-cb2a-4abb-9c02-80a1f6975b4e"/>
+  </producedTypes>
+  <name>СобытияОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>События оборудования</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="327c582a-8b23-441d-90a2-29b8b9a45376">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <attributes uuid="116477eb-9d20-4899-ab05-40394e70569c">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="ce6ef16d-2b6d-4809-8bcb-9b7eb4582669">
+    <name>Оборудование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оборудование</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Оборудование</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="92616286-e157-411a-9166-2689c44ee9be">
+    <name>ВидСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид события</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ВидыСобытийОборудования</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

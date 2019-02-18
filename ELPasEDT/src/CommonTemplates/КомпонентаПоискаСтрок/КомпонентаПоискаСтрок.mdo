@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6f713bcf-b50b-445e-adf5-e8288644e2fc">
+  <name>КомпонентаПоискаСтрок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Компонента поиска строк</value>
+  </synonym>
+  <comment></comment>
+  <templateType>AddIn</templateType>
+</mdclass:CommonTemplate>

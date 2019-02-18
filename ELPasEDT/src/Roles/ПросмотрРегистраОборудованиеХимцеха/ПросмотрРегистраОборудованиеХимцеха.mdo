@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ab908f79-a60b-46aa-a5b1-c99db980597a">
+  <name>ПросмотрРегистраОборудованиеХимцеха</name>
+  <synonym>
+    <key>ru</key>
+    <value>Просмотр регистра &quot;Оборудование химцеха&quot;</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

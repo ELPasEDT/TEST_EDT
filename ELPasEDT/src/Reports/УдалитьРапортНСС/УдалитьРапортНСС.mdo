@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="60a5b4ca-9272-4e9e-baa1-3798fb13a976">
+  <producedTypes>
+    <objectType typeId="d610bb2e-7493-4bf5-bd0c-cd04ce68c01a" valueTypeId="78dc007d-d63f-4ba0-9398-4d99b8ec733d"/>
+    <managerType typeId="a6a833b2-1a60-4949-9fdd-e4dc4b4ed3ef" valueTypeId="d86864d6-aeca-4f92-9abd-545b9d7dcf35"/>
+  </producedTypes>
+  <name>УдалитьРапортНСС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удалить рапорт НСС</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.УдалитьРапортНСС.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.УдалитьРапортНСС.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="fc5bee5b-6b5b-4179-8cd7-b6bac656fb9f">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="43d1a909-b155-4dae-a1d7-96c77f502e7f">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="92d74e0c-23fb-4c52-afc3-00f8d20c14bd">
+  <producedTypes>
+    <refType typeId="e2abbd68-6b7c-4a44-b567-8cf170c0fac3" valueTypeId="abf5232b-76b8-43aa-88c0-32e2e86b0b5b"/>
+    <listType typeId="6ee9025e-a062-42fe-a3b2-399d10b87ab0" valueTypeId="eb325baf-816e-48dd-87d8-6952e1a7dfd8"/>
+    <managerType typeId="e51f0580-7d64-4d0e-b44b-d32339e6dd23" valueTypeId="8242640b-78c1-4f74-a45a-06fe6393f877"/>
+  </producedTypes>
+  <name>СостоянияОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния оборудования</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="3f4ebfe2-db35-45e1-a911-09224f822420">
+    <name>ВРаботе</name>
+    <synonym>
+      <key>ru</key>
+      <value>В работе</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="052f8500-1cc7-4a45-8a6a-3d3f7f49aa1e">
+    <name>ВРемонте</name>
+    <synonym>
+      <key>ru</key>
+      <value>В ремонте</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="6cddd451-3396-4b84-82cf-843eb13b310f">
+    <name>ВыведеноИзЭксплуатации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выведено из эксплуатации</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="a0d58a5a-d700-4b1d-aa21-07eebf07ada2">
+    <name>ВРезерве</name>
+    <synonym>
+      <key>ru</key>
+      <value>В резерве</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

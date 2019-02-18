@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ba2e6ab4-5ac5-411c-9dda-afdc4fd7ae7c">
+  <producedTypes>
+    <objectType typeId="9e8b6b68-9458-46f2-8515-d1c4cc7ea74c" valueTypeId="997c20da-93e7-4272-abee-ab2c83bc5b4e"/>
+    <refType typeId="011e8600-c66c-4ed7-89e8-40f81d148911" valueTypeId="8603622a-ffba-4245-a246-fb375e1c07d5"/>
+    <selectionType typeId="2685e093-cafd-4c32-abbd-ea8f98c42a16" valueTypeId="8c0bd561-5ce1-4881-b5ba-100662d85c97"/>
+    <listType typeId="7056cb28-930f-4925-8057-3c9b62acf28c" valueTypeId="522db801-b699-404b-86c0-ca68a55a1220"/>
+    <managerType typeId="cddb2ee4-230e-4811-83c6-c51c0e4e779e" valueTypeId="1d699a46-15e9-46ed-971b-5ae2bc679df3"/>
+  </producedTypes>
+  <name>НаправленияРасходаРеагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Направления использования реагентов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.НаправленияРасходаРеагентов.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Направление использования реагента</value>
+  </objectPresentation>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.НаправленияРасходаРеагентов.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="1c4fb893-08d3-451b-a99e-c1f60a788853">
+    <name>ВидРеагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид реагента</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ВидыРеагентов</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8bd580c0-75d8-44f8-88ed-48094c525604">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Орг. единица</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f58dd83e-384a-40df-a4ba-9b74011a8721">
+    <name>ДиспетчерскоеНаименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Краткое наименование</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8f991fc8-30fa-4b65-b21c-ec72ee6c8e5f">
+    <name>Оборудование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оборудование</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Оборудование</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="c4e2f5ef-9ec0-4437-87a0-eec26c092243">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

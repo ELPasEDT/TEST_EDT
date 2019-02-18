@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8b95bd85-fa7c-4e26-8b62-bba7dfd12681">
+  <producedTypes>
+    <objectType typeId="8c48af5d-2f58-411e-a789-ee0d0cc4a4cd" valueTypeId="0904ed1c-acb0-4b01-aba6-3e886b3245e6"/>
+    <refType typeId="6f25ed48-4d7f-4a13-aaea-70c36948d7c4" valueTypeId="b3f43a9a-2769-4b24-b5f1-d6588647e788"/>
+    <selectionType typeId="d4b6576b-710f-438d-85bb-b65a4b5df654" valueTypeId="ac544d89-4be8-4178-a580-2c8d55e49881"/>
+    <listType typeId="74e3aae9-63a0-40d0-a351-b2e6ba05a445" valueTypeId="1c8f311e-f9be-4974-b3aa-f045d7f0da6d"/>
+    <managerType typeId="9887ce3f-b6b8-48cc-ba55-2d2a7dccaeda" valueTypeId="656e2aeb-2ad6-4665-8738-6163467e23cb"/>
+  </producedTypes>
+  <name>НастройкиСогласованияЗаявок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки согласования заявок</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.НастройкиСогласованияЗаявок.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.НастройкиСогласованияЗаявок.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.НастройкиСогласованияЗаявок.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="e6ec7b7b-da69-47da-b904-eef37697106c">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ГруппыПользователей</types>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="884c4d67-7db5-4017-a720-fd6b3f574574">
+    <producedTypes>
+      <objectType typeId="aad012ea-b67b-4417-9441-e8b22ba53352" valueTypeId="2859f927-290b-4cfd-add0-f5a57425f102"/>
+      <rowType typeId="2440dd11-6791-4d0f-9ce0-31984883197e" valueTypeId="23a1ae5f-1468-4235-86cb-e6303a8a9251"/>
+    </producedTypes>
+    <name>СтатусыЗаявок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статусы заявок</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="128eb1b6-8c73-46c1-8d0f-555700b7b712">
+      <name>НачальныйСтатус</name>
+      <synonym>
+        <key>ru</key>
+        <value>Начальный статус</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>EnumRef.СтатусыЗаявок</types>
+        <types>EnumRef.СтатусыЗаявокСокращенный</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="16f1e15e-05f8-47ad-8f50-9975f92c118c">
+      <name>КонечныйСтатус</name>
+      <synonym>
+        <key>ru</key>
+        <value>Конечный статус</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>EnumRef.СтатусыЗаявок</types>
+        <types>EnumRef.СтатусыЗаявокСокращенный</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="7987f302-6a1f-4bfc-91f1-53e9aba8d5c9">
+    <producedTypes>
+      <objectType typeId="ca8d9e71-7b97-4a44-aca7-57e5b41df6e3" valueTypeId="c75ca2d6-ede3-434c-9933-37b833ccebe0"/>
+      <rowType typeId="418c02f4-96d4-4c96-84f6-99f13bc38808" valueTypeId="ab1465ea-3397-4869-943f-5bf33870dc65"/>
+    </producedTypes>
+    <name>ДоступныеКатегорииВидовОборудования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доступные категории видов оборудования</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="e229c62f-9a5d-4618-a3b8-134cdd7318ff">
+      <name>Категория</name>
+      <synonym>
+        <key>ru</key>
+        <value>Категория</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.КатегорииВидовОборудования</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="f5cf2627-bf7b-4047-9cb4-bd27617898c8">
+    <producedTypes>
+      <objectType typeId="0d8a7a56-340e-45df-9846-a4fef49a7cb7" valueTypeId="43609418-7ac0-4a09-b8ac-65cd284e4c62"/>
+      <rowType typeId="396307e5-2bbe-4341-a2e9-5cead92aba88" valueTypeId="127057ce-f6a7-4440-ae24-fd2955d206be"/>
+    </producedTypes>
+    <name>ДоступныеОрганизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доступные организации</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="0019e385-4309-482b-96d6-ba0a2c8bfee3">
+      <name>Организация</name>
+      <synonym>
+        <key>ru</key>
+        <value>Организация</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.Организации</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="261e3662-d157-48a8-8de8-36fbec07f0c6">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="82ddc345-69e5-400f-b6ef-ca5b2eda67a3">
+    <name>ОткрытьСписокНастрокеСогласованияЗаявок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки согласования заявок</value>
+    </synonym>
+    <comment></comment>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:Catalog>

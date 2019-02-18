@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5175ebf3-d3eb-40ed-ada3-71c59c4268f1">
+  <name>ДобавлениеИзменениеПроведениеДокументаЗакреплениеВидаЗаписиИСобытий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Добавление, изменение, проведение документа &quot;Закрепление вида записи и событий&quot;</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

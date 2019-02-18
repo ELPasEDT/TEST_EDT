@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3196821a-64c3-432b-8fbe-4cd9a19fd552">
+  <producedTypes>
+    <selectionType typeId="98647933-370b-4df0-8372-91742946d98f" valueTypeId="fcdec01a-0a11-4e38-aeb0-6a64efe066e6"/>
+    <listType typeId="3f180d82-bd4a-4a9f-bb1c-550b5f53abd5" valueTypeId="9e842fbb-56b9-4739-aba2-80c515d0d964"/>
+    <managerType typeId="337cab4d-4b66-47a1-8ae9-e8f5c9c7ca2c" valueTypeId="d470ef04-06d8-4982-9953-af16dea6e37b"/>
+    <recordSetType typeId="216045dc-9cdd-4825-8576-a30602ccb4b0" valueTypeId="222d01bd-d19b-400e-a857-0662a2f2a3a2"/>
+    <recordKeyType typeId="5a64b9aa-57ee-4c15-b3f9-e49062ff1a9a" valueTypeId="00da3421-ee3f-4e6e-a744-7f03e6a13e3f"/>
+    <recordType typeId="deb5e6bb-c239-4eb2-8811-0f50a9ae5df4" valueTypeId="2eb72b44-9ffe-4e18-b662-ec3567a6413d"/>
+    <recordManagerType typeId="84cc932c-1640-4ea9-bdb3-4433cb9b713a" valueTypeId="b86f89b9-a388-4bbd-9c03-273eb648b21b"/>
+  </producedTypes>
+  <name>ИспользованиеОрганизацийЕСС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использование организаций ЕСС</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <attributes uuid="016315e0-4bed-4c9e-b669-92a211526c05">
+    <name>НаименованиеОрганизацииЕСС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование организации ЕСС</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="cf55c84e-b2a4-4e77-b92b-53a1f5eac176">
+    <name>ЗагружатьОрганизацию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загружать организацию</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="ddd934b8-2f69-4d6e-8566-fc29de57ef1e">
+    <name>КодОрганизацииЕСС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код организации ЕСС</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e8d0c0f6-6c9f-4b1c-a874-87458f37df6e">
+  <name>ЭлПасСервисныеПроцедуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Эл пас сервисные процедуры</value>
+  </synonym>
+  <comment></comment>
+  <server>true</server>
+</mdclass:CommonModule>

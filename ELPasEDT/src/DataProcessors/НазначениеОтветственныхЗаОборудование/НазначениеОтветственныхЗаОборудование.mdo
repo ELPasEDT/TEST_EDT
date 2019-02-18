@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7e56c286-0e97-4a15-879c-688c7a61ac99">
+  <producedTypes>
+    <objectType typeId="493310ce-8d4a-47d9-afe4-9e423228224b" valueTypeId="17a4a264-5f03-44eb-9d5f-a329d437526b"/>
+    <managerType typeId="da74c850-924b-4fb3-a026-f47434887b58" valueTypeId="7c2718d7-f066-45c3-88a1-fce9eb9aee28"/>
+  </producedTypes>
+  <name>НазначениеОтветственныхЗаОборудование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Назначение ответственных за оборудование</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.НазначениеОтветственныхЗаОборудование.Form.Форма</defaultForm>
+  <forms uuid="2334d5d9-e6b5-4a68-a7b6-d1615671c490">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="6fde357d-fc71-4398-bb02-c612f65e68b1">
+    <name>СхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:DataProcessor>

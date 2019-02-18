@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2d232eb9-a350-4754-bbfe-31031d600dce">
+  <producedTypes>
+    <objectType typeId="546a16b9-160c-401f-a127-8d85fa68b807" valueTypeId="331bf9ca-7835-4f4c-b9aa-4ee19765c954"/>
+    <managerType typeId="5df5a44e-b5ae-434d-98c1-78e61aaed15a" valueTypeId="a416a06f-c5c4-4e12-9720-8099801c69d7"/>
+  </producedTypes>
+  <name>УчетНеисправностиОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет неисправности оборудования</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.УчетНеисправностиОборудования.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="ad464c98-cd9a-434e-8845-1ccf84e2ab27">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

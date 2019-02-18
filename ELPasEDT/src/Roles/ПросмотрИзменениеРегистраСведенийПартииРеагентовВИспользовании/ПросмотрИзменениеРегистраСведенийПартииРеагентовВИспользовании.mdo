@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="312a2aab-6f8c-46c9-91e9-0fc19a9e86d8">
+  <name>ПросмотрИзменениеРегистраСведенийПартииРеагентовВИспользовании</name>
+  <synonym>
+    <key>ru</key>
+    <value>Просмотр и изменение регистра сведений &quot;Партии реагентов в использовании&quot;</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

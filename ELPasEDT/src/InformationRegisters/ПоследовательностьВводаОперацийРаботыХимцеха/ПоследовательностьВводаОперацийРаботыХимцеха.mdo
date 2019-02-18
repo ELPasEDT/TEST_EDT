@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e12df0c3-4170-478f-a069-a1da2273f490">
+  <producedTypes>
+    <selectionType typeId="1f60081c-a26b-40ec-b3f5-4971ddd4bd92" valueTypeId="fec7ef0b-4558-42e9-817d-182b472887a4"/>
+    <listType typeId="94dec1c5-9730-4472-b8e2-010d365a84cb" valueTypeId="3828285f-f367-4ee7-a703-d1f1a5212d02"/>
+    <managerType typeId="a32da760-f148-4730-b8e3-551f0820dfd9" valueTypeId="d912b17f-f401-46e5-835b-a7437641b401"/>
+    <recordSetType typeId="6bd92bd6-8060-4fb4-afa8-9dc8f6dcc62b" valueTypeId="2983f3a3-8075-48d2-a921-a173898432e5"/>
+    <recordKeyType typeId="d352eb8d-6330-4cfe-baa8-950d5ea960c6" valueTypeId="cd945f72-694e-4cf0-b8d8-c8e909e2655f"/>
+    <recordType typeId="8dc8a62d-892e-4755-878e-82874eac674c" valueTypeId="024f33a9-9b09-4f92-b454-d958d90a2168"/>
+    <recordManagerType typeId="eed8cb8b-c033-45b1-8fea-788056a6d979" valueTypeId="87acac53-c62c-45bc-b6b6-07c78ac1508e"/>
+  </producedTypes>
+  <name>ПоследовательностьВводаОперацийРаботыХимцеха</name>
+  <synonym>
+    <key>ru</key>
+    <value>Последовательность ввода операций работы химцеха</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="d42a05c5-2e76-427b-bd2d-e9c25aa24803">
+    <name>Операция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Операция</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ОперацииОборудованияХимцеха</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2538dfd8-e5dc-4700-a269-6e777d6dd26c">
+    <name>ДатаОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата операции</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="bf590083-c382-411e-a24b-dc58f6e4be74">
+    <name>СвязаннаяОперацияДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Связанная операция документ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>DocumentRef.ЗаписьЖурналаУчетаРеагентов</types>
+      <types>DocumentRef.РасходРеагента</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7d02ba8e-3650-434b-bfb3-b9c3097645c9">
+    <name>СвязаннаяОперацияНомерОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Связанная операция номер операции</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c9e72eba-4a91-4e0b-b583-0523a22b7848">
+    <name>ДокументПриемаСмены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ приема смены</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>DocumentRef.ОперативныйЖурнал</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="1387d25c-5424-4682-82b3-ce78d6366220">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>DocumentRef.ЗаписьЖурналаУчетаРеагентов</types>
+      <types>DocumentRef.РасходРеагента</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ae90d9e2-1e09-4353-ba21-1828d5e4446d">
+    <name>НомерОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер операции</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

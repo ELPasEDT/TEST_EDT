@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="724941f8-b8df-4b92-a242-31e98c0ae4b4">
+  <producedTypes>
+    <objectType typeId="e6d9d32a-140b-4b30-97bd-22b7e5d5c143" valueTypeId="2fd67007-f1b0-4980-a3ce-69e5e5776de3"/>
+    <managerType typeId="c4d470d4-cf0a-47e3-81ee-934f5fa5e5eb" valueTypeId="16eaaacb-fdc9-4f3b-a8e3-ddd5f7dabb70"/>
+  </producedTypes>
+  <name>АРМУчетРеагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет реагентов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.АРМУчетРеагентов.Form.ФормаСписка</defaultForm>
+  <forms uuid="8fd9810d-996c-40ad-a111-640e6acf05f4">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d1c05ab5-82b6-453c-9aa5-0eb9886a4e08">
+    <name>ФормаИсторииИзмененийЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма истории изменений записи</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="7b62bd39-ae44-40fd-96d6-040f7de67172">
+    <name>ОткрытьАРМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Журнал учета реагентов</value>
+    </synonym>
+    <comment></comment>
+    <group>NavigationPanelImportant</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:DataProcessor>

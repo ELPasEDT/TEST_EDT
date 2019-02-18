@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4149b49f-e460-434e-acbb-a55c51540f3d">
+  <name>ПросмотрИзменениеРегистраВидыЗаписейСобытияПоПодразделениям</name>
+  <synonym>
+    <key>ru</key>
+    <value>Просмотр и изменение регистра &quot;Виды записей и события по подразделениям&quot;</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

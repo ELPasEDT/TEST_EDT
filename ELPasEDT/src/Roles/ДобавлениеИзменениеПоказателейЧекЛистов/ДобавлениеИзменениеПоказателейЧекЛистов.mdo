@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="876bccf3-b813-4a54-a8d3-75c4ad289d4d">
+  <name>ДобавлениеИзменениеПоказателейЧекЛистов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Добавление и изменение показателей чек-листов</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

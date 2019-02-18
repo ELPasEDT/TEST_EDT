@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4e812c9f-3b35-4607-bfda-bf6c89a238cc">
+  <name>ПросмотрИзменениеРегистраРаспоряжения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Просмотр и изменение распоряжений</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

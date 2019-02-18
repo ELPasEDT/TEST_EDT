@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="68c770f3-b875-4731-ac7b-16f1ced74415">
+  <name>НастройкаОборудованияХимЦеха</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройка оборудования химцеха</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

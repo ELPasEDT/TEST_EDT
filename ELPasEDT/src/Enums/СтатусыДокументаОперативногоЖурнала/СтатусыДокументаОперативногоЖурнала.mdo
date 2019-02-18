@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="61e1451e-a61c-4ed1-8534-95446c899d75">
+  <producedTypes>
+    <refType typeId="de695ad3-f60b-4fcf-9a3f-5ff2bb3758a5" valueTypeId="622a5ea1-b3b8-451e-8b1a-51019ab71de4"/>
+    <listType typeId="16faed37-9fc3-4cfd-bbe7-07bd9c0005f1" valueTypeId="327c3214-2f81-43d0-b4fd-daad0bb29699"/>
+    <managerType typeId="99939566-5e42-42a7-a066-28849ed499bd" valueTypeId="7aa1e8e6-fa2d-4766-b6f3-92329ea56f3d"/>
+  </producedTypes>
+  <name>СтатусыДокументаОперативногоЖурнала</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы документа оперативного журнала</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="380e3b50-51a1-4217-95d1-687834c1df65">
+    <name>Черновик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Черновик</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="8701f7c6-f8fc-46d0-87c8-1e2e900b1462">
+    <name>Чистовик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Чистовик</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="01f2bc45-525b-481f-896b-48c0147e08f8">
+    <name>ЧистовикОтменен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Чистовик отменен</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="3267c25b-ce6e-4f1e-8514-6ea6cded09c2">
+    <name>РаспоряжениеПолучено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Распоряжение получено</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

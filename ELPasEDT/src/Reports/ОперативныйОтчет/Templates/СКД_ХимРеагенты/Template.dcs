@@ -1,0 +1,910 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetUnion">
+		<name>ХимРеагенты</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Дата</dataPath>
+			<field>Дата</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоОбращений</dataPath>
+			<field>КоличествоОбращений</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество обращений</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТЭЦ</dataPath>
+			<field>ТЭЦ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТЭЦ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ответственный</dataPath>
+			<field>Ответственный</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоДокументов</dataPath>
+			<field>КоличествоДокументов</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество документов</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Пользователь</dataPath>
+			<field>Пользователь</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователь</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоОбщее</dataPath>
+			<field>КоличествоОбщее</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество общее</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество</dataPath>
+			<field>Количество</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<item xsi:type="DataSetQuery">
+			<name>НаборДанных1</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Ссылка</dataPath>
+				<field>Ссылка</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Дата</dataPath>
+				<field>Дата</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Дата</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоОбращений</dataPath>
+				<field>КоличествоОбращений</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Количество обращений</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ТЭЦ</dataPath>
+				<field>ТЭЦ</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ТЭЦ</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Ответственный</dataPath>
+				<field>Ответственный</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Подразделение</dataPath>
+				<field>Подразделение</field>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	КОЛИЧЕСТВО(РАЗЛИЧНЫЕ РасходРеагента.Ссылка) КАК Ссылка,
+	НАЧАЛОПЕРИОДА(РасходРеагента.Дата, ДЕНЬ) КАК Дата,
+	РасходРеагента.Ответственный КАК Ответственный,
+	РасходРеагента.Подразделение КАК Подразделение,
+	РасходРеагента.Подразделение.Организация КАК ТЭЦ,
+	СУММА(0) КАК КоличествоОбращений
+ИЗ
+	Документ.РасходРеагента КАК РасходРеагента
+ГДЕ
+	РасходРеагента.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+
+СГРУППИРОВАТЬ ПО
+	НАЧАЛОПЕРИОДА(РасходРеагента.Дата, ДЕНЬ),
+	РасходРеагента.Ответственный,
+	РасходРеагента.Подразделение,
+	РасходРеагента.Подразделение.Организация
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	КОЛИЧЕСТВО(РАЗЛИЧНЫЕ ЗаписьЖурналаУчетаРеагентов.Ссылка),
+	НАЧАЛОПЕРИОДА(ЗаписьЖурналаУчетаРеагентов.Дата, ДЕНЬ),
+	ЗаписьЖурналаУчетаРеагентов.ОтветственныйНачалаЗакачки,
+	ЗаписьЖурналаУчетаРеагентов.Подразделение,
+	ЗаписьЖурналаУчетаРеагентов.Подразделение.Организация,
+	СУММА(0)
+ИЗ
+	Документ.ЗаписьЖурналаУчетаРеагентов КАК ЗаписьЖурналаУчетаРеагентов
+ГДЕ
+	ЗаписьЖурналаУчетаРеагентов.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И ЗаписьЖурналаУчетаРеагентов.ЗакачкаНачата = ИСТИНА
+
+СГРУППИРОВАТЬ ПО
+	НАЧАЛОПЕРИОДА(ЗаписьЖурналаУчетаРеагентов.Дата, ДЕНЬ),
+	ЗаписьЖурналаУчетаРеагентов.ОтветственныйНачалаЗакачки,
+	ЗаписьЖурналаУчетаРеагентов.Подразделение,
+	ЗаписьЖурналаУчетаРеагентов.Подразделение.Организация
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	КОЛИЧЕСТВО(РАЗЛИЧНЫЕ ЗаписьЖурналаУчетаРеагентов.Ссылка),
+	НАЧАЛОПЕРИОДА(ЗаписьЖурналаУчетаРеагентов.Дата, ДЕНЬ),
+	ЗаписьЖурналаУчетаРеагентов.ОтветственныйНачалаРасхода,
+	ЗаписьЖурналаУчетаРеагентов.Подразделение,
+	ЗаписьЖурналаУчетаРеагентов.Подразделение.Организация,
+	СУММА(0)
+ИЗ
+	Документ.ЗаписьЖурналаУчетаРеагентов КАК ЗаписьЖурналаУчетаРеагентов
+ГДЕ
+	ЗаписьЖурналаУчетаРеагентов.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И ЗаписьЖурналаУчетаРеагентов.РасходНачат = ИСТИНА
+
+СГРУППИРОВАТЬ ПО
+	НАЧАЛОПЕРИОДА(ЗаписьЖурналаУчетаРеагентов.Дата, ДЕНЬ),
+	ЗаписьЖурналаУчетаРеагентов.ОтветственныйНачалаРасхода,
+	ЗаписьЖурналаУчетаРеагентов.Подразделение,
+	ЗаписьЖурналаУчетаРеагентов.Подразделение.Организация
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	КОЛИЧЕСТВО(РАЗЛИЧНЫЕ ЗаписьЖурналаУчетаРеагентов.Ссылка),
+	НАЧАЛОПЕРИОДА(ЗаписьЖурналаУчетаРеагентов.Дата, ДЕНЬ),
+	ЗаписьЖурналаУчетаРеагентов.ОтветственныйОкончанияЗакачки,
+	ЗаписьЖурналаУчетаРеагентов.Подразделение,
+	ЗаписьЖурналаУчетаРеагентов.Подразделение.Организация,
+	СУММА(0)
+ИЗ
+	Документ.ЗаписьЖурналаУчетаРеагентов КАК ЗаписьЖурналаУчетаРеагентов
+ГДЕ
+	ЗаписьЖурналаУчетаРеагентов.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И ЗаписьЖурналаУчетаРеагентов.ЗакачкаЗавершена = ИСТИНА
+
+СГРУППИРОВАТЬ ПО
+	НАЧАЛОПЕРИОДА(ЗаписьЖурналаУчетаРеагентов.Дата, ДЕНЬ),
+	ЗаписьЖурналаУчетаРеагентов.ОтветственныйОкончанияЗакачки,
+	ЗаписьЖурналаУчетаРеагентов.Подразделение,
+	ЗаписьЖурналаУчетаРеагентов.Подразделение.Организация
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	КОЛИЧЕСТВО(РАЗЛИЧНЫЕ ЗаписьЖурналаУчетаРеагентов.Ссылка),
+	НАЧАЛОПЕРИОДА(ЗаписьЖурналаУчетаРеагентов.Дата, ДЕНЬ),
+	ЗаписьЖурналаУчетаРеагентов.ОтветственныйОкончанияРасхода,
+	ЗаписьЖурналаУчетаРеагентов.Подразделение,
+	ЗаписьЖурналаУчетаРеагентов.Подразделение.Организация,
+	СУММА(0)
+ИЗ
+	Документ.ЗаписьЖурналаУчетаРеагентов КАК ЗаписьЖурналаУчетаРеагентов
+ГДЕ
+	ЗаписьЖурналаУчетаРеагентов.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И ЗаписьЖурналаУчетаРеагентов.РасходЗавершен = ИСТИНА
+
+СГРУППИРОВАТЬ ПО
+	НАЧАЛОПЕРИОДА(ЗаписьЖурналаУчетаРеагентов.Дата, ДЕНЬ),
+	ЗаписьЖурналаУчетаРеагентов.ОтветственныйОкончанияРасхода,
+	ЗаписьЖурналаУчетаРеагентов.Подразделение,
+	ЗаписьЖурналаУчетаРеагентов.Подразделение.Организация</query>
+		</item>
+		<item xsi:type="DataSetQuery">
+			<name>НаборДанных2</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоДокументов</dataPath>
+				<field>КоличествоДокументов</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Количество документов</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Пользователь</dataPath>
+				<field>Пользователь</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Пользователь</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоОбщее</dataPath>
+				<field>КоличествоОбщее</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Количество общее</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Количество</dataPath>
+				<field>Количество</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Количество</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	ГруппыПользователейСостав.Ссылка КАК Ссылка,
+	ГруппыПользователейСостав.Пользователь КАК Пользователь
+ПОМЕСТИТЬ ВТ_ГруппыДоступа
+ИЗ
+	Справочник.ГруппыПользователей.Состав КАК ГруппыПользователейСостав
+
+СГРУППИРОВАТЬ ПО
+	ГруппыПользователейСостав.Ссылка,
+	ГруппыПользователейСостав.Пользователь
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВЫБОР
+		КОГДА ГруппыДоступаПользователи.Пользователь ССЫЛКА Справочник.ГруппыПользователей
+			ТОГДА ВТ_ГруппыДоступа.Пользователь
+		ИНАЧЕ ГруппыДоступаПользователи.Пользователь
+	КОНЕЦ КАК Пользователь,
+	МАКСИМУМ(1) КАК Количество
+ПОМЕСТИТЬ ВТ_ВсеПользователи
+ИЗ
+	Справочник.ГруппыДоступа.Пользователи КАК ГруппыДоступаПользователи
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ГруппыДоступа КАК ВТ_ГруппыДоступа
+		ПО ГруппыДоступаПользователи.Пользователь = ВТ_ГруппыДоступа.Ссылка
+ГДЕ
+	ГруппыДоступаПользователи.Ссылка.Профиль В(&amp;Профиль)
+
+СГРУППИРОВАТЬ ПО
+	ВЫБОР
+		КОГДА ГруппыДоступаПользователи.Пользователь ССЫЛКА Справочник.ГруппыПользователей
+			ТОГДА ВТ_ГруппыДоступа.Пользователь
+		ИНАЧЕ ГруппыДоступаПользователи.Пользователь
+	КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	РасходРеагента.Ответственный КАК Пользователь,
+	КОЛИЧЕСТВО(РАЗЛИЧНЫЕ РасходРеагента.Ссылка) КАК КоличествоДокументов,
+	1 КАК Количество
+ПОМЕСТИТЬ ВТ_Пользователи
+ИЗ
+	Документ.РасходРеагента КАК РасходРеагента
+ГДЕ
+	РасходРеагента.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+
+СГРУППИРОВАТЬ ПО
+	РасходРеагента.Ответственный
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ЗаписьЖурналаУчетаРеагентов.ОтветственныйНачалаЗакачки,
+	КОЛИЧЕСТВО(РАЗЛИЧНЫЕ ЗаписьЖурналаУчетаРеагентов.Ссылка),
+	1
+ИЗ
+	Документ.ЗаписьЖурналаУчетаРеагентов КАК ЗаписьЖурналаУчетаРеагентов
+ГДЕ
+	ЗаписьЖурналаУчетаРеагентов.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И ЗаписьЖурналаУчетаРеагентов.ЗакачкаНачата = ИСТИНА
+
+СГРУППИРОВАТЬ ПО
+	ЗаписьЖурналаУчетаРеагентов.ОтветственныйНачалаЗакачки
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ЗаписьЖурналаУчетаРеагентов.ОтветственныйНачалаРасхода,
+	КОЛИЧЕСТВО(РАЗЛИЧНЫЕ ЗаписьЖурналаУчетаРеагентов.Ссылка),
+	1
+ИЗ
+	Документ.ЗаписьЖурналаУчетаРеагентов КАК ЗаписьЖурналаУчетаРеагентов
+ГДЕ
+	ЗаписьЖурналаУчетаРеагентов.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И ЗаписьЖурналаУчетаРеагентов.РасходНачат = ИСТИНА
+
+СГРУППИРОВАТЬ ПО
+	ЗаписьЖурналаУчетаРеагентов.ОтветственныйНачалаРасхода
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ЗаписьЖурналаУчетаРеагентов.ОтветственныйОкончанияЗакачки,
+	КОЛИЧЕСТВО(РАЗЛИЧНЫЕ ЗаписьЖурналаУчетаРеагентов.Ссылка),
+	1
+ИЗ
+	Документ.ЗаписьЖурналаУчетаРеагентов КАК ЗаписьЖурналаУчетаРеагентов
+ГДЕ
+	ЗаписьЖурналаУчетаРеагентов.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И ЗаписьЖурналаУчетаРеагентов.ЗакачкаЗавершена = ИСТИНА
+
+СГРУППИРОВАТЬ ПО
+	ЗаписьЖурналаУчетаРеагентов.ОтветственныйОкончанияЗакачки
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ЗаписьЖурналаУчетаРеагентов.ОтветственныйОкончанияРасхода,
+	КОЛИЧЕСТВО(РАЗЛИЧНЫЕ ЗаписьЖурналаУчетаРеагентов.Ссылка),
+	1
+ИЗ
+	Документ.ЗаписьЖурналаУчетаРеагентов КАК ЗаписьЖурналаУчетаРеагентов
+ГДЕ
+	ЗаписьЖурналаУчетаРеагентов.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И ЗаписьЖурналаУчетаРеагентов.РасходЗавершен = ИСТИНА
+
+СГРУППИРОВАТЬ ПО
+	ЗаписьЖурналаУчетаРеагентов.ОтветственныйОкончанияРасхода
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЕСТЬNULL(ВТ_ВсеПользователи.Пользователь, ВТ_Пользователи.Пользователь) КАК Пользователь,
+	ВТ_Пользователи.КоличествоДокументов КАК КоличествоДокументов,
+	1 КАК КоличествоОбщее,
+	ВЫБОР
+		КОГДА ВТ_Пользователи.КоличествоДокументов &gt; 0
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК Количество
+ИЗ
+	ВТ_ВсеПользователи КАК ВТ_ВсеПользователи
+		ПОЛНОЕ СОЕДИНЕНИЕ ВТ_Пользователи КАК ВТ_Пользователи
+		ПО ВТ_ВсеПользователи.Пользователь = ВТ_Пользователи.Пользователь
+ГДЕ
+	НЕ ЕСТЬNULL(ВТ_ВсеПользователи.Пользователь, ВТ_Пользователи.Пользователь) ЕСТЬ NULL
+
+УПОРЯДОЧИТЬ ПО
+	ЕСТЬNULL(ВТ_ВсеПользователи.Пользователь.Наименование, ВТ_Пользователи.Пользователь.Наименование)</query>
+		</item>
+	</dataSet>
+	<calculatedField>
+		<dataPath>ПроцентОбщий</dataPath>
+		<expression>Выразить(Выбор Когда КоличествоОбщее = 0 Тогда 0 Иначе Количество / КоличествоОбщее Конец , "Число(15,2)")</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>% общий</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Поле1</dataPath>
+		<expression>""</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Поле1</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<totalField>
+		<dataPath>КоличествоОбращений</dataPath>
+		<expression>Сумма(КоличествоОбращений)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Ссылка</dataPath>
+		<expression>Сумма(Ссылка)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Количество</dataPath>
+		<expression>Сумма(Количество)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоДокументов</dataPath>
+		<expression>Сумма(КоличествоДокументов)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоОбщее</dataPath>
+		<expression>Сумма(КоличествоОбщее)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПроцентОбщий</dataPath>
+		<expression>Выразить(Выбор Когда Сумма(КоличествоОбщее) = 0 Тогда 0 Иначе Сумма(Количество) / Сумма(КоличествоОбщее)Конец , "Число(15,2)") *100</expression>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<parameter>
+		<name>Профиль</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Профиль</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ПрофилиГруппДоступа</v8:Type>
+		</valueType>
+		<useRestriction>true</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>НачалоПериода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<inputParameters>
+			<dcscor:item>
+				<dcscor:parameter>ФормаВыбора</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string"/>
+			</dcscor:item>
+		</inputParameters>
+		<denyIncompleteValues>true</denyIncompleteValues>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>КонецПериода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<inputParameters>
+			<dcscor:item>
+				<dcscor:parameter>ФормаВыбора</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string"/>
+			</dcscor:item>
+		</inputParameters>
+		<denyIncompleteValues>true</denyIncompleteValues>
+		<use>Always</use>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Дата</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Ответственный</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Подразделение</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТЭЦ</dcsset:field>
+				</dcsset:item>
+				<dcsset:userSettingID>171ab6c7-2f43-49db-893b-884d4002f221</dcsset:userSettingID>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:userSettingID>16d0980a-f90e-450b-8e82-d0fdbfecba68</dcsset:userSettingID>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Профиль</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">3fc5f3ad-9bbb-11e8-80c2-f403434a09ff</dcscor:value>
+					<dcscor:value xsi:type="xs:string">33b0dfa9-9bca-11e8-80c2-f403434a09ff</dcscor:value>
+					<dcscor:value xsi:type="xs:string">448e71be-9bbc-11e8-80c2-f403434a09ff</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>НачалоПериода</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+						<v8:date>0001-01-01T00:00:00</v8:date>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>КонецПериода</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+						<v8:date>0001-01-01T00:00:00</v8:date>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Дата</dcsset:field>
+					<dcsset:orderType>Desc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:userSettingID>51985ffc-c681-4df3-b35e-d6f14a2ef3a0</dcsset:userSettingID>
+			</dcsset:order>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>КоличествоОбращений.ПроцентОбщий</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">КоличествоОбращений</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="xs:string"/>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:useInHierarchicalGroup>DontUse</dcsset:useInHierarchicalGroup>
+					<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
+					<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+					<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+					<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Ссылка.ПроцентОбщий</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Ссылка</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="xs:string"/>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:useInHierarchicalGroup>DontUse</dcsset:useInHierarchicalGroup>
+					<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
+					<dcsset:useInHeader>DontUse</dcsset:useInHeader>
+					<dcsset:useInParameters>DontUse</dcsset:useInParameters>
+					<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>КоличествоОбращений.ПроцентОбщий</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>Ссылка.ПроцентОбщий</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПроцентОбщий</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>КоличествоДокументов</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>Количество</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>КоличествоОбщее</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">15</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">15</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:userSettingID>19ece078-943b-417f-bf9d-ca5451b373fe</dcsset:userSettingID>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Античный</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Output</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemTable">
+				<dcsset:column>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Дата</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>Day</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Дата</dcsset:left>
+							<dcsset:comparisonType>Filled</dcsset:comparisonType>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Дата</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Ссылка</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>Ссылка.ПроцентОбщий</dcsset:field>
+							<dcsset:title>% общий</dcsset:title>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>КоличествоОбращений</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:field>КоличествоОбращений.ПроцентОбщий</dcsset:field>
+							<dcsset:title>% общий</dcsset:title>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+							<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+				</dcsset:column>
+				<dcsset:row>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ТЭЦ</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ТЭЦ</dcsset:left>
+							<dcsset:comparisonType>Filled</dcsset:comparisonType>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+							<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+					<dcsset:item>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Подразделение</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item>
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>Ответственный</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Ответственный</dcsset:left>
+									<dcsset:comparisonType>Filled</dcsset:comparisonType>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+							<dcsset:outputParameters>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+									<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+								</dcscor:item>
+							</dcsset:outputParameters>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:row>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+						<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">Begin</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Output</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">Количество записей по ТЭЦ / Подразделениям / Ответственным</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:name>ТЭЦ</dcsset:name>
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Пользователь.Подразделение.Организация</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto">
+						<dcsset:use>false</dcsset:use>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Пользователь.Подразделение.Организация</dcsset:field>
+						<dcsset:title>ТЭЦ</dcsset:title>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Количество</dcsset:field>
+						<dcsset:title>Кол-во ввели записи</dcsset:title>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КоличествоОбщее</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПроцентОбщий</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КоличествоДокументов</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+						<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Output</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Заголовок</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">Количество записей по пользователям</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Пользователь</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Пользователь</dcsset:left>
+							<dcsset:comparisonType>Filled</dcsset:comparisonType>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Пользователь</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Количество</dcsset:field>
+							<dcsset:title>Кол-во ввели записи</dcsset:title>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>КоличествоОбщее</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ПроцентОбщий</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>КоличествоДокументов</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:use>false</dcscor:use>
+							<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+							<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Output</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+							<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+				</dcsset:item>
+			</dcsset:item>
+			<dcsset:itemsUserSettingID>1383df08-6980-46f1-a92f-e761d0c3b855</dcsset:itemsUserSettingID>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

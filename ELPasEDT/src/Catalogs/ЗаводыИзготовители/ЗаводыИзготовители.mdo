@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ba83365a-b65c-41a3-85a3-ff1249231469">
+  <producedTypes>
+    <objectType typeId="3c347970-bb44-45ff-a625-c5dc2cfd0942" valueTypeId="304f196b-6ec2-4775-909c-85793ea8b942"/>
+    <refType typeId="0482fbbc-8847-4e40-97ee-dac0283942ac" valueTypeId="bd5dfaac-a57c-4217-97f2-0b91797be70c"/>
+    <selectionType typeId="00f7a5ba-1d16-4a9a-ab90-63b8d4cee962" valueTypeId="c1241bdd-a899-44d4-baaa-9dcc94d8b7f1"/>
+    <listType typeId="acfd03bb-3bdd-450b-8ab7-9d8b640b275b" valueTypeId="dcf27097-f021-41bb-85f0-e5e20ca633ce"/>
+    <managerType typeId="b074b98b-3088-4cdd-b788-b3c3e69eec57" valueTypeId="57a9c374-5356-4ef0-95c5-4195354b95f0"/>
+  </producedTypes>
+  <name>ЗаводыИзготовители</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заводы-изготовители</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ЗаводыИзготовители.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ЗаводыИзготовители.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Завод-изготовитель</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ЗаводыИзготовители.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ЗаводыИзготовители.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="a0f12690-9ba1-4865-833e-8228ad684fd3">
+    <name>НаименованиеПолное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полное наименование</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4038230f-3a40-4b27-a1a1-b2cfe2e11865">
+    <name>НаименованиеДополнительное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Актуальное наименование</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="71118531-1e85-4de7-b2e7-3af21c2c8cd6">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d8e08935-92f9-4c44-9ecb-80552fe406a8">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.СтатусыЗаявокСокращенный</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4610c9c8-3849-44ee-b980-8eb004cdb574">
+    <name>СсылкаДляИзменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменяем</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ЗаводыИзготовители</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="50cada52-3139-4947-b15b-2586ba5fc03e">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="efe9d3e1-3fb9-45fb-a8f3-ad43701b776e">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

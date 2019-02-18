@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="07975842-cc6c-42f5-b225-a4ceaf1699b1">
+  <name>ДобавлениеИзменениеПоказателиТеплосети</name>
+  <synonym>
+    <key>ru</key>
+    <value>Добавление изменение показатели теплосети</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e1566074-ac31-4374-ad9f-d6c5f2cb1a7a">
+  <name>ГрупповоеРедактированиеОтветственных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Групповое редактирование ответственных</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

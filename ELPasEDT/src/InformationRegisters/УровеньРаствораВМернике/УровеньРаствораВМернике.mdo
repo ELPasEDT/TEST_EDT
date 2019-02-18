@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e2f062fb-f1a5-403d-87a9-a8710b254b82">
+  <producedTypes>
+    <selectionType typeId="2f1c3c6c-101e-42b0-8fdf-08dbadf829b9" valueTypeId="e4aad89f-0d83-4111-a243-f0b0b9a31ebf"/>
+    <listType typeId="83d07a41-71da-4f4b-bd50-6044b3c3f503" valueTypeId="168c896d-9e35-4e03-b619-06d7c78ddf3e"/>
+    <managerType typeId="d8c11aef-6032-4f00-93ef-bc72328bc98b" valueTypeId="7dca18c8-122a-46d6-a853-45c1cd46de8c"/>
+    <recordSetType typeId="aacda57d-cb37-4c17-97f2-e424b3934209" valueTypeId="f4294776-ac6c-4275-a36b-d21835b0db76"/>
+    <recordKeyType typeId="d46e07ce-8234-41ab-830f-0f9cc2cec229" valueTypeId="4c4011fe-f0a1-4f63-8b4b-de052a1ca19c"/>
+    <recordType typeId="a43ed5e5-7817-4605-b5c1-b5c8c5315e9c" valueTypeId="f37ca7a1-4715-4846-a4e7-596d4e75a9e3"/>
+    <recordManagerType typeId="98bc275d-f83a-4230-a31e-abd5d59d8ed0" valueTypeId="9faebf5a-1d45-48ae-9595-64813f92a3bc"/>
+  </producedTypes>
+  <name>УровеньРаствораВМернике</name>
+  <synonym>
+    <key>ru</key>
+    <value>Уровень раствора в мернике</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="6260361b-6344-4e2d-86db-8474a5b576b7">
+    <name>Уровень</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уровень</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="8847b6d8-6757-4913-9b83-4c8218f6fa16">
+    <name>Оборудование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оборудование</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Оборудование</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

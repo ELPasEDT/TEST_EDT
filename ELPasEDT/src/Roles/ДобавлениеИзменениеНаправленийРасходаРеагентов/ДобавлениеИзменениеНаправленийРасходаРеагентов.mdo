@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e6a8eebf-1d57-4a73-9acd-5e0041933be9">
+  <name>ДобавлениеИзменениеНаправленийРасходаРеагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Добавление и изменение направлений расхода реагентов</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

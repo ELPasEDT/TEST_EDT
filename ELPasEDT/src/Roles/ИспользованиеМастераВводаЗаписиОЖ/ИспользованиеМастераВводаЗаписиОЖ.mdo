@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ae034fb1-6b7c-44a2-9c1b-92850eec59f3">
+  <name>ИспользованиеМастераВводаЗаписиОЖ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использование мастера ввода записи оперативного журнала</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

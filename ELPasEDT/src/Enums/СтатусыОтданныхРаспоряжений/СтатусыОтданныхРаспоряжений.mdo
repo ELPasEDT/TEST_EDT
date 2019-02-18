@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="92cfac72-aeb4-4210-a3c6-2a104cfaa341">
+  <producedTypes>
+    <refType typeId="1249c2ee-a294-4500-9bf6-1e93c18e4a7a" valueTypeId="74efb332-a643-4dce-b70b-97368cf33686"/>
+    <listType typeId="c2ff98cc-62e5-43c3-b7a8-efee92a25550" valueTypeId="122916fc-a6af-46cc-a620-7c0832b18998"/>
+    <managerType typeId="03e80cbd-2642-444e-97d1-239decafbac2" valueTypeId="729944f3-433f-49a0-86e8-a127aab9cd2e"/>
+  </producedTypes>
+  <name>СтатусыОтданныхРаспоряжений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы отданных распоряжений</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="715a01a7-584d-499b-bbf1-e77641bad3ee">
+    <name>Выполнено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнено</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="2c0722da-3658-4277-8882-c85d2afe6165">
+    <name>НеВыполнено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не выполнено</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="262690f4-ed59-4254-9f6a-a1dd9e55e9e5">
+    <name>ВРаботе</name>
+    <synonym>
+      <key>ru</key>
+      <value>В работе</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

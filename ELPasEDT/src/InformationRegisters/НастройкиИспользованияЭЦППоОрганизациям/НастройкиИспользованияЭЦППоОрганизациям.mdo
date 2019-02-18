@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9740a248-4377-4be6-b346-10818a1bd2b1">
+  <producedTypes>
+    <selectionType typeId="bf1c9acc-fb6d-447c-81eb-e674f61f15ea" valueTypeId="ffa1e25f-22a4-4a6d-b8f9-ab66ea3f1e2a"/>
+    <listType typeId="852bc834-ea1f-4484-b15d-4059bf74d667" valueTypeId="b18f47f0-c03b-495c-b3af-044aadb96648"/>
+    <managerType typeId="be29a07d-76c3-40f7-a1ee-f19fb22e2c8f" valueTypeId="cb605795-7c0f-4e52-90fd-3408c967522d"/>
+    <recordSetType typeId="f76eef9d-fffc-46eb-9481-8af2dd862d26" valueTypeId="83958a98-2db8-4667-8f85-6aee7cfa6c6a"/>
+    <recordKeyType typeId="9b18323b-6931-48db-a8fe-89ae2277cd49" valueTypeId="21a76e37-5430-4a48-a73f-06c4ba889743"/>
+    <recordType typeId="253df4e4-9e38-4905-b056-6b664a56e938" valueTypeId="eaac8a64-d62e-4d49-9a05-06f949a907c9"/>
+    <recordManagerType typeId="5f3bd524-8a33-41b7-87e3-3ef61a09c685" valueTypeId="4f38b6a2-3958-4bfc-a122-f823f05be3b4"/>
+  </producedTypes>
+  <name>НастройкиИспользованияЭЦППоОрганизациям</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки использования ЭЦП по орг. единицам</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="8de789ce-1512-4aae-8d4d-a8a0a5ba5774">
+    <name>Использование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использование</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="d44df592-b331-4b1f-b833-8746892506d4">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организационная единица</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <commands uuid="3836d355-0e9b-4b71-ad96-7d64b43c6c57">
+    <name>ОткрытьНастройку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки использования ЭЦП по орг. единицам</value>
+    </synonym>
+    <comment></comment>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:InformationRegister>

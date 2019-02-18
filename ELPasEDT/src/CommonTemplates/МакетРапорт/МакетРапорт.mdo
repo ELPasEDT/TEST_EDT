@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0ab5ba40-c509-4c34-8f36-e62513e565d7">
+  <name>МакетРапорт</name>
+  <synonym>
+    <key>ru</key>
+    <value>Макет рапорт</value>
+  </synonym>
+  <comment></comment>
+  <templateType>DataCompositionAppearanceTemplate</templateType>
+</mdclass:CommonTemplate>

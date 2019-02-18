@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c3664856-4c1c-44fc-8c13-ba618e10a045">
+  <producedTypes>
+    <selectionType typeId="f376dc99-5dd0-49e8-aefa-6b0420439f26" valueTypeId="7795cd62-c2df-4bc1-a2c3-1b8013e90453"/>
+    <listType typeId="41696c3a-566e-48d2-bd26-1d0980e5146d" valueTypeId="e5e9b2b1-b4f4-4c8d-a3ad-ac688239dbef"/>
+    <managerType typeId="af5bf9bd-444e-4a2f-a79e-616014a5c07c" valueTypeId="6a9cdce5-db2e-4cd4-a24c-737c03d24228"/>
+    <recordSetType typeId="e62939c1-5361-4b07-adc9-4f217d1b582d" valueTypeId="90b32d36-1580-4d31-bc30-6597f677e8b7"/>
+    <recordKeyType typeId="2c4e8883-631a-4650-9d67-80bbaa015939" valueTypeId="4481aa56-cfa8-4afc-bc60-9f341686ef62"/>
+    <recordType typeId="51ede8c6-024e-4930-9c51-28edf91a5b21" valueTypeId="d460826d-7903-46ec-8689-14246f78e655"/>
+    <recordManagerType typeId="6c2eb4ba-c539-438a-bdd8-c85014228c47" valueTypeId="3caf7f0a-de27-45e7-bdc1-38e15b0b48c4"/>
+  </producedTypes>
+  <name>СогласованиеСокращенный</name>
+  <synonym>
+    <key>ru</key>
+    <value>Согласование сокращенный</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="d6d38144-ebe7-472c-8932-cc5c65ddee64">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.СтатусыЗаявокСокращенный</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="07e4c553-cd47-4ef7-8d23-8bd90e35291a">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

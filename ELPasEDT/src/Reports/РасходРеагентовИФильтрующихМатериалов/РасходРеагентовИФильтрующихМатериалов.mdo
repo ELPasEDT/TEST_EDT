@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c0178ca0-b9ba-42f7-be48-a9fce2e1e7eb">
+  <producedTypes>
+    <objectType typeId="8b69fbf5-b874-4ee0-8fc4-b7f2019d79c1" valueTypeId="d2e423fb-b3a5-4c31-a209-c5d909724c73"/>
+    <managerType typeId="be21dfec-5b0c-4856-b156-df2f155a9693" valueTypeId="3d252d35-0397-44a6-baef-2c96cdc710b1"/>
+  </producedTypes>
+  <name>РасходРеагентовИФильтрующихМатериалов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расход реагентов и фильтрующих материалов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.РасходРеагентовИФильтрующихМатериалов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="458e8824-d36f-4e59-ae7a-8e0bdb417902">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

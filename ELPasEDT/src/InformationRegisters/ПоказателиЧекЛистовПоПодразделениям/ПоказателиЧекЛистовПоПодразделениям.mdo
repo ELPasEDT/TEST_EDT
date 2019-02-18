@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="171d7e96-4da0-4317-baf9-e501bc47a2f6">
+  <producedTypes>
+    <selectionType typeId="dc916af8-47e3-4c02-b0fb-ae4fa1128404" valueTypeId="2a0e9d76-88ab-438f-9d5b-c0394ada86ae"/>
+    <listType typeId="d1214088-6d76-4500-b83b-db9eedb6e7be" valueTypeId="0bf57d79-4d9d-41ac-89df-19b07707ce7a"/>
+    <managerType typeId="2e90de80-f0d3-453d-9ed4-02f691299dfb" valueTypeId="9c0b40e6-a56c-4d63-ba97-47063a9af7ec"/>
+    <recordSetType typeId="6392b7e7-e7db-4660-9190-5bf07f05b904" valueTypeId="d8032675-1d57-404a-a48a-e4c22af3be0e"/>
+    <recordKeyType typeId="61744409-ca36-49c1-8844-94b91502976a" valueTypeId="6860b4ef-2d91-43a9-99f1-759045d82770"/>
+    <recordType typeId="f1b42468-2295-4c36-bee1-c9687c91318c" valueTypeId="792d47c5-8c47-4b93-a600-a004ec37aa74"/>
+    <recordManagerType typeId="3925214c-ad0e-4cc6-866e-5f5d1b4eaa09" valueTypeId="43f672f1-f1ea-47df-8ea2-c70ace0bf8f6"/>
+  </producedTypes>
+  <name>ПоказателиЧекЛистовПоПодразделениям</name>
+  <synonym>
+    <key>ru</key>
+    <value>Показатели чек листов по подразделениям</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="6a916eaa-9667-4294-8ca8-7b1f8b1fde62">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="975ddbdd-bcd5-4561-8630-b225477ac0f3">
+    <name>ЧекЛист</name>
+    <synonym>
+      <key>ru</key>
+      <value>Чек лист</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ПоказателиЧекЛиста</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

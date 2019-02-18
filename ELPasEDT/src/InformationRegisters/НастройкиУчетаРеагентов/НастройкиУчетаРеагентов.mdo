@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="98b0c429-93f1-4730-bf8c-989707ee4a36">
+  <producedTypes>
+    <selectionType typeId="867fd2ab-a2e2-4865-bdd8-96bb4517908a" valueTypeId="19102c60-14c6-485a-9a75-da89b61cdabb"/>
+    <listType typeId="fd45dbc7-c7e6-4756-af90-eb8c338386fe" valueTypeId="71898efd-26cc-4d23-ae1a-533b7778390a"/>
+    <managerType typeId="8e33ad76-1536-497c-a7d8-1c39fdb6a28f" valueTypeId="c53dc330-4553-434b-b9d3-9d6d6d293530"/>
+    <recordSetType typeId="af0b3fe6-b065-4d6f-b243-aae4e355c06f" valueTypeId="de24d23f-58ce-47e9-addb-aa75e8507aed"/>
+    <recordKeyType typeId="a2eb56d7-e3c9-41f8-8115-b26f114d3e4e" valueTypeId="6f9d484f-fbad-4198-85f9-1ea7ebd507ee"/>
+    <recordType typeId="3b650da2-2563-45ee-a6b4-d99c713459e6" valueTypeId="22aeda7c-7493-427e-a895-0f6e2af6e3a8"/>
+    <recordManagerType typeId="c07b8aef-68ba-4637-9901-57c3ced350dc" valueTypeId="82f993f8-0e46-4462-81ad-8a7c93f2379a"/>
+  </producedTypes>
+  <name>НастройкиУчетаРеагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки учета реагентов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="f5517680-405d-4263-b5d3-d3dce26e4e2e">
+    <name>БазоваяЕдиницаИзмеренияПлощади</name>
+    <synonym>
+      <key>ru</key>
+      <value>Базовая единица измерения площади</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.КлассификаторЕдиницИзмерения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e5500ba5-f2e4-455f-98a1-dc88a9958cd9">
+    <name>БазоваяЕдиницаИзмеренияУровня</name>
+    <synonym>
+      <key>ru</key>
+      <value>Базовая единица измерения уровня</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.КлассификаторЕдиницИзмерения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <commands uuid="b00d37b7-11a5-4f64-be9e-ac9758df0a6f">
+    <name>ОткрытьСписокНастроек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки учета реагентов</value>
+    </synonym>
+    <comment></comment>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:InformationRegister>

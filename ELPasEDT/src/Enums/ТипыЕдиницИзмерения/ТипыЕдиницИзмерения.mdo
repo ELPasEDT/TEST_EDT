@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e62b7246-564f-49ee-86a5-011bd1885ac9">
+  <producedTypes>
+    <refType typeId="eb9aade2-e9b9-4c8d-a1b4-92613fe66d77" valueTypeId="edfad8e4-849f-4857-84b6-3514c7c09616"/>
+    <listType typeId="7d051d97-5b32-4d3f-881d-210ecd70c283" valueTypeId="efc660d6-838b-4dcf-89b5-a64e63771fad"/>
+    <managerType typeId="f369b54a-7e67-411c-bb85-740b412ab5b8" valueTypeId="f9f5550b-3c53-4ea7-a366-cb2b313e5d71"/>
+  </producedTypes>
+  <name>ТипыЕдиницИзмерения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы единиц измерения</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Enum>

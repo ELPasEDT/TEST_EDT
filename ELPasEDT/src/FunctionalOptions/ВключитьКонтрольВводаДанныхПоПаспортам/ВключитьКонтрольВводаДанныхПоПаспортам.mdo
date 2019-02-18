@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOption xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="573f6425-11e3-4b64-8559-9b18d35c5a66">
+  <name>ВключитьКонтрольВводаДанныхПоПаспортам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Включить контроль ввода данных по паспортам</value>
+  </synonym>
+  <comment></comment>
+  <location>Constant.ВключитьКонтрольВводаДанныхПоПаспортам</location>
+  <privilegedGetMode>true</privilegedGetMode>
+  <content>Subsystem.КонтрольВводаДанных</content>
+  <content>InformationRegister.КонтрольВводаДанных</content>
+  <content>InformationRegister.ПланВводаДанных</content>
+</mdclass:FunctionalOption>

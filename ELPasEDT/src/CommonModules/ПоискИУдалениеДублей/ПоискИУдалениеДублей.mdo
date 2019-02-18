@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ae1560e3-518a-49e7-9666-5ed3a4d7c92c">
+  <name>ПоискИУдалениеДублей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Поиск и удаление дублей</value>
+  </synonym>
+  <comment></comment>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

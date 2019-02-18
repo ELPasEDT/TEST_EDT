@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5776944a-4c3d-40d7-8f07-61fed2336c4d">
+  <producedTypes>
+    <objectType typeId="2e63e5c9-a1a1-425e-8377-66eeb212cf67" valueTypeId="80945a72-51f8-4fc1-9c47-b6962107b7af"/>
+    <managerType typeId="6839df10-f9a9-4621-863c-a7ca9a3a6160" valueTypeId="37396563-6f94-4466-b657-b5715dfa25f6"/>
+  </producedTypes>
+  <name>ЗагрузкаИзЕСС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка подразделений и сотрудников из ЕСС</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗагрузкаИзЕСС.Form.Форма</defaultForm>
+  <attributes uuid="3d626e3e-0035-4251-9ee4-f6fdbd790773">
+    <name>ФайлДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Файл данных</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3001e16a-5752-4901-9d53-dd7b1418b3e6">
+    <name>ДанныеИзЕСС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные из ЕСС</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ValueTable</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="26ee9eb7-c412-434d-8d22-daf0ec41cd9f">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

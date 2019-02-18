@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ee4e67ef-12c5-453c-862c-4d23e317ee59">
+  <name>ПланированиеДвиженияРеагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Планирование</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.СценарииПланирования</content>
+  <content>Enum.ПериодыПланирования</content>
+  <content>Document.ПланРасходаРеагентов</content>
+  <content>Report.ПланФактИспользованияРеагентов</content>
+  <content>Role.ДобавлениеИзменениеПроведениеДокументаПланРасходаРеагентов</content>
+  <content>Role.ДобавлениеИзменениеСценариевПланирования</content>
+  <content>Role.ПросмотрДокументаПланРасходаРеагентов</content>
+  <content>Role.ПросмотрОтчетаПланФактИспользованияРеагентов</content>
+  <content>Role.ПросмотрСценариевПланирования</content>
+  <parentSubsystem>Subsystem.УчетРеагентов</parentSubsystem>
+</mdclass:Subsystem>

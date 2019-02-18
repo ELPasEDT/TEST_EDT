@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1ad55a0c-f1c9-4ab1-b917-856595981f55">
+  <producedTypes>
+    <selectionType typeId="a6c41ea8-f8ee-42ba-b83b-8d5308b96103" valueTypeId="cc38aa4c-33e4-4dcd-acc0-46dfc9c1da56"/>
+    <listType typeId="ec569baf-5f93-4822-b185-a3367c53bb32" valueTypeId="4528ab35-7050-4eda-8a9f-690358ce38ed"/>
+    <managerType typeId="8a90ce3f-5666-415d-94a0-ccf412951440" valueTypeId="cf0ce172-b177-4855-ac71-87f2f4e73e74"/>
+    <recordSetType typeId="41d9c276-d0da-41da-ba93-f77958b72ad8" valueTypeId="311c263f-8ffc-4e75-a164-e5cba4f6d069"/>
+    <recordKeyType typeId="9f91ee07-f1a1-4cba-acef-71752d3de84e" valueTypeId="fb95d582-c6bb-4bc4-a933-59598c208587"/>
+    <recordType typeId="ed1dab3d-f2c7-4512-ad0e-e4128cc7e9b6" valueTypeId="1d1ac549-b22c-4eb7-b37c-67251fb4a777"/>
+    <recordManagerType typeId="95d48ded-f82e-417a-8dae-666c8301d874" valueTypeId="f2713e81-8fd6-48e7-a250-cb432a465d30"/>
+  </producedTypes>
+  <name>РазрешенияНаПринудительноеЗавершениеСмены</name>
+  <synonym>
+    <key>ru</key>
+    <value>Разрешения на принудительное завершение смены</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="b76c3f1f-521d-4fc9-9111-750946dfdb83">
+    <name>Разрешено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешено</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="910334a2-b0ba-4c59-9200-06fc93599d00">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организационная единица</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <commands uuid="08828e6e-d330-40c4-a7bf-7cd90d9f7da3">
+    <name>ОткрытьНастройку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешения на принудительное завершение смены</value>
+    </synonym>
+    <comment></comment>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:InformationRegister>

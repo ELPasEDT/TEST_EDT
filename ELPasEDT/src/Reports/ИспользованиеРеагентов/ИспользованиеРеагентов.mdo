@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6c100f69-ff0a-465a-b803-c72723138b22">
+  <producedTypes>
+    <objectType typeId="f8586480-4dff-406a-9ea1-76d0091f54be" valueTypeId="01e99a4e-b262-4267-8085-2b4ccb863a83"/>
+    <managerType typeId="795382b5-620a-4e32-b985-73ae886a038a" valueTypeId="9a1ef4f1-0b4f-4dd8-8f60-1b325dd5a844"/>
+  </producedTypes>
+  <name>ИспользованиеРеагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по использованию реагентов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ИспользованиеРеагентов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <templates uuid="1d2b9684-e361-49b0-aa09-8b861a3e2054">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

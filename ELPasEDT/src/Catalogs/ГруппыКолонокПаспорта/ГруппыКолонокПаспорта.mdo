@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7e1f451a-a0b9-45eb-b675-6d10045dd541">
+  <producedTypes>
+    <objectType typeId="942afc63-73e0-4470-b74a-df38e5eba44d" valueTypeId="ef06a499-407f-4372-8b74-c5b3a5f1086d"/>
+    <refType typeId="a758d179-9493-459b-9d1a-c9f0d01d9788" valueTypeId="2860f0b0-aa4e-48c3-a3bf-de18b93a66f3"/>
+    <selectionType typeId="436af557-0335-48cf-a7d9-df0bda418ecd" valueTypeId="3b3b0854-d7da-4141-9ba5-d39dc9a8a9e8"/>
+    <listType typeId="c571b50f-413f-4371-8e4e-0ba5f94853a3" valueTypeId="7781229e-0876-4913-9be6-f9dca6006509"/>
+    <managerType typeId="e029aece-55be-48a0-8b48-7975f4ae587c" valueTypeId="c5b6cb67-4f62-43bc-8179-8fc3c37cae5a"/>
+  </producedTypes>
+  <name>ГруппыКолонокПаспорта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Группы колонок паспорта</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ГруппыКолонокПаспорта.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ГруппыКолонокПаспорта.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="a9409bc6-0fe6-4ec2-9d26-ca178ee325bb">
+    <name>ВидОборудования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид оборудования</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВидыОборудования</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="897572a4-c97a-4eca-9054-98cc1fceffba">
+    <name>ВидГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид группы</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="9cb2ccfc-c12c-4dcd-8e7c-6ba6dc252f8b">
+    <producedTypes>
+      <objectType typeId="1e87bcf1-7c0f-4417-a600-bd1e1c340982" valueTypeId="928df995-94c5-418c-a8d3-02a2356bb75c"/>
+      <rowType typeId="8762b3d1-8c6f-4551-bc96-98b7d572e799" valueTypeId="eb6a967a-b86d-482f-9312-4c04933003da"/>
+    </producedTypes>
+    <name>РеквизитыГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реквизиты группы</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="0af411e9-9351-4f4b-9464-2d0e7ef4b463">
+      <name>Реквизит</name>
+      <synonym>
+        <key>ru</key>
+        <value>Реквизит</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.РеквизитыПаспортовОборудования</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="bd0a0100-c9e7-4666-98ad-698157f9b92b">
+      <name>Заголовок</name>
+      <synonym>
+        <key>ru</key>
+        <value>Заголовок</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="89e935ed-11e8-48cf-be27-c35e9d2412b1">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

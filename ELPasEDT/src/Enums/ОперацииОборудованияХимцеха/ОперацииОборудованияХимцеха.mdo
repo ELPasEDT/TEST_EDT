@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b1e4f037-236f-4b4d-b12b-ecbf117d7700">
+  <producedTypes>
+    <refType typeId="7a45fba2-701f-4847-a747-077f9e26c7dc" valueTypeId="34e82c6e-f1a0-4d92-a355-8284e5f7cc3f"/>
+    <listType typeId="f36b63f0-5c54-4255-90e1-865c7b1ec8bd" valueTypeId="e3149485-421d-46ab-bb48-ad6d9867a1ff"/>
+    <managerType typeId="1ed376b1-16ef-4323-a3a8-144178d1d90b" valueTypeId="8af5b001-f1bc-4344-8300-bab4af55ab53"/>
+  </producedTypes>
+  <name>ОперацииОборудованияХимцеха</name>
+  <synonym>
+    <key>ru</key>
+    <value>Операции оборудования химцеха</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="df35b05c-5ade-4310-b5a7-590b9276cce9">
+    <name>ВключениеЗакачки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Включение закачки</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="d590e2ba-7d5b-4b34-8efd-462a8214455f">
+    <name>ВыключениеЗакачуи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выключение закачуи</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="1d23aec9-1987-4610-b2c5-7d0587ae76f7">
+    <name>ВключениеРасхода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Включение расхода</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="f9ac6883-911d-4986-9a67-560efafcb86a">
+    <name>ВыключениеРасхода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выключение расхода</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="80ef8e08-0cf8-43c6-9813-a84ea96c020f">
+    <name>ВыключениеРасходаОдновременноСЗакачкой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выключение расхода одновременно с закачкой</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="5c2da9b4-691c-4469-8eb6-73b2a9693d52">
+    <name>ВыключениеЗакачкиОдновременноСРасходом</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выключение закачки одновременно с расходом</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

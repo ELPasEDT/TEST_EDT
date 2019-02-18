@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0e446377-cf0a-4a25-b82b-6580a66617b4">
+  <producedTypes>
+    <objectType typeId="e7f5af6e-6692-42f3-bf76-ac53f087b092" valueTypeId="9305e307-ee86-4278-8c08-6bbfc26f5d72"/>
+    <managerType typeId="64f754be-e32b-4519-8568-1a50edbc8c18" valueTypeId="a7d06fe0-4701-4385-9ad6-fde7b0e0505c"/>
+  </producedTypes>
+  <name>ПечатьПаспорта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Печать паспорта</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ПечатьПаспорта.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ПечатьПаспорта.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <attributes uuid="ddef7b51-6809-48d2-b32a-a4ca67803f71">
+    <name>Оборудование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оборудование</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Оборудование</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="b4e37ef6-2578-4c12-92a9-446d244f5efb">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="d7e24a64-112c-45a5-ae29-7baff08b0533">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

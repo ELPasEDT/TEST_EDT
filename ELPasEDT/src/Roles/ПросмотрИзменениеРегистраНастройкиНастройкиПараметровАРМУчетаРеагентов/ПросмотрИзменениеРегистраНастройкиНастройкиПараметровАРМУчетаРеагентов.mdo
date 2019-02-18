@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="852064cf-9c12-4bcc-954a-1a6e680d2316">
+  <name>ПросмотрИзменениеРегистраНастройкиНастройкиПараметровАРМУчетаРеагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Просмотр и изменение регистра &quot;Настройки параметров АРМ учета реагентов&quot;</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

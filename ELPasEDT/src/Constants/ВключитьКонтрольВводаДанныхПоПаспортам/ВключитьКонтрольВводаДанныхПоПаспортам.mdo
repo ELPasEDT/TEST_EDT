@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1af6997b-64d1-48db-a732-97e1dfd66109">
+  <producedTypes>
+    <managerType typeId="2d4c9604-c0e1-4d90-b7b8-dda29e3ae1aa" valueTypeId="3c02051a-1759-4b68-97b6-243c4c761dc0"/>
+    <valueManagerType typeId="c9b85a34-ccea-4694-9d3c-b5f1ea7a2d5a" valueTypeId="a75a2994-6ee0-42e6-b7dd-842066008e14"/>
+  </producedTypes>
+  <name>ВключитьКонтрольВводаДанныхПоПаспортам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Включить контроль ввода данных по паспортам</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

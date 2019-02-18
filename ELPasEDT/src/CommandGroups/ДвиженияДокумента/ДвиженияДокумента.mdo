@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommandGroup xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="285e645f-ecae-45af-8dfd-16e18c7ed681">
+  <name>ДвиженияДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Движения</value>
+  </synonym>
+  <comment></comment>
+  <representation>Auto</representation>
+  <category>FormNavigationPanel</category>
+</mdclass:CommandGroup>

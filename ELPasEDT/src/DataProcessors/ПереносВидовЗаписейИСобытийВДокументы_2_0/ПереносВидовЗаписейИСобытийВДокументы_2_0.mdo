@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="041c4611-7bea-42f7-82c4-8b2f128f4562">
+  <producedTypes>
+    <objectType typeId="dac59930-d804-498d-8764-e5e947f81c33" valueTypeId="37f12a1e-7ed4-4cb1-8314-117e8fbe8c05"/>
+    <managerType typeId="6969d717-1f17-4f88-ad96-f7fe09894928" valueTypeId="58247a5e-e3aa-480b-bb47-c81a91993d39"/>
+  </producedTypes>
+  <name>ПереносВидовЗаписейИСобытийВДокументы_2_0</name>
+  <synonym>
+    <key>ru</key>
+    <value>3 Шаг. Перенос видов записей и событий в документы (2.0)</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПереносВидовЗаписейИСобытийВДокументы_2_0.Form.Форма</defaultForm>
+  <tabularSections uuid="90e016d5-d23e-4473-ab31-dd5ce762679e">
+    <producedTypes>
+      <objectType typeId="746d4e4b-55cf-4782-8d2f-40de938b83a7" valueTypeId="7be5f2c3-5ad5-4e4e-a447-49fbd99750de"/>
+      <rowType typeId="a6ee40f3-812f-4b0c-a6a8-6c5165810296" valueTypeId="9927766c-5449-4137-91ca-cde30a5176e2"/>
+    </producedTypes>
+    <name>КПереносу</name>
+    <synonym>
+      <key>ru</key>
+      <value>К переносу</value>
+    </synonym>
+    <comment></comment>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <comment></comment>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="a7153cbd-cf80-49b8-8e72-ce067b22be3a">
+      <name>Подразделение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Подразделение</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.Подразделения</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="91a9295c-82e6-4ff7-8b43-261e8549b07a">
+      <name>ВидЗаписи</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид записи</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.ВидыЗаписей</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="063d93ac-e90b-4f52-9e38-7b33b8ca2398">
+      <name>Событие</name>
+      <synonym>
+        <key>ru</key>
+        <value>Событие</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.События</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="0063e737-355f-4f74-9377-e0362aa94f36">
+    <producedTypes>
+      <objectType typeId="88ea9bf3-857f-4198-8d60-ce5692a1826d" valueTypeId="15ffec33-2d47-4dfe-b5ac-b4e9ca5b2721"/>
+      <rowType typeId="552b1bcb-eb33-414b-81a7-e786e6cf62e0" valueTypeId="e56c09b0-e7d3-4fdb-95d7-8badeb8ac252"/>
+    </producedTypes>
+    <name>Документы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документы</value>
+    </synonym>
+    <comment></comment>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <comment></comment>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="43a47b26-be0c-47a0-ae3c-beeb26f55ab9">
+      <name>Документ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Документ</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>DocumentRef.ЗакреплениеВидаЗаписиИСобытийЗаПодразделением</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="4b768cf5-6ea8-4a6e-922e-6e2b1f642b0b">
+      <name>СозданРанее</name>
+      <synonym>
+        <key>ru</key>
+        <value>Создан ранее</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="4263450d-d302-4b93-bd69-527ed83b5b7f">
+    <producedTypes>
+      <objectType typeId="70a862c2-7dac-44ed-a758-b725079645c2" valueTypeId="127e65f5-612e-49d0-9964-59cdf7d46e37"/>
+      <rowType typeId="12da664d-970b-447b-8fe6-4f8d2346e30b" valueTypeId="b6223576-913c-4182-92dc-2f8cca32381a"/>
+    </producedTypes>
+    <name>ВидыЗаписей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Виды записей</value>
+    </synonym>
+    <comment></comment>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <comment></comment>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="55dd6f1e-c9ce-47b4-901c-efaf15b265d8">
+      <name>ВидЗаписи</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид записи</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.ВидыЗаписей</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="c4bf6baa-989b-4f6d-8eb2-88c67cfbdf46">
+      <name>Подразделение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Подразделение</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.Подразделения</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="dec542fa-d6bb-4eb5-8534-f46b70245516">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

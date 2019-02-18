@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="10a9547b-55b1-41a7-aa2b-e699eb390f6c">
+  <name>ЧтениеРегистраАктивныеСмены</name>
+  <synonym>
+    <key>ru</key>
+    <value>Чтение регистра &quot;Активные смены&quot;</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

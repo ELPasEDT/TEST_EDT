@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6b69226b-3ad1-4cfe-9f32-9e088e232cc3">
+  <producedTypes>
+    <objectType typeId="89f87522-80a7-4c79-b4b9-b7404d6355ad" valueTypeId="5bab3eb8-23b9-487e-9c24-c2c77f4a3aed"/>
+    <managerType typeId="d066a611-17f0-4d28-87a7-bf7268430133" valueTypeId="6c0c88a2-a0ab-4389-8178-cc938704d48f"/>
+  </producedTypes>
+  <name>ЗаполнениеДатыКонтроляЗнаний</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заполнение даты контроля знаний</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗаполнениеДатыКонтроляЗнаний.Form.Форма</defaultForm>
+  <attributes uuid="a786a00a-c5d4-43b4-8067-11cb370d4af1">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9497c741-aff2-495e-a9ca-56fc2451d482">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="58a97902-54ef-4941-9a3a-f836b63dbfdc">
+    <producedTypes>
+      <objectType typeId="c5a57128-250a-452d-9c0e-1d11c25b8182" valueTypeId="f7e5c901-4bb5-4ca1-9b72-47565a7bc6f5"/>
+      <rowType typeId="04221487-1e1a-475e-b86f-ee5f29804e2b" valueTypeId="ee10c0ea-5335-4a7d-a2cd-088501ecf70a"/>
+    </producedTypes>
+    <name>СписокСотрудников</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список сотрудников</value>
+    </synonym>
+    <comment></comment>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <comment></comment>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="3fe9b7b9-1304-4d33-a7bb-b3b4f570623a">
+      <name>Использовать</name>
+      <synonym>
+        <key>ru</key>
+        <value>Использовать</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="8a963c16-a411-491a-94b5-00337381ed86">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.ФизическиеЛица</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="02a17eb4-1d2b-4b08-be9c-92bfedcc686b">
+      <name>ДатаКонтроляЗнаний</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата следующего контроля знаний</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="21c72fa6-11c7-4916-b788-170c264fc46f">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

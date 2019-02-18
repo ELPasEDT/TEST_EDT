@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="65cca668-b983-4345-afbf-7a81267d6a80">
+  <name>АнализСостоянияОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ состояния оборудования</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Constant.ИспользоватьАнализСостоянияОборудования</content>
+  <content>FunctionalOption.ИспользоватьАнализСостоянияОборудования</content>
+  <content>Catalog.ЗначенияПоказателейОценткиСостоянияОборудования</content>
+  <content>ChartOfCharacteristicTypes.ПоказателиОценкиСостоянияОборудования</content>
+  <content>InformationRegister.ВесовыеКоэффициентыЗначенийПоказателейОценкиСостоянияОборудования</content>
+  <content>Enum.ОценкиСостоянияОборудования</content>
+  <content>InformationRegister.КлассификацияОборудованияПоУровнямРисков</content>
+  <content>Enum.УровниРисковОтказаОборудования</content>
+  <content>InformationRegister.ЗначенияПоказателейОценткиСостоянияОборудования</content>
+  <content>DataProcessor.АнализСостоянияОборудования</content>
+</mdclass:Subsystem>

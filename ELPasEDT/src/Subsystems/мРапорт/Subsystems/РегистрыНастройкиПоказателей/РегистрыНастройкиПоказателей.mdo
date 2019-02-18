@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="78077e65-9107-43f2-ac50-4efb9f95b21d">
+  <name>РегистрыНастройкиПоказателей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регистры настройки показателей</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>InformationRegister.НастройкаЗначенийПоказателейКотлы</content>
+  <content>InformationRegister.НастройкаЗначенийПоказателейТурбины</content>
+  <content>InformationRegister.НастройкаЗначенийПоказателейТеплосетевоеОборудование</content>
+  <content>InformationRegister.НастройкаЗначенийПоказателейУровеньВБакахКонденсата</content>
+  <content>InformationRegister.НастройкаЗначенийПоказателейНСКТЦ</content>
+  <content>InformationRegister.НастройкаЗначенийПоказателейНСКТЦШапка</content>
+  <content>InformationRegister.НастройкаЗначенийПоказателейМеханизмыНеблочнойЧасти</content>
+  <content>InformationRegister.НастройкаЗначенийПоказателейНСС</content>
+  <content>InformationRegister.НастройкаЗначенийПоказателейНССШапка</content>
+  <content>InformationRegister.НастройкаЗначенийПоказателейТопливо</content>
+  <content>InformationRegister.НастройкаЗначенийПоказателейТопливоШапка</content>
+  <content>InformationRegister.НастройкаЗначенийПоказателейХВО</content>
+  <content>InformationRegister.НастройкаЗначенийПоказателейХВОШапка</content>
+  <content>InformationRegister.НастройкаЗначенийПоказателейПГУ</content>
+  <content>InformationRegister.НастройкаЗначенийПоказателейГлавнаяСхема</content>
+  <content>InformationRegister.НастройкаЗначенийПоказателейПГУШапка</content>
+  <content>InformationRegister.НастройкаЗначенийПоказателейГлавнаяСхемаШапка</content>
+  <parentSubsystem>Subsystem.мРапорт</parentSubsystem>
+</mdclass:Subsystem>

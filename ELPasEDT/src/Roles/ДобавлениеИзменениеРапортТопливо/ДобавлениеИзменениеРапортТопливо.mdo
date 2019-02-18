@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f1d52b3a-5f18-4d9e-ae64-1507ae1b1c2b">
+  <name>ДобавлениеИзменениеРапортТопливо</name>
+  <synonym>
+    <key>ru</key>
+    <value>Добавление изменение рапорт топливо</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

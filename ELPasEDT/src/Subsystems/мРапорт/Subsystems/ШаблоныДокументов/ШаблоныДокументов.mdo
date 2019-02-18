@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b0d8e690-0076-437d-a637-4d12dff0b94c">
+  <name>ШаблоныДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Шаблоны документов</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.ШаблонРапортКотлы</content>
+  <content>Document.ШаблонРапортТурбины</content>
+  <content>Document.ШаблонРапортТеплосетевоеОборудование</content>
+  <content>Document.ШаблонРапортНСКТЦ</content>
+  <content>Document.ШаблонРапортМеханизмыНеблочнойЧасти</content>
+  <content>Document.ШаблонРапортНСС</content>
+  <content>Document.ШаблонРапортТопливо</content>
+  <content>Document.ШаблонРапортХВО</content>
+  <content>Document.ШаблонРапортПГУ</content>
+  <content>Document.ШаблонРапортГлавнаяСхема</content>
+  <parentSubsystem>Subsystem.мРапорт</parentSubsystem>
+</mdclass:Subsystem>

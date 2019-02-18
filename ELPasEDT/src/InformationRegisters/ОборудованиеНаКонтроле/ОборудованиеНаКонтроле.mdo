@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ff1691bb-6647-40fc-be16-e6feadf65351">
+  <producedTypes>
+    <selectionType typeId="88516813-cb63-46b0-b275-a05ebda5226a" valueTypeId="2bc3ab95-ca50-4dc3-a2fe-6ebac951d4cd"/>
+    <listType typeId="9df327ce-e4b1-48f5-8fc3-42633f8d689e" valueTypeId="0af8b77a-b07c-4f73-a52d-cbb9feb9c0a0"/>
+    <managerType typeId="ef53ebaf-bf69-46d5-9ab1-530e6e46ccc6" valueTypeId="846ba916-4129-4f26-b7e1-76b8f9c90417"/>
+    <recordSetType typeId="f400769f-46a6-411a-897a-3102461a2589" valueTypeId="07b9350a-2c00-41b4-bfc9-efde101aa7f7"/>
+    <recordKeyType typeId="f0f63105-219b-44b6-ad49-1637fa4e72c5" valueTypeId="4301d6c8-6424-44b5-8005-27ef1a786f91"/>
+    <recordType typeId="a7e8aebb-200b-4908-b9c0-661e2f819913" valueTypeId="8b271a5c-0dfc-4564-823c-90a5edc0b1e2"/>
+    <recordManagerType typeId="e04d4f12-8e4b-4537-a4d9-8af6a058b452" valueTypeId="afda1ce3-301e-4773-bb59-9b431bfd6cda"/>
+  </producedTypes>
+  <name>ОборудованиеНаКонтроле</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оборудование на контроле</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="cc957ecd-1c9c-46ab-b0bf-121a8ab77376">
+    <name>ДатаВыходаИзСтроя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата выхода из строя</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b5c0de0c-c9cc-426a-8a25-97204d365581">
+    <name>ДатаОкончанияРемонтныхРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания ремонтных работ</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f6284a9f-875e-4dcc-92f2-7f42346d2952">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="228731f8-adba-478f-947a-3d5b7239864f">
+    <name>Оборудование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оборудование</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Оборудование</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="30bbbf7a-50fc-4855-9374-e67c10c2ab88">
+    <name>СтатусОборудования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус оборудования</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.СтатусыОборудования</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6d92844c-a59d-4818-a999-fef227a5e806">
+    <name>СтатусАктуален</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус актуален</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0c8b7740-a839-4608-95ee-2e883415df4c">
+  <producedTypes>
+    <objectType typeId="b41746c0-498b-428d-be2a-8c8aaea1036d" valueTypeId="89e4ff84-4216-4c98-a612-590910ef36d6"/>
+    <managerType typeId="3a189b26-8869-44b9-8010-ac7c66ccf1b6" valueTypeId="6cfb814e-aadb-4fc6-b8bb-d9fb29ab6850"/>
+  </producedTypes>
+  <name>ЗаполнениеПаспортаОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заполнение паспорта оборудования</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗаполнениеПаспортаОборудования.Form.Форма</defaultForm>
+  <forms uuid="801431e6-43b7-4363-a479-b3853f0b5ea5">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

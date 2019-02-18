@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8798d948-aab7-4a84-8c88-8e53a1032ed4">
+  <producedTypes>
+    <objectType typeId="6e26276a-6e09-4122-8887-451dc759fffc" valueTypeId="a84ac2da-26ae-44ac-ad09-8d80fea80206"/>
+    <refType typeId="51ab1ad4-ca24-4951-9263-68b143225d9c" valueTypeId="f2e9312c-3c6b-49ef-8cf2-bf8c08c1af04"/>
+    <selectionType typeId="0af504ed-de33-47fe-8965-1578ae50bbe1" valueTypeId="dae1f9de-5e24-4ace-af0b-a77d2508faa9"/>
+    <listType typeId="6ea0e7a6-4b62-4ff8-8caa-3190de408deb" valueTypeId="fb7adb47-76fb-4bcd-b437-4f9b76ab50c0"/>
+    <managerType typeId="d3bb187f-ec8e-4f2a-87eb-489b8740ddd8" valueTypeId="05e133f9-ad45-4a22-811a-6b0176e86d2e"/>
+  </producedTypes>
+  <name>ФормулыПоказателейЖурналаУчетаРеагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Формулы показателей журнала учета реагентов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ФормулыПоказателейЖурналаУчетаРеагентов.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ФормулыПоказателейЖурналаУчетаРеагентов.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ФормулыПоказателейЖурналаУчетаРеагентов.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="01855c7b-4e45-432f-9b85-72a4324f23e7">
+    <name>Формула</name>
+    <synonym>
+      <key>ru</key>
+      <value>Формула</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="acab0c41-eac7-4354-9e2c-d30dff73e8e9">
+    <name>Показатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.РассчетныеПоказателиЖурналаУчетаРеагентов</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="000c1c40-6cbe-427f-9662-ec5ea16e0970">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f29c8141-f0fd-481e-abca-a425670856f8">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организационная единица</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="49d205bd-04f4-4590-a809-fc3e4b02935e">
+    <producedTypes>
+      <objectType typeId="51acbbac-b510-48aa-9bcb-b7d6f22dbc04" valueTypeId="82ac000e-7bc6-4107-bff2-d57ea4ee8998"/>
+      <rowType typeId="40a33409-33ec-4b99-8bce-0b616c25183e" valueTypeId="5faf6dea-86f0-48aa-b24c-56c7fd280ba0"/>
+    </producedTypes>
+    <name>Реагенты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реагенты</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="829aaf4a-3976-4a55-8c49-991994eecb25">
+      <name>Реагент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид реагента (Реагент)</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>EnumRef.ВидыРеагентов</types>
+        <types>CatalogRef.Реагенты</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="cb339357-81fd-442e-9350-befe75669f83">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e8696ed6-725f-4d1b-9bf3-80eeff7b5140">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="75c8c8e4-0054-4593-906c-b4be7e4025b3">
+    <name>ОткрытьСписокНастроек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Формулы показателей журнала учета реагентов</value>
+    </synonym>
+    <comment></comment>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:Catalog>

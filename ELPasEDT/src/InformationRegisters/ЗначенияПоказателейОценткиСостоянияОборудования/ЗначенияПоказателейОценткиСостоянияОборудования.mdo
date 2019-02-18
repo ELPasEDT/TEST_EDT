@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="39c234f0-80dd-4da4-8d2d-4ccb0d58605a">
+  <producedTypes>
+    <selectionType typeId="9778ada7-5c1b-4430-8d19-45b6c7cc972c" valueTypeId="a820facb-2fca-4092-8b12-bd04d6748b04"/>
+    <listType typeId="d38253f0-ca41-442d-a672-be551fa940d2" valueTypeId="2c806935-c151-45a1-97e2-12fb1c29cd6a"/>
+    <managerType typeId="f055e8cc-2bd6-4438-a72b-584b01d5bcaa" valueTypeId="00777fc0-eabf-4043-b1a1-1b68b3185b8d"/>
+    <recordSetType typeId="0d0ca12d-11bf-4880-8eae-fe9544e427aa" valueTypeId="86f9ec1c-c7c6-4098-ba08-2a51c83749a0"/>
+    <recordKeyType typeId="4e6695ef-7b5e-486d-9b9c-6356109db83a" valueTypeId="6a255a59-15e3-48c9-b1f3-1ec09e680f43"/>
+    <recordType typeId="6039093b-9e58-44cd-b86d-42d63e1a02ae" valueTypeId="8682b763-22e4-4e92-bca1-d8af0ad86f8f"/>
+    <recordManagerType typeId="066e4db2-a5fd-4309-a352-fabb77a237e6" valueTypeId="ba8f444f-d27c-489e-be17-cbb6cf39fbb5"/>
+  </producedTypes>
+  <name>ЗначенияПоказателейОценткиСостоянияОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Значения показателей оцентки состояния оборудования</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="9e80bb9f-14d4-4ee0-9d18-b8c77ca76852">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Characteristic.ПоказателиОценкиСостоянияОборудования</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>InformationRegister.ЗначенияПоказателейОценткиСостоянияОборудования.Dimension.Показатель</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="dd6ca3c1-bbeb-42e3-947d-ee95dd787767">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Оборудование</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="bceede0d-015d-442c-b266-1c40e56c5d71">
+    <name>Показатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.ПоказателиОценкиСостоянияОборудования</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

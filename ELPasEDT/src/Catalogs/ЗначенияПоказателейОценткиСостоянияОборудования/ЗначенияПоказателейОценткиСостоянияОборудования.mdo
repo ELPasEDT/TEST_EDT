@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="741346ab-2a39-4332-9b35-f0608620cfdb">
+  <producedTypes>
+    <objectType typeId="89c9d19e-a660-43e4-8325-0172a31a5ddc" valueTypeId="fe480495-fe79-42d9-bffe-4faa776c1c63"/>
+    <refType typeId="ec861472-cbef-4b66-9db5-9fa81ca63737" valueTypeId="86f92d8b-f077-4ec4-8420-8a87d07256d3"/>
+    <selectionType typeId="f54df47c-e6b8-4bb5-a7f6-cea710b29185" valueTypeId="51d391c4-8bbd-4630-a90f-05f127e481fa"/>
+    <listType typeId="130f011e-8b3b-4d9b-9c8a-fe2bab30a63d" valueTypeId="db1f890e-d135-45dc-9774-a68b8ce3b85e"/>
+    <managerType typeId="7a600985-2fb7-42b4-b2b2-519016e25664" valueTypeId="defaa317-a3a9-440f-801b-bfafe14af042"/>
+  </producedTypes>
+  <name>ЗначенияПоказателейОценткиСостоянияОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Значения показателей оцентки состояния оборудования</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ЗначенияПоказателейОценткиСостоянияОборудования.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ЗначенияПоказателейОценткиСостоянияОборудования.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>ChartOfCharacteristicTypes.ПоказателиОценкиСостоянияОборудования</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

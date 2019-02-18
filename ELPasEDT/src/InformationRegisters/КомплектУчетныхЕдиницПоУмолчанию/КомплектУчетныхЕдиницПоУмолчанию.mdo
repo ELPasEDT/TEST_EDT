@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="16b33a11-60de-44a5-833d-f1a2e494ff89">
+  <producedTypes>
+    <selectionType typeId="116fdec5-b751-4db0-adbc-da2df4ddbdb1" valueTypeId="0ae2fb7a-8954-4ab9-916f-6ff546b0b314"/>
+    <listType typeId="b2bc967e-3cf9-498a-932f-297850efcbca" valueTypeId="9bb702f4-38fa-4038-8708-40620a75e73f"/>
+    <managerType typeId="51c12877-6b78-4182-be11-3673e93325a5" valueTypeId="7efaaff2-b0ff-48e7-90b4-4287b8701a34"/>
+    <recordSetType typeId="7469a86a-2570-4e9c-a4f9-2fbe92f92424" valueTypeId="5265e691-a90c-476e-bef0-3edcd3cbf809"/>
+    <recordKeyType typeId="13eb0a22-1b4e-452e-abf1-36ee0b7ff612" valueTypeId="2e07b591-b2b5-4a05-ab6b-569678287358"/>
+    <recordType typeId="8de86014-b522-4637-ad48-dbc76810d10b" valueTypeId="6a7f1d80-a424-4e10-97c8-26abfddccc20"/>
+    <recordManagerType typeId="130da9e0-771e-4727-8765-b1518c14de29" valueTypeId="1f496b42-6666-40b1-b6cb-a26ce2d24999"/>
+  </producedTypes>
+  <name>КомплектУчетныхЕдиницПоУмолчанию</name>
+  <synonym>
+    <key>ru</key>
+    <value>Комплект учетных единиц по умолчанию</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="14ef90a5-1281-4b6c-92f4-184d195d5730">
+    <name>Комплект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комплект</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.КомплектыУчетныхЕдиниц</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="d5d75de9-3f59-46a5-92e3-1d727b749acd">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организационная единица</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c1f4d464-cc2e-4d5c-addf-4b74a5655d93">
+    <name>Реагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реагент</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Реагенты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

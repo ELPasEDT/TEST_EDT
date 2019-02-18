@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="416834db-1806-4cbe-bdfd-c5e437b97016">
+  <producedTypes>
+    <refType typeId="2c707c4a-c3e3-4596-9bff-11d6a21fb8ab" valueTypeId="9e993d28-ea19-4175-b312-967a11464759"/>
+    <listType typeId="8c2d4751-3be6-46a2-b98a-5ad7432aff80" valueTypeId="e49386e6-4659-4684-9fd0-557f9ca84d48"/>
+    <managerType typeId="dd60b999-7a87-4868-85bd-04fe5bf2ac48" valueTypeId="cd87c530-8258-4f39-a5ac-fb355ad61690"/>
+  </producedTypes>
+  <name>ОценкиСостоянияОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оценки состояния оборудования</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="dded1142-0d82-4ef4-9f80-e71f65bf6713">
+    <name>Удовлетворительное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удовлетворительное</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="50ef7747-6530-4a6c-80d4-148223259fe8">
+    <name>Неудовлетворительное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Неудовлетворительное</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="9d930b63-394d-46cc-9ff8-112205436fc4">
+    <name>Критическое</name>
+    <synonym>
+      <key>ru</key>
+      <value>Критическое</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

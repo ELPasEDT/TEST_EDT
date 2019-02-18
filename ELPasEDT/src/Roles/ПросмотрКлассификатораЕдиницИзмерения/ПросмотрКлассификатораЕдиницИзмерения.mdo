@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ab857f05-e4d7-4cd3-b6e7-be9565d7e3ed">
+  <name>ПросмотрКлассификатораЕдиницИзмерения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Просмотр классификатора единиц измерения</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

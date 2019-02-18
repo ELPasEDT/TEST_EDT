@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="75c9c262-667e-40cb-b6d1-68af97fa76d9">
+  <producedTypes>
+    <selectionType typeId="64923a52-3d79-4d3f-9895-2751858ad3f3" valueTypeId="6cecef9f-e55a-4162-a4f9-aae815128543"/>
+    <listType typeId="1df95d21-22ab-4e86-a678-7cd9f3674a60" valueTypeId="93a49959-48b3-4d92-9457-50846662e3d1"/>
+    <managerType typeId="7e86024e-8456-4a8e-b607-cffc19fdd897" valueTypeId="dc7bfd30-5283-4b17-ad11-18d6a46a0208"/>
+  </producedTypes>
+  <name>ЖурналУчетаРеагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Журнал учета реагентов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.РасходРеагента</registeredDocuments>
+  <registeredDocuments>Document.ЗаписьЖурналаУчетаРеагентов</registeredDocuments>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="d6a09995-4283-4b42-abb7-fc181c572cdb">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.РасходРеагента.Attribute.Организация</references>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.Организация</references>
+  </columns>
+  <columns uuid="a583fd80-2f46-4500-ab75-faf2dc64f217">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.РасходРеагента.Attribute.Подразделение</references>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.Подразделение</references>
+  </columns>
+  <columns uuid="37f14519-57d4-49e3-9cff-89e45f3c31be">
+    <name>Оборудование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оборудование</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.РасходРеагента.Attribute.Оборудование</references>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.Оборудование</references>
+  </columns>
+  <columns uuid="653e50dc-5933-4f1a-b1f6-d978e5beafe1">
+    <name>ВидРасхода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид расхода</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.РасходРеагента.Attribute.ВидРасхода</references>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.ВидРасхода</references>
+  </columns>
+  <columns uuid="2b355d5b-a3d6-46ae-b87f-238218e97f8e">
+    <name>НаправлениеРасхода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Направление расхода</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.РасходРеагента.Attribute.НаправлениеРасхода</references>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.НаправлениеРасхода</references>
+  </columns>
+  <columns uuid="d5acd98b-df4e-434d-8ef0-c3eb6d4fa8ec">
+    <name>ВидРеагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид реагента</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.РасходРеагента.Attribute.ВидРеагента</references>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.ВидРеагента</references>
+  </columns>
+  <columns uuid="7e768e4a-456a-4e55-875c-c6839a404dac">
+    <name>Партия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партия</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.РасходРеагента.Attribute.Партия</references>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.Партия</references>
+  </columns>
+  <columns uuid="b8b581f4-4fb1-4390-8c7f-f71925665e04">
+    <name>Реагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реагент</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.РасходРеагента.Attribute.Реагент</references>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.Реагент</references>
+  </columns>
+  <columns uuid="1ddea1ed-f44b-427d-8313-e570fa36804a">
+    <name>ВахтаНачалаРасхода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вахта начала расхода</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.РасходРеагента.Attribute.Вахта</references>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.ВахтаНачалаРасхода</references>
+  </columns>
+  <columns uuid="f664b930-ec03-4133-88be-5267d682f1fa">
+    <name>ВахтаНачалаЗакачки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вахта начала закачки</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.ВахтаНачалаЗакачки</references>
+  </columns>
+  <columns uuid="10d54899-1347-4976-8fba-39e03d171325">
+    <name>ВахтаОкончанияЗакачки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вахта окончания закачки</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.ВахтаОкончанияЗакачки</references>
+  </columns>
+  <columns uuid="42d0dd59-12dc-4e83-9dd6-12f3ec670387">
+    <name>ВахтаОкончанияРасхода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вахта окончания расхода</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.РасходРеагента.Attribute.Вахта</references>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.ВахтаОкончанияРасхода</references>
+  </columns>
+  <columns uuid="089082d6-1c7b-42b6-b71c-4d79987eedf2">
+    <name>ДатаНачалаЗакачки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала закачки</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.ДатаНачалаЗакачки</references>
+  </columns>
+  <columns uuid="a4023a4f-d8c7-42ff-b90f-c8a45c7465b1">
+    <name>ДатаНачалаРасхода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала расхода</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.ДатаНачалаРасхода</references>
+    <references>Document.РасходРеагента.Attribute.ДатаРасхода</references>
+  </columns>
+  <columns uuid="1a2bab3d-2539-4513-8c4e-f3a2c522d0ba">
+    <name>ДатаОкончанияЧистойЗакачки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания чистой закачки</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.ДатаОкончанияЧистойЗакачки</references>
+  </columns>
+  <columns uuid="0ec3c8df-4698-42f8-819d-2486685ed58d">
+    <name>ДатаОкончанияЧистогоРасхода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания чистого расхода</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.ДатаОкончанияЧистогоРасхода</references>
+  </columns>
+  <columns uuid="43dd1a1f-f1d8-46c5-aa13-033fd727f99c">
+    <name>Комментарий1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий1</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.Комментарий1</references>
+  </columns>
+  <columns uuid="12d8dd75-441b-4923-bc76-58af0b889bfb">
+    <name>Комментарий2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий2</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.Комментарий2</references>
+  </columns>
+  <columns uuid="9d36ea47-66bd-4295-a8f5-f1ff45a041bd">
+    <name>Комментарий3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий3</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.РасходРеагента.Attribute.Комментарий</references>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.Комментарий3</references>
+  </columns>
+  <columns uuid="43a65638-2e2f-44eb-bb6f-0fd97c428a5a">
+    <name>Комментарий4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий4</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.Комментарий4</references>
+  </columns>
+  <columns uuid="bce5f10a-87eb-4b1c-9182-aa0edb3ec779">
+    <name>КонцентрацияНаНачалоЗакачки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Концентрация на начало закачки</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.КонцентрацияНаНачалоЗакачки</references>
+  </columns>
+  <columns uuid="3c21e55e-ec5e-47e4-bbbb-3b986f8ac931">
+    <name>КонцентрацияНаНачалоРасхода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Концентрация на начало расхода</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.КонцентрацияНаНачалоРасхода</references>
+  </columns>
+  <columns uuid="29401b05-4cba-42d8-9a0b-633981d64dc0">
+    <name>КонцентрацияНаОкончаниеЗакачки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Концентрация на окончание закачки</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.КонцентрацияНаОкончаниеЗакачки</references>
+  </columns>
+  <columns uuid="45f376d5-5f38-4100-9a3a-8538acab7a1b">
+    <name>КонцентрацияНаОкончаниеРасхода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Концентрация на окончание расхода</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.КонцентрацияНаОкончаниеРасхода</references>
+  </columns>
+  <columns uuid="89727049-cb4b-4e26-bf4b-e559b07cdf07">
+    <name>КонцентрацияПоДокументам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Концентрация по документам</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.КонцентрацияПоДокументам</references>
+  </columns>
+  <columns uuid="b5510773-de7f-4ecf-9bf4-bb525e81e3b3">
+    <name>ОбъемСработанногоРаствораЗакачка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объем сработанного раствора закачка</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.ОбъемСработанногоРаствораЗакачка</references>
+  </columns>
+  <columns uuid="b0a6a5df-936d-4645-ae37-12414e3a27a3">
+    <name>ОбъемСработанногоРаствораРасход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объем сработанного раствора расход</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.ОбъемСработанногоРаствораРасход</references>
+  </columns>
+  <columns uuid="a4ad3a2d-128b-4999-8793-e9cadea52f3e">
+    <name>ПлотностьПоТаблицам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Плотность по таблицам</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.ПлотностьПоТаблицам</references>
+  </columns>
+  <columns uuid="ec8e99b9-df45-425d-8de4-81ef0847c7d7">
+    <name>Расход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.Расход</references>
+    <references>Document.РасходРеагента.Attribute.Расход</references>
+  </columns>
+  <columns uuid="2a2cd075-d54d-4e4f-9a8a-e6ff59ea2089">
+    <name>РасходТоварногоРеагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход товарного реагента</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.РасходРеагента.Attribute.Количество</references>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.РасходТоварногоРеагента</references>
+  </columns>
+  <columns uuid="ca315e4e-7213-47df-a785-69ef7e850814">
+    <name>СменаНачалаРасхода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Смена начала расхода</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.РасходРеагента.Attribute.Смена</references>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.СменаНачалаРасхода</references>
+  </columns>
+  <columns uuid="43422854-eebd-4d24-a505-3a5e4191410c">
+    <name>СменаНачалаЗакачки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Смена начала закачки</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.СменаНачалаЗакачки</references>
+  </columns>
+  <columns uuid="91a1583a-6064-4aeb-91a3-d4459dcf2320">
+    <name>СменаОкончанияРасхода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Смена окончания расхода</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.РасходРеагента.Attribute.Смена</references>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.СменаОкончанияРасхода</references>
+  </columns>
+  <columns uuid="120b3469-a60f-4ea7-b974-e247c4ff393b">
+    <name>СменаОкончанияЗакачки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Смена окончания закачки</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.СменаОкончанияЗакачки</references>
+  </columns>
+  <columns uuid="f37f2bb9-52d0-4e4c-a1fe-b8c6d147af91">
+    <name>УровеньНаНачалоЗакачки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уровень на начало закачки</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.УровеньНаНачалоЗакачки</references>
+  </columns>
+  <columns uuid="3c44a291-9e70-4d6a-b0b9-f69971d93141">
+    <name>УровеньНаНачалоРасхода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уровень на начало расхода</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.УровеньНаНачалоРасхода</references>
+  </columns>
+  <columns uuid="6d5424b8-0c89-4747-ac00-6dbae3a3c614">
+    <name>УровеньНаОкончаниеЗакачки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уровень на окончание закачки</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.УровеньНаОкончаниеЗакачки</references>
+  </columns>
+  <columns uuid="c4896b3a-3791-49db-b453-334a9ff893b8">
+    <name>УровеньНаОкончаниеРасхода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уровень на окончание расхода</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.УровеньНаОкончаниеРасхода</references>
+  </columns>
+  <columns uuid="27f23db8-96e4-4ab6-97b6-cc059fc0405e">
+    <name>ЕдиницаИзмеренияКоличества</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения количества</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.ЕдиницаИзмеренияКоличества</references>
+  </columns>
+  <columns uuid="d2a3aa6d-aed5-4924-a6f6-cc5830ca3356">
+    <name>ЕдиницаИзмеренияКонцентрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения концентрации</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.ЕдиницаИзмеренияКонцентрации</references>
+  </columns>
+  <columns uuid="cd94502d-0d85-4c70-ba97-97bd1b6c6f8a">
+    <name>ЕдиницаИзмеренияПлотности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения плотности</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.ЕдиницаИзмеренияПлотности</references>
+  </columns>
+  <columns uuid="cfc18352-8b17-4bde-870d-355726275e25">
+    <name>РучнаяКорректировка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ручная корректировка</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.РучнаяКорректировка</references>
+  </columns>
+  <columns uuid="53ccdf39-cde1-463a-ac6b-930ab66bf662">
+    <name>ОтветственныйНачалаРасхода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный начала расхода</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.РасходРеагента.Attribute.Ответственный</references>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.ОтветственныйНачалаРасхода</references>
+  </columns>
+  <columns uuid="516baef5-f591-4b9e-a80c-61fb2e777cb6">
+    <name>ОтветственныйОкончанияРасхода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный окончания расхода</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.РасходРеагента.Attribute.Ответственный</references>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.ОтветственныйОкончанияРасхода</references>
+  </columns>
+  <columns uuid="d2f4918b-bf48-472b-af00-3116a11b0494">
+    <name>ОтветственныйНачалаЗакачки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный начала закачки</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.ОтветственныйНачалаЗакачки</references>
+  </columns>
+  <columns uuid="8fcb0728-a57d-4dba-8fa4-25e526b01892">
+    <name>ОтветственныйОкончанияЗакачки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный окончания закачки</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.ОтветственныйОкончанияЗакачки</references>
+  </columns>
+  <columns uuid="1c419857-817f-4893-853d-d02fabe0b3a3">
+    <name>ВремяРасхода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время расхода</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.ВремяРасхода</references>
+  </columns>
+  <columns uuid="33455dcd-66d6-4954-b7e6-370dd9b1bdaf">
+    <name>ВремяЗакачки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время закачки</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.ВремяЗакачки</references>
+  </columns>
+  <columns uuid="94309676-6f37-4aaf-a31b-f63a97c9de02">
+    <name>ЗаписьОтменена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запись отменена</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.ЗаписьОтменена</references>
+    <references>Document.РасходРеагента.Attribute.ЗаписьОтменена</references>
+  </columns>
+  <columns uuid="ad6262b1-203d-406e-abe0-a434f14da29e">
+    <name>ДатаОкончанияЗакачки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания закачки</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.ДатаОкончанияЗакачки</references>
+  </columns>
+  <columns uuid="8a552a74-4352-45c1-b404-3130dc61ffe4">
+    <name>ДатаОкончанияРасхода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания расхода</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.ДатаОкончанияРасхода</references>
+  </columns>
+  <columns uuid="1aaabd04-4a06-4234-8e00-8e2cc9c71942">
+    <name>НеВключатьВЖурнал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не включать в журнал</value>
+    </synonym>
+    <comment></comment>
+    <indexing>Index</indexing>
+    <references>Document.РасходРеагента.Attribute.НеВключатьВЖурнал</references>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.НеВключатьВЖурнал</references>
+  </columns>
+  <columns uuid="0d952f32-ae54-488d-b751-937878fda3dd">
+    <name>КомментарийАвтрораИзменений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий автрора изменений</value>
+    </synonym>
+    <comment></comment>
+    <references>Document.ЗаписьЖурналаУчетаРеагентов.Attribute.КомментарийАвтрораИзменений</references>
+  </columns>
+</mdclass:DocumentJournal>

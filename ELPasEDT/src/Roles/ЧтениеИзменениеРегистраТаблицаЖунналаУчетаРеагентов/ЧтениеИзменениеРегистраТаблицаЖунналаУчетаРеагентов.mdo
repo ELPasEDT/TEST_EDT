@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="474278ff-4951-458f-8eba-cf637eb5e04b">
+  <name>ЧтениеИзменениеРегистраТаблицаЖунналаУчетаРеагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Чтение изменение регистра &quot;Таблица жуннала учета реагентов&quot;</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7c9948be-9671-48ba-87c7-ed3d3ea6fbe6">
+  <name>ИнженерХВО</name>
+  <synonym>
+    <key>ru</key>
+    <value>Инженер ХВО</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

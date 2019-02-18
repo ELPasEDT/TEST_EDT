@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0f1976f8-f7d8-4bad-bc8f-4a6cf2ec1a39">
+  <name>ДобавлениеИзменениеПроведениеДокументаЗакреплениеПоказателейЧекЛистов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Добавление, изменение, проведение документа &quot;Закрепление показателей Чек- листов&quot;</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

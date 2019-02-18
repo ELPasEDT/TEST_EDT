@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="afbf9585-5a0e-4375-a43b-5ba1fef2adf9">
+  <producedTypes>
+    <objectType typeId="f0314b88-cd3a-45c0-9249-e818b437e2c2" valueTypeId="f75701dd-430f-4262-943c-2030c1a75a01"/>
+    <managerType typeId="c581b9ae-3904-46b9-afe5-e600f60ef59c" valueTypeId="2a05a0cf-db44-45c0-9c7c-4e4017a1d24a"/>
+  </producedTypes>
+  <name>ПланФактИспользованияРеагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>План-фактный анализ использования реагентов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ПланФактИспользованияРеагентов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="89d5bce7-3535-4b52-84f2-644b6f40c080">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

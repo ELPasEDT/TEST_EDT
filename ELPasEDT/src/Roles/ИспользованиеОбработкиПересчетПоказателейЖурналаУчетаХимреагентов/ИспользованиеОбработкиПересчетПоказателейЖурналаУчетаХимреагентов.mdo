@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="60d5e844-aaa3-4274-b20f-a3c90c038fc9">
+  <name>ИспользованиеОбработкиПересчетПоказателейЖурналаУчетаХимреагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использование обработки &quot;Пересчет показателей журнала учета химреагентов&quot;</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

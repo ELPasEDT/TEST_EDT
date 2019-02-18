@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b3b2455a-1ae2-4ce2-baed-e46050477916">
+  <producedTypes>
+    <selectionType typeId="a37a9366-1413-4cde-8712-3a2c88f906d6" valueTypeId="39289604-1607-4f69-8f69-a9e842e3e89c"/>
+    <listType typeId="47860e16-5338-4a4d-92c5-2360348cab70" valueTypeId="bc722964-f805-4a1c-b200-ee575188b710"/>
+    <managerType typeId="fcfc8121-69d7-44e6-85aa-066d37f7f212" valueTypeId="68f8fad9-63ec-4898-85ae-0a036d963dc5"/>
+    <recordSetType typeId="c3e5fc7f-9086-4ddb-a7bc-d3ed5a6607de" valueTypeId="6a6d9b1c-04bf-4439-9955-8aae9e79da3e"/>
+    <recordKeyType typeId="840ba232-8ca5-486f-b5f6-6229e8161531" valueTypeId="7375e1a2-2104-45d1-ae01-e8dc1c5e96e5"/>
+    <recordType typeId="8621f60e-52f3-48bc-b53e-76b881edf9ca" valueTypeId="76e0d32a-7096-4977-a949-47f9af15b302"/>
+    <recordManagerType typeId="ce8daecf-2444-405f-a76b-ef6f698b2398" valueTypeId="58804b4f-1c64-4018-8339-cfabb190c193"/>
+  </producedTypes>
+  <name>ПрисоединенныеФайлы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Присоединенные файлы</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="6db3df91-9f0b-4cd6-b78d-41d8befbe44e">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Оборудование</types>
+      <types>CatalogRef.ВидыОборудования</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="27cce171-efe6-4cb1-ab10-27fad52ab9ec">
+    <name>Файл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Файл</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Файлы</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

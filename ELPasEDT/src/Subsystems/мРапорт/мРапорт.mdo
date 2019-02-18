@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="efa44c35-374c-4550-a6fe-08cc5f8b6c13">
+  <name>мРапорт</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рапорт 2.0</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Report.мРапортНСС_2_0</content>
+  <subsystems>РегистрыНастройкиПоказателей</subsystems>
+  <subsystems>ДокументыРапорта</subsystems>
+  <subsystems>ШаблоныДокументов</subsystems>
+</mdclass:Subsystem>

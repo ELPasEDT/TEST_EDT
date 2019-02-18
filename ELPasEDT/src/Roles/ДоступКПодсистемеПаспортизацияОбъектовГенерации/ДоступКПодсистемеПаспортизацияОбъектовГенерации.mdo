@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b5213925-7df9-4c91-8a05-81a91fa52995">
+  <name>ДоступКПодсистемеПаспортизацияОбъектовГенерации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Доступ к подсистеме &quot;Паспортизация объектов генерации&quot;</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

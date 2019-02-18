@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9a0133f1-1ffc-406d-8f11-7bbaa7ef7c15">
+  <producedTypes>
+    <objectType typeId="442e559d-c91a-420a-8ac6-90be9a3f08d3" valueTypeId="237e6db1-58d4-4883-a993-f1f9ef1ebad5"/>
+    <refType typeId="3d0a34e4-5aec-46c6-8260-a7fcbeeaaad1" valueTypeId="bc0b372b-7eee-43aa-9832-b173efa7a518"/>
+    <selectionType typeId="782e8fe6-dc3d-4c12-87bc-9ad4f773984d" valueTypeId="f7013886-9f91-4867-902e-077d8fca0a7c"/>
+    <listType typeId="7038fa5c-b7e0-4392-b0f7-0099306b5540" valueTypeId="ce5a6959-8e42-434c-8eff-7e338e292c11"/>
+    <managerType typeId="ff0e1ad0-992c-4cf7-a377-60b04c9e926c" valueTypeId="ea2999a7-77de-48ad-87a4-7f7b95c864ac"/>
+  </producedTypes>
+  <name>КомплектыУчетныхЕдиниц</name>
+  <synonym>
+    <key>ru</key>
+    <value>Комплекты учетных единиц измерения</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.КомплектыУчетныхЕдиниц.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Комплект</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.КомплектыУчетныхЕдиниц.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.КомплектыУчетныхЕдиниц.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.КомплектыУчетныхЕдиниц.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="dbb4657e-aefa-49fe-af6e-00931094ae95">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организационная единица</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0d69debf-02b8-4d8e-9965-f66c4e0bf8f8">
+    <name>Реагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реагент</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Реагенты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2d1b1664-3586-42d3-b3fe-91e672113c34">
+    <name>ЕдиницаИзмеренияКоличества</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ед. изм. количества</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ЕдиницыИзмерения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3265b6fd-d4bf-4776-a213-226d62dfd520">
+    <name>ЕдиницаИзмеренияКонцентрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ед. изм. концентрации</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ЕдиницыИзмерения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0f1f7229-edca-40ad-826f-07a49e6b42b4">
+    <name>ЕдиницаИзмеренияПлотности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ед. изм. плотности</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ЕдиницыИзмерения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a576e3b2-02df-41ac-9cd4-06112937f8e4">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="3e86780d-a259-4ba7-8c6c-aabb38c2f9cb">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="80879a99-4636-4077-9eec-84fd65f41553">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ef0984d9-6a0d-47d2-8c4b-10d8f05f6d90">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="bd5ab609-d987-473b-996e-7c804f817d29">
+    <name>ОткрытьСписокКомплектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комплекты учетных единиц измерения</value>
+    </synonym>
+    <comment></comment>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:Catalog>

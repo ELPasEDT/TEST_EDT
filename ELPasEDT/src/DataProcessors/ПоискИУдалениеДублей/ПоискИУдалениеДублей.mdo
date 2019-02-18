@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a02bad22-72de-47fa-9df0-3d8a0fc71163">
+  <producedTypes>
+    <objectType typeId="3d640fe8-e286-4002-aebe-5299f315b2b6" valueTypeId="9cd9ea99-4e1a-4962-9089-0ba7f750603c"/>
+    <managerType typeId="9960670c-1274-4253-bdce-ccc6664d7fd7" valueTypeId="e8ff1bce-c5b9-4b33-bd00-f2ceca9df1ce"/>
+  </producedTypes>
+  <name>ПоискИУдалениеДублей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Поиск и удаление дублей</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ПоискИУдалениеДублей.Form.ПоискДублей</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="33757d7a-20fa-4cec-852f-21ed5b3887b2">
+    <name>ПоискДублей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поиск дублей</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="af706bff-501c-4a05-abdd-285d0f9f704b">
+    <name>ПравилаОтбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Правила отбора</value>
+    </synonym>
+    <comment></comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d25bc5f5-fff9-4331-8929-ad96077cd19e">
+    <name>ОбластьПоискаДублей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Область поиска дублей</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4b6b1cb7-9029-4dc2-9990-55836f75fa58">
+    <name>ПравилаПоиска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Правила поиска</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c0c37b0c-3ab4-4d23-9bad-a5a66e376e8d">
+  <producedTypes>
+    <objectType typeId="7de8bf9e-82b7-42eb-b0eb-a187b7da02fb" valueTypeId="7059f62c-462a-4fc3-9b58-31c516b69246"/>
+    <managerType typeId="00efebb5-777a-410e-b2a1-745df85ae9a0" valueTypeId="3684f187-1c5e-4dab-a184-ec3909f0aa0e"/>
+  </producedTypes>
+  <name>ВедомостьПоХимРеагентам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ведомость по хим. реагентам</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ВедомостьПоХимРеагентам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <templates uuid="1708e626-c95f-4fd1-a968-314bb97f481f">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="caa0ded9-0e14-4bb6-8f03-7c562272396f">
+  <producedTypes>
+    <selectionType typeId="f949ee57-6f74-4e9c-bed1-be61e01bb5af" valueTypeId="753109c5-e617-40df-80bf-81e9e0b5983e"/>
+    <listType typeId="72912db0-c192-4943-a0f7-21f87051d41c" valueTypeId="9c7d1028-4118-4fb2-bc3f-eaff3561022d"/>
+    <managerType typeId="1c227914-8a56-433d-a506-41873edf7ec6" valueTypeId="611eb8c7-2404-4c92-9873-77bf617936ec"/>
+    <recordSetType typeId="38bb2e63-c0f0-4540-83ab-6fab1bdd82cf" valueTypeId="c54bd856-ab9f-4f82-bce2-e593add423c3"/>
+    <recordKeyType typeId="75138a94-b8a7-4e8a-9a1e-33c47653633b" valueTypeId="de196d97-1de1-40ae-b569-c10fbab9a46c"/>
+    <recordType typeId="f0d4b09d-5773-4039-8e3f-586ae8d37a8e" valueTypeId="91fd68ca-5c31-4eac-9b39-aa0e16c2cfb5"/>
+    <recordManagerType typeId="bd5eaf5a-6de3-4d02-8392-732be7fbeab6" valueTypeId="24b3a3f0-5a2b-4e93-bd30-78e2fe235016"/>
+  </producedTypes>
+  <name>ВесовыеКоэффициентыЗначенийПоказателейОценкиСостоянияОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Весовые коэффициенты значений показателей оценки состояния оборудования</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="60786ed4-ea23-4147-b7e2-47ca4954b5ce">
+    <name>Коэффициент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коэффициент</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="72b36a65-3bbf-4818-a7b3-10fff80b96f2">
+    <name>ИспользоватьПроизвольныйАлгоритм</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать произвольный алгоритм</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9961808c-e0cb-404f-b11e-c4b1744ca178">
+    <name>Алгоритм</name>
+    <synonym>
+      <key>ru</key>
+      <value>Алгоритм</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="649a6c59-3705-492c-8963-c47081d39795">
+    <name>ВидОборудования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид оборудования</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВидыОборудования</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d19b08a7-ab8f-491c-bde9-93b60e098056">
+    <name>Показатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.ПоказателиОценкиСостоянияОборудования</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e92c3497-567b-45d5-8fc5-68f86c4c291c">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Characteristic.ПоказателиОценкиСостоянияОборудования</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>ВидОборудования</name>
+      <field>InformationRegister.ВесовыеКоэффициентыЗначенийПоказателейОценкиСостоянияОборудования.Dimension.ВидОборудования</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

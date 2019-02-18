@@ -1,0 +1,550 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СсылкаПринял</dataPath>
+			<field>СсылкаПринял</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка принял</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Событие</dataPath>
+			<field>Событие</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Проведен</dataPath>
+			<field>Проведен</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СсылкаСдал</dataPath>
+			<field>СсылкаСдал</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка сдал</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерПринял</dataPath>
+			<field>НомерПринял</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер принял</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаПринял</dataPath>
+			<field>ДатаПринял</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата принял</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидЗаписи</dataPath>
+			<field>ВидЗаписи</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Статус</dataPath>
+			<field>Статус</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтветственныйПринял</dataPath>
+			<field>ОтветственныйПринял</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответственный принял</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Смена</dataPath>
+			<field>Смена</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Контролер</dataPath>
+			<field>Контролер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СменаЗакрыта</dataPath>
+			<field>СменаЗакрыта</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументЗакрытия</dataPath>
+			<field>ДокументЗакрытия</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Вахта</dataPath>
+			<field>Вахта</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаНачалаСмены</dataPath>
+			<field>ДатаНачалаСмены</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаОкончанияСмены</dataPath>
+			<field>ДатаОкончанияСмены</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерСдал</dataPath>
+			<field>НомерСдал</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер сдал</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаСдал</dataPath>
+			<field>ДатаСдал</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата сдал</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтветственныйСдал</dataPath>
+			<field>ОтветственныйСдал</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответственный сдал</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТЭЦ</dataPath>
+			<field>ТЭЦ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ТЭЦ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПодписанЭППринял</dataPath>
+			<field>ПодписанЭППринял</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подписан ЭППринял</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПодписанЭПСдал</dataPath>
+			<field>ПодписанЭПСдал</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подписан ЭПСдал</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЧистовикПринял</dataPath>
+			<field>ЧистовикПринял</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Чистовик принял</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЧистовикСдал</dataPath>
+			<field>ЧистовикСдал</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Чистовик сдал</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номер</dataPath>
+			<field>Номер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Дата</dataPath>
+			<field>Дата</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ответственный</dataPath>
+			<field>Ответственный</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПодписанЭП</dataPath>
+			<field>ПодписанЭП</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Чистовик</dataPath>
+			<field>Чистовик</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ОперативныйЖурнал.Ссылка КАК СсылкаПринял,
+	ОперативныйЖурнал.Номер КАК НомерПринял,
+	ОперативныйЖурнал.Дата КАК ДатаПринял,
+	ОперативныйЖурнал.ВидЗаписи КАК ВидЗаписи,
+	ОперативныйЖурнал.Событие КАК Событие,
+	ОперативныйЖурнал.Ответственный КАК ОтветственныйПринял,
+	ОперативныйЖурнал.Подразделение КАК Подразделение,
+	ОперативныйЖурнал.Статус КАК Статус,
+	ОперативныйЖурнал.Смена КАК Смена,
+	ОперативныйЖурнал.Контролер КАК Контролер,
+	ОперативныйЖурнал.СменаЗакрыта КАК СменаЗакрыта,
+	ОперативныйЖурнал.ДокументЗакрытия КАК ДокументЗакрытия,
+	ОперативныйЖурнал.Вахта КАК Вахта,
+	ОперативныйЖурнал.ДатаНачалаСмены КАК ДатаНачалаСмены,
+	ОперативныйЖурнал.ДатаОкончанияСмены КАК ДатаОкончанияСмены,
+	ЗакрытияСмены.Номер КАК НомерСдал,
+	ЗакрытияСмены.Дата КАК ДатаСдал,
+	ЗакрытияСмены.Ответственный КАК ОтветственныйСдал,
+	ЗакрытияСмены.Ссылка КАК СсылкаСдал,
+	ОперативныйЖурнал.Подразделение.Организация КАК ТЭЦ,
+	ОперативныйЖурнал.ПодписанЭП КАК ПодписанЭППринял,
+	ЗакрытияСмены.ПодписанЭП КАК ПодписанЭПСдал,
+	ОперативныйЖурнал.Чистовик КАК ЧистовикПринял,
+	ЗакрытияСмены.Чистовик КАК ЧистовикСдал
+{ВЫБРАТЬ
+	СсылкаПринял.*,
+	НомерПринял,
+	ДатаПринял,
+	ВидЗаписи.*,
+	Событие.*,
+	ОтветственныйПринял.*,
+	Подразделение.*,
+	Статус.*,
+	Смена.*,
+	Контролер.*,
+	СменаЗакрыта,
+	ДокументЗакрытия.*,
+	Вахта.*,
+	ДатаНачалаСмены,
+	ДатаОкончанияСмены,
+	НомерСдал,
+	ДатаСдал,
+	ОтветственныйСдал.*,
+	СсылкаСдал.*,
+	ТЭЦ.*,
+	ПодписанЭППринял,
+	ПодписанЭПСдал,
+	ЧистовикПринял,
+	ЧистовикСдал}
+ИЗ
+	Документ.ОперативныйЖурнал КАК ОперативныйЖурнал
+		ПОЛНОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			ОперативныйЖурнал.Ссылка КАК Ссылка,
+			ОперативныйЖурнал.Номер КАК Номер,
+			ОперативныйЖурнал.Дата КАК Дата,
+			ОперативныйЖурнал.Проведен КАК Проведен,
+			ОперативныйЖурнал.ВидЗаписи КАК ВидЗаписи,
+			ОперативныйЖурнал.Событие КАК Событие,
+			ОперативныйЖурнал.Ответственный КАК Ответственный,
+			ОперативныйЖурнал.Подразделение КАК Подразделение,
+			ОперативныйЖурнал.Статус КАК Статус,
+			ОперативныйЖурнал.Смена КАК Смена,
+			ОперативныйЖурнал.Контролер КАК Контролер,
+			ОперативныйЖурнал.СменаЗакрыта КАК СменаЗакрыта,
+			ОперативныйЖурнал.ДокументЗакрытия КАК ДокументЗакрытия,
+			ОперативныйЖурнал.Вахта КАК Вахта,
+			ОперативныйЖурнал.ДатаНачалаСмены КАК ДатаНачалаСмены,
+			ОперативныйЖурнал.ДатаОкончанияСмены КАК ДатаОкончанияСмены,
+			ОперативныйЖурнал.ПодписанЭП КАК ПодписанЭП,
+			ОперативныйЖурнал.Чистовик КАК Чистовик
+		ИЗ
+			Документ.ОперативныйЖурнал КАК ОперативныйЖурнал
+		ГДЕ
+			ОперативныйЖурнал.ВидЗаписи = &amp;ВидЗаписи
+			И ОперативныйЖурнал.Событие = &amp;Закрытие
+			И ОперативныйЖурнал.ПометкаУдаления = ЛОЖЬ
+			И ОперативныйЖурнал.Чистовик = ИСТИНА) КАК ЗакрытияСмены
+		ПО ОперативныйЖурнал.Вахта = ЗакрытияСмены.Вахта
+			И ОперативныйЖурнал.Подразделение = ЗакрытияСмены.Подразделение
+			И ОперативныйЖурнал.ДатаНачалаСмены = ЗакрытияСмены.ДатаНачалаСмены
+			И ОперативныйЖурнал.ДатаОкончанияСмены = ЗакрытияСмены.ДатаОкончанияСмены
+ГДЕ
+	ОперативныйЖурнал.ВидЗаписи = &amp;ВидЗаписи
+	И ОперативныйЖурнал.Событие = &amp;Открытие
+	И ОперативныйЖурнал.ПометкаУдаления = ЛОЖЬ
+	И ОперативныйЖурнал.Чистовик = ИСТИНА
+	И ОперативныйЖурнал.ДатаСобытия МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+
+СГРУППИРОВАТЬ ПО
+	ОперативныйЖурнал.Подразделение,
+	ОперативныйЖурнал.Вахта,
+	ОперативныйЖурнал.Ссылка,
+	ОперативныйЖурнал.Номер,
+	ОперативныйЖурнал.Дата,
+	ОперативныйЖурнал.ВидЗаписи,
+	ОперативныйЖурнал.Событие,
+	ОперативныйЖурнал.Ответственный,
+	ОперативныйЖурнал.Статус,
+	ОперативныйЖурнал.Смена,
+	ОперативныйЖурнал.Контролер,
+	ОперативныйЖурнал.СменаЗакрыта,
+	ОперативныйЖурнал.ДокументЗакрытия,
+	ОперативныйЖурнал.ДатаНачалаСмены,
+	ОперативныйЖурнал.ДатаОкончанияСмены,
+	ЗакрытияСмены.Номер,
+	ЗакрытияСмены.Дата,
+	ЗакрытияСмены.Ответственный,
+	ЗакрытияСмены.Ссылка,
+	ОперативныйЖурнал.Подразделение.Организация,
+	ОперативныйЖурнал.ПодписанЭП,
+	ЗакрытияСмены.ПодписанЭП,
+	ЗакрытияСмены.Чистовик,
+	ОперативныйЖурнал.Чистовик
+
+УПОРЯДОЧИТЬ ПО
+	ТЭЦ,
+	Подразделение,
+	ДатаНачалаСмены,
+	ПодписанЭППринял,
+	ПодписанЭПСдал</query>
+	</dataSet>
+	<parameter>
+		<name>ВидЗаписи</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Вид записи</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ВидыЗаписей</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Справочник.ВидыЗаписей.ПередачаСмены</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Закрытие</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Закрытие</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.События</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Справочник.События.СменуСдал</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Открытие</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Открытие</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.События</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Справочник.События.СменуПринял</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<availableAsField>false</availableAsField>
+		<inputParameters>
+			<dcscor:item>
+				<dcscor:parameter>ФормаВыбора</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string"/>
+			</dcscor:item>
+		</inputParameters>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<availableAsField>false</availableAsField>
+		<inputParameters>
+			<dcscor:item>
+				<dcscor:parameter>ФормаВыбора</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string"/>
+			</dcscor:item>
+		</inputParameters>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Вахта</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Смена</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаПринял</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерПринял</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЧистовикПринял</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОтветственныйПринял</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаНачалаСмены</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаОкончанияСмены</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаСдал</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НомерСдал</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЧистовикСдал</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОтветственныйСдал</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Подразделение</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ДатаНачалаСмены</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Античный</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemTable">
+				<dcsset:row>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ТЭЦ</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Подразделение</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item>
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>ДатаНачалаСмены</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+							<dcsset:item>
+								<dcsset:order>
+									<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+								</dcsset:order>
+								<dcsset:selection>
+									<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+								</dcsset:selection>
+							</dcsset:item>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:row>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

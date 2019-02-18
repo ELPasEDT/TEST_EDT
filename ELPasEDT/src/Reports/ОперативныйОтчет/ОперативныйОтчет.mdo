@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a4dc1870-7775-4a00-96fb-0f07cc038f0b">
+  <producedTypes>
+    <objectType typeId="565f2a21-de71-4993-a4b3-c26726cf0898" valueTypeId="4b2fc4e2-e9e4-4bae-a91a-9d30771578dc"/>
+    <managerType typeId="628bf65d-347e-445e-b810-a4c3b8222637" valueTypeId="5d684996-983c-4fb2-934a-a2dd56eedba8"/>
+  </producedTypes>
+  <name>ОперативныйОтчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по количеству введенных записей оперативного журнала</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ОперативныйОтчет.Form.ОперативныйОтчетФорма</defaultForm>
+  <defaultSettingsForm>Report.ОперативныйОтчет.Form.ФормаНастроек</defaultSettingsForm>
+  <attributes uuid="ba9a1331-2c18-456d-b0e1-920ad5e8140a">
+    <name>ВидОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид отчета</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a44d015e-3b61-4b31-9234-4c86b03d84bf">
+    <name>ДатаНач</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата нач</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ДФ=dd.MM.yyyy</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ДФ=dd.MM.yyyy</value>
+    </editFormat>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5a77c079-4957-4c28-9125-6d3bd0177959">
+    <name>ДатаКон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата кон</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ДФ=dd.MM.yyyy</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ДФ=dd.MM.yyyy</value>
+    </editFormat>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="71c17042-4089-4021-8932-1e2c923dabe5">
+    <name>ОперативныйОтчетФорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оперативный отчет форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a2817028-809a-4d9a-951c-c3f2b72478c3">
+    <name>ФормаНастроек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настроек</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="65a7e3dc-3a53-4daa-9bd8-04de389c5881">
+    <name>СКД_ОперативныйЖурнал</name>
+    <synonym>
+      <key>ru</key>
+      <value>СКД оперативный журнал</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="ec6ac091-5e46-4b9d-a040-71503fdb28fc">
+    <name>СКД_ХимРеагенты</name>
+    <synonym>
+      <key>ru</key>
+      <value>СКД химреагенты</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="95e41b80-fcfc-44da-9086-042c00bb89ec">
+    <name>СКД_ПриемСдачаСмены</name>
+    <synonym>
+      <key>ru</key>
+      <value>СКД прием/сдача смены</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="37a085bd-e77f-4efe-83e3-4ccd7067f963">
+    <name>СКД_ПриемСдачаСмены1</name>
+    <synonym>
+      <key>ru</key>
+      <value>СКД прием/сдача смены</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="8e4ec5ca-9629-463e-9d8c-36a08d78493f">
+    <name>СКД_ХимРеагенты1</name>
+    <synonym>
+      <key>ru</key>
+      <value>СКД химреагенты</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

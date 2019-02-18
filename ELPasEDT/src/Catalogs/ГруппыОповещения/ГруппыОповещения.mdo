@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="977f471c-c878-493c-b385-18a5e876989d">
+  <producedTypes>
+    <objectType typeId="1fae1fdd-80f1-4be9-9186-675a93a77663" valueTypeId="10a28b04-137c-403e-a1d6-5ddd77c9e16e"/>
+    <refType typeId="55a69528-2b70-481e-a963-1ac86ca2083d" valueTypeId="174f71e0-77a9-4e81-8262-2399182eab26"/>
+    <selectionType typeId="04b0eec9-e2fb-4a39-a02c-a5277f300694" valueTypeId="615adccc-9c6a-48c6-8e56-7fd02cea8e46"/>
+    <listType typeId="aba59f9e-9fc5-4f10-a1a1-5cf34905d913" valueTypeId="b56afc42-b6f3-4354-9e77-5becbe53d0fd"/>
+    <managerType typeId="6e198d4f-8012-4153-ab62-568ad6357c8a" valueTypeId="0d6dbd86-f7d1-4301-ab09-e09cb2986c2f"/>
+  </producedTypes>
+  <name>ГруппыОповещения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Группы оповещения</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ГруппыОповещения.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ГруппыОповещения.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ГруппыОповещения.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultChoiceForm>Catalog.ГруппыОповещения.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="0987fafe-1862-43f8-bd5e-64a81dc32c97">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="a84c094d-272e-4bda-92ae-6de221974b83">
+    <producedTypes>
+      <objectType typeId="1973d39d-6aeb-4eb4-99f1-99fd6ef8e114" valueTypeId="582d9f32-2123-4373-b102-0e0c01fd45b0"/>
+      <rowType typeId="3812ba90-6408-4548-8b48-d7b83b2b0ffe" valueTypeId="89a0b1ca-342c-4c8d-897d-fab46543d120"/>
+    </producedTypes>
+    <name>Сотрудники</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудники</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="451ee80a-1ef6-4ce4-99cc-92c4ab8b1e08">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.Пользователи</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="f5d896d9-1ec6-4e20-997d-54195584f9bb">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c2b8d43d-aa8b-4299-aee0-a28781e15d93">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2873fd93-9046-401c-8406-04e077f9683d">
+  <name>ПечатьПаспортаОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Печать паспорта оборудования</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

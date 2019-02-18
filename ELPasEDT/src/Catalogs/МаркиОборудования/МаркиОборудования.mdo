@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="890da9b5-d593-4372-8bc5-71ef4423c201">
+  <producedTypes>
+    <objectType typeId="3de975ce-1d95-4f21-8272-e21ae57bcc59" valueTypeId="9fcdd1f4-1d7f-42d1-bc67-e8694fdf4919"/>
+    <refType typeId="ef770245-4915-43b7-a1c8-ec6c4f8f1a1b" valueTypeId="d1babbc3-52a1-49fd-a874-fd6c1d4d6ea5"/>
+    <selectionType typeId="bca29be5-ca2e-456c-874d-6af4b1645149" valueTypeId="f106c920-3a12-46fb-9fd8-aed144aa8248"/>
+    <listType typeId="42dd2d12-569a-465b-bbc6-dbb8b90870e9" valueTypeId="13aa1dd2-b8d0-4d25-a446-9e4059d03a4b"/>
+    <managerType typeId="b016f8e2-1ec9-4eb6-8759-47f02139c139" valueTypeId="b67d395e-6899-43df-8b43-871c3657df65"/>
+  </producedTypes>
+  <name>МаркиОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Марки оборудования</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.МаркиОборудования.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.МаркиОборудования.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.МаркиОборудования.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.МаркиОборудования.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="ff59ffd6-0463-47a5-80c6-a466f7e3549b">
+    <name>ВидОборудования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид оборудования</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВидыОборудования</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9023dfa4-3beb-41bd-902a-7584d238269f">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.СтатусыЗаявокСокращенный</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="78d44171-98bf-4731-8a56-30e3deb17409">
+    <name>СсылкаДляИзменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменяем</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.МаркиОборудования</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="6c2f5bde-9957-4749-a5be-1730ea77738e">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="68d3963b-987a-4198-b9ce-6eb7d7ed59a1">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

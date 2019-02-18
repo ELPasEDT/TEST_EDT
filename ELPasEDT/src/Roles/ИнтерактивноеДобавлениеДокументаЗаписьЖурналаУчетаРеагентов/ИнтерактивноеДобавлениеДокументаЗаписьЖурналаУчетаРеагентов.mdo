@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f9780255-0a7d-4d92-83f5-1df210c446a9">
+  <name>ИнтерактивноеДобавлениеДокументаЗаписьЖурналаУчетаРеагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интерактивное добавление документа &quot;Запись журнала учета реагентов&quot;</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

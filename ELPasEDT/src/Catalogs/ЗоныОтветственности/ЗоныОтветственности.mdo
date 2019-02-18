@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0e35c8bc-f943-4bc1-b074-afe78b474203">
+  <producedTypes>
+    <objectType typeId="991fe249-14ff-49c2-88e5-96eac9d8a966" valueTypeId="ce75944c-bf3b-4675-bd08-3b0d2027345c"/>
+    <refType typeId="6a2cc0e3-6b0e-410f-b7e7-5c99203b25c6" valueTypeId="d3fd5972-633c-4eb4-877c-25353afe18a8"/>
+    <selectionType typeId="eb40c1d1-9bfe-44c5-b05d-d82e602875cd" valueTypeId="ae9f65a7-6427-4aa8-8122-f39569c3a8fa"/>
+    <listType typeId="c0393e6e-211f-4389-954f-dd6c2788dfb7" valueTypeId="a9b4fe3f-c7c4-4166-8640-fa7dfa0d3e34"/>
+    <managerType typeId="3c6d96cf-fbb9-44af-b775-1ce4a24c3fff" valueTypeId="ea77c00c-d3b0-4e07-9819-53b792418bb2"/>
+  </producedTypes>
+  <name>ЗоныОтветственности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Зоны ответственности</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ЗоныОтветственности.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ЗоныОтветственности.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <explanation>
+    <key>ru</key>
+    <value>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</value>
+  </explanation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

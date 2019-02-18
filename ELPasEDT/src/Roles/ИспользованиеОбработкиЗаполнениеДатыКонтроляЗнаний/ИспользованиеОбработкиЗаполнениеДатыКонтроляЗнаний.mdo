@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0478e30a-fa2f-490e-b709-6024b051a4ee">
+  <name>ИспользованиеОбработкиЗаполнениеДатыКонтроляЗнаний</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использование обработки &quot;Заполнение даты контроля знаний&quot;</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

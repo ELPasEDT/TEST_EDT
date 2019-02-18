@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="138318ae-8d4f-4bcb-8c55-83195021ff7d">
+  <producedTypes>
+    <refType typeId="d61e394d-94b3-4912-be4a-2fb5a81395d6" valueTypeId="59be8715-0ce2-4935-aa90-65b1e0f09912"/>
+    <listType typeId="f12364d4-3938-485d-8926-12eb520e684c" valueTypeId="5dd15fe3-bbc1-4f01-a52d-83c9c66fed02"/>
+    <managerType typeId="be766494-712f-4f6d-b646-9203b46a89e4" valueTypeId="945708ad-7ccd-4de0-bda9-049feee1d1c5"/>
+  </producedTypes>
+  <name>УровниРисковОтказаОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Уровни рисков отказа оборудования</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="41fa57d2-59fd-491a-9b7f-df176a7342c2">
+    <name>Зеленый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зеленый</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="1faababf-e380-423a-a07d-4140be6c7144">
+    <name>Желтый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Желтый</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="9ae0c105-4734-4001-97ed-a8be6dcdf924">
+    <name>Красный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Красный</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

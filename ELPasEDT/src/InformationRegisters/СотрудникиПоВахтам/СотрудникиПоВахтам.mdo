@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e9f0fa97-9b77-4a74-9f78-a8fcb97ee652">
+  <producedTypes>
+    <selectionType typeId="b81d5bd8-88cb-4ac8-bfa0-d81aad41a5fe" valueTypeId="c017c50e-bd23-4eae-8162-7c78e4214a43"/>
+    <listType typeId="542a99f8-66c2-4003-acd0-cf87ff757081" valueTypeId="19354eec-92b1-448b-9e14-249db0e03347"/>
+    <managerType typeId="0eaaab8e-3bf3-438e-8df0-fa6e9a9354d9" valueTypeId="722b6afe-cd90-40c4-a1f6-ad540aeaf83d"/>
+    <recordSetType typeId="938a4d48-db4b-4421-95a9-71641655ce8b" valueTypeId="66100456-ca9f-4ca4-a4eb-ce76c13c902b"/>
+    <recordKeyType typeId="45f2956d-00e2-47b2-9d87-c37fb48e1809" valueTypeId="be321809-189d-480a-a8c1-cbb9fef85dbc"/>
+    <recordType typeId="d4c897d2-54dc-4f0a-b0e5-ba54d6ce1a35" valueTypeId="d9a569ac-79a5-4142-bdec-e1e3b6f61c91"/>
+    <recordManagerType typeId="cbc47dcd-4555-4dcc-8add-4944fbf24b7e" valueTypeId="31ff68bf-abd9-4cb4-9148-3f09e25ea782"/>
+  </producedTypes>
+  <name>СотрудникиПоВахтам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сотрудники по вахтам</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <attributes uuid="90d0a437-0ef8-41a8-aa59-000eb544ff52">
+    <name>СтаршийСмены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Старший смены</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="23dff985-e996-410a-96a3-d1aacb987983">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="8f9fac9c-31c9-45dc-87f4-a0bf742d4ca1">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9fecd381-7cab-4b3b-8293-d6da139156b4">
+    <name>Вахта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вахта</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Вахты</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

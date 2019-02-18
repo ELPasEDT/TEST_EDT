@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bfb0bac3-9ddd-47a4-a1ff-713dfebdfd05">
+  <producedTypes>
+    <selectionType typeId="2bb72dbd-09d7-48b2-8581-d9dca21d2222" valueTypeId="9bfbcfaa-73a1-47fc-a5c7-af1a86d049ef"/>
+    <listType typeId="0b4480ac-55f4-42e5-af5c-177e4e5eef5d" valueTypeId="6c1bf2fe-22bb-487d-8b9f-cbed992611d6"/>
+    <managerType typeId="26a3a7da-0db0-4f88-904b-84cc6135c526" valueTypeId="968f78f7-3714-4cad-b36f-6d29a8a69b0a"/>
+    <recordSetType typeId="c0139eca-80c8-45d4-a707-30b9dd453116" valueTypeId="5372c4d0-0cfc-4f85-b9f8-902f505a2bac"/>
+    <recordKeyType typeId="e6c53360-7383-48c6-b851-309b7ffbe82f" valueTypeId="8c914ff9-f988-45f8-960a-2dabe1f6eef5"/>
+    <recordType typeId="81d39e58-7ea1-46a1-a0c7-61d286783a86" valueTypeId="11ccb323-9f08-4262-a871-30ba2b78719f"/>
+    <recordManagerType typeId="8f2f7a84-2ea2-479a-949b-d3fd8eb8643a" valueTypeId="0f3b937c-caf1-42f8-8c0a-736afa784938"/>
+  </producedTypes>
+  <name>НастройкиУчетаРеагентовПоОрганизациям</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки учета реагентов по организациям</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="f00ae381-8aff-46db-82a8-f5b9f5c539dd">
+    <name>КонтрольСмены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контроль смены</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d909a1cb-f96f-48b6-ad0e-62a84fc10290">
+    <name>КонтрольОстатков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контроль остатков</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="7af8d174-dc23-40f0-a0b7-09e813d88d33">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организационная единица</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НазваниеСправочника</dataPath>
+			<field>НазваниеСправочника</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Название справочника</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Статус</dataPath>
+			<field>Статус</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭлементСправочника</dataPath>
+			<field>ЭлементСправочника</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Элемент справочника</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИсходныйЭлемент</dataPath>
+			<field>ИсходныйЭлемент</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исходный элемент</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	НастройкиСогласованияЗаявокДоступныеОрганизации.Организация КАК Организация
+ПОМЕСТИТЬ ВТ_ОрганизацииПользователя
+ИЗ
+	Справочник.НастройкиСогласованияЗаявок.ДоступныеОрганизации КАК НастройкиСогласованияЗаявокДоступныеОрганизации
+ГДЕ
+	ВЫБОР
+			КОГДА НастройкиСогласованияЗаявокДоступныеОрганизации.Ссылка.Пользователь ССЫЛКА Справочник.Пользователи
+				ТОГДА НастройкиСогласованияЗаявокДоступныеОрганизации.Ссылка.Пользователь = &amp;Пользователь
+			ИНАЧЕ НастройкиСогласованияЗаявокДоступныеОрганизации.Ссылка.Пользователь В
+					(ВЫБРАТЬ
+						ГруппыПользователейСостав.Ссылка КАК Ссылка
+					ИЗ
+						Справочник.ГруппыПользователей.Состав КАК ГруппыПользователейСостав
+					ГДЕ
+						ГруппыПользователейСостав.Пользователь = &amp;Пользователь)
+		КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	НастройкиСогласованияЗаявокСтатусыЗаявок.НачальныйСтатус КАК Статус
+ПОМЕСТИТЬ ВТ_СтатусыПользователя
+ИЗ
+	Справочник.НастройкиСогласованияЗаявок.СтатусыЗаявок КАК НастройкиСогласованияЗаявокСтатусыЗаявок
+ГДЕ
+	ВЫБОР
+			КОГДА НастройкиСогласованияЗаявокСтатусыЗаявок.Ссылка.Пользователь ССЫЛКА Справочник.Пользователи
+				ТОГДА НастройкиСогласованияЗаявокСтатусыЗаявок.Ссылка.Пользователь = &amp;Пользователь
+			ИНАЧЕ НастройкиСогласованияЗаявокСтатусыЗаявок.Ссылка.Пользователь В
+					(ВЫБРАТЬ
+						ГруппыПользователейСостав.Ссылка КАК Ссылка
+					ИЗ
+						Справочник.ГруппыПользователей.Состав КАК ГруппыПользователейСостав
+					ГДЕ
+						ГруппыПользователейСостав.Пользователь = &amp;Пользователь)
+		КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	НастройкиСогласованияЗаявокДоступныеКатегорииВидовОборудования.Категория КАК Категория
+ПОМЕСТИТЬ ВТ_КатегорииПользователи
+ИЗ
+	Справочник.НастройкиСогласованияЗаявок.ДоступныеКатегорииВидовОборудования КАК НастройкиСогласованияЗаявокДоступныеКатегорииВидовОборудования
+ГДЕ
+	ВЫБОР
+			КОГДА НастройкиСогласованияЗаявокДоступныеКатегорииВидовОборудования.Ссылка.Пользователь ССЫЛКА Справочник.Пользователи
+				ТОГДА НастройкиСогласованияЗаявокДоступныеКатегорииВидовОборудования.Ссылка.Пользователь = &amp;Пользователь
+			ИНАЧЕ НастройкиСогласованияЗаявокДоступныеКатегорииВидовОборудования.Ссылка.Пользователь В
+					(ВЫБРАТЬ
+						ГруппыПользователейСостав.Ссылка КАК Ссылка
+					ИЗ
+						Справочник.ГруппыПользователей.Состав КАК ГруппыПользователейСостав
+					ГДЕ
+						ГруппыПользователейСостав.Пользователь = &amp;Пользователь)
+		КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	Заявки.Ссылка.Статус КАК Статус,
+	Заявки.Ссылка КАК ЭлементСправочника,
+	ТИПЗНАЧЕНИЯ(Заявки.Ссылка) КАК НазваниеСправочника,
+	ВЫБОР
+		КОГДА Заявки.Ссылка.СсылкаДляИзменения = ЗНАЧЕНИЕ(Справочник.ВидыОборудования.ПустаяСсылка)
+				ИЛИ Заявки.Ссылка.СсылкаДляИзменения = ЗНАЧЕНИЕ(Справочник.ЗаводыИзготовители.ПустаяСсылка)
+				ИЛИ Заявки.Ссылка.СсылкаДляИзменения = ЗНАЧЕНИЕ(Справочник.КлассификаторЕдиницИзмерения.ПустаяСсылка)
+				ИЛИ Заявки.Ссылка.СсылкаДляИзменения = ЗНАЧЕНИЕ(Справочник.МаркиОборудования.ПустаяСсылка)
+				ИЛИ Заявки.Ссылка.СсылкаДляИзменения = ЗНАЧЕНИЕ(ПланВидовХарактеристик.РеквизитыПаспортовОборудования.ПустаяСсылка)
+				ИЛИ Заявки.Ссылка.СсылкаДляИзменения ЕСТЬ NULL
+			ТОГДА "Новый элемент"
+		ИНАЧЕ Заявки.Ссылка.СсылкаДляИзменения
+	КОНЕЦ КАК ИсходныйЭлемент
+ИЗ
+	РегистрСведений.Заявки КАК Заявки
+ГДЕ
+	ВЫБОР
+			КОГДА &amp;ВсеЗаявки
+				ТОГДА ИСТИНА
+			ИНАЧЕ Заявки.Организация В
+					(ВЫБРАТЬ
+						ВТ_ОрганизацииПользователя.Организация КАК Организация
+					ИЗ
+						ВТ_ОрганизацииПользователя КАК ВТ_ОрганизацииПользователя)
+		КОНЕЦ
+	И ВЫБОР
+			КОГДА &amp;ВсеЗаявки
+				ТОГДА ИСТИНА
+			ИНАЧЕ Заявки.Ссылка.Статус В
+					(ВЫБРАТЬ
+						ВТ_СтатусыПользователя.Статус КАК Статус
+					ИЗ
+						ВТ_СтатусыПользователя КАК ВТ_СтатусыПользователя)
+		КОНЕЦ
+	И ВЫБОР
+			КОГДА НЕ &amp;ВсеЗаявки
+					И Заявки.Ссылка ССЫЛКА Справочник.ВидыОборудования
+				ТОГДА ВЫРАЗИТЬ(Заявки.Ссылка КАК Справочник.ВидыОборудования).Категория В
+						(ВЫБРАТЬ
+							ВТ_КатегорииПользователи.Категория КАК Категория
+						ИЗ
+							ВТ_КатегорииПользователи КАК ВТ_КатегорииПользователи)
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ</query>
+	</dataSet>
+	<parameter>
+		<name>Пользователь</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Пользователь</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ГруппыПользователей</v8:Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Пользователи</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ВсеЗаявки</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Все заявки</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>true</useRestriction>
+		<use>Always</use>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЭлементСправочника</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НазваниеСправочника</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">Статус</dcsset:left>
+					<dcsset:comparisonType>InListByHierarchy</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыЗаявок.НаРассмотрении</dcsset:right>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыЗаявок.Согласована</dcsset:right>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыЗаявокСокращенный.НаРассмотрении</dcsset:right>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыЗаявок.СогласованаПлощадкой</dcsset:right>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВсеЗаявки</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Античный</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объекты к согласованию/ утверждению</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Статус</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ИсходныйЭлемент</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

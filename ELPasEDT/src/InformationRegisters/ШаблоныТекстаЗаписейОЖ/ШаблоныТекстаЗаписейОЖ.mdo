@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a41edeb0-e643-43b9-b391-a590741db598">
+  <producedTypes>
+    <selectionType typeId="1a3bf46b-974a-4487-96df-81fa90c78c87" valueTypeId="64dc4043-9e07-40b3-9f60-7c65be6420cd"/>
+    <listType typeId="ce1910a3-f994-49c6-a1d9-315aa03aded2" valueTypeId="8ed16690-7a28-4d99-86c9-cf1ec8b5b6ed"/>
+    <managerType typeId="ffd7344f-822a-47c5-bdcc-15838a39333f" valueTypeId="d529de8c-b6d0-4318-a6a2-dbade808778f"/>
+    <recordSetType typeId="54d56472-e066-439d-83d0-6cc1560337da" valueTypeId="4cba1e3f-1e4b-4908-ab19-82b398a7d155"/>
+    <recordKeyType typeId="d81ed055-effa-4bc0-b50a-6aad0ad3672a" valueTypeId="878b99cc-61b8-4748-a356-6dd7393794ec"/>
+    <recordType typeId="957202f1-669a-41be-98f5-e5993336f404" valueTypeId="ac6cab39-4c24-4f90-b28f-f34cee4457ad"/>
+    <recordManagerType typeId="7c19ac6c-f70d-4909-b441-450384c51f94" valueTypeId="657da9c6-19b7-4847-aa99-cfd428311bc1"/>
+  </producedTypes>
+  <name>ШаблоныТекстаЗаписейОЖ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Шаблоны текста записей ОЖ</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ШаблоныТекстаЗаписейОЖ.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ШаблоныТекстаЗаписейОЖ.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="0d0db8a5-09b7-40a8-bd7d-49db190fa14c">
+    <name>ШаблонТекста</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон текста</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="1efac42d-10b5-404f-8315-224a16171305">
+    <name>ВидЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид записи</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВидыЗаписей</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="11ebcd85-9eee-46d2-9c5e-9e7971cfef21">
+    <name>Событие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Событие</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.События</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="40a93f9d-0b5a-4228-a29b-d8849ceb382d">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="02e586e7-15ba-42e4-9d05-293899a34bd8">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="4ddd918e-c580-46f5-977a-67704c21014a">
+    <name>НомерШаблона</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер шаблона</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="d9d52e09-0237-4253-aadb-d6cbff6b6f5d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e46c722b-9f3c-4f5c-910a-0dc372028303">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

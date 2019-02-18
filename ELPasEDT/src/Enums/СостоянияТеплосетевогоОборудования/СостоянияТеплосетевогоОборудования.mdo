@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="422fcad2-d9e9-41c2-a1e7-94a8e5b0380f">
+  <producedTypes>
+    <refType typeId="f3516b8e-0108-4a23-be19-5d05cfc79d54" valueTypeId="b223ed18-5dc8-4f36-afd3-50d0a3644ea3"/>
+    <listType typeId="d06afcec-d1ff-4afd-9745-0c9fd4ea452d" valueTypeId="83fcfacb-b613-43ee-bc91-99211639ba15"/>
+    <managerType typeId="0ff5e659-1e10-453a-9c29-e486e29a9451" valueTypeId="61669aca-f795-4019-87cf-c9aa3397cf63"/>
+  </producedTypes>
+  <name>СостоянияТеплосетевогоОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния теплосетевого оборудования</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="d59186ce-0240-4da6-a3e4-8e48f2938472">
+    <name>Расход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="e0ed8848-158f-46b4-96b1-72e4a381391d">
+    <name>Резерв</name>
+    <synonym>
+      <key>ru</key>
+      <value>Резерв (РЕЗ)</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="1a5803be-704a-48a7-98c0-ef1e666e0dad">
+    <name>Ремонт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ремонт (РЕМ)</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

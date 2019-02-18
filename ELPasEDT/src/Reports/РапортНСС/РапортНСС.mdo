@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="63994bca-aee1-47f0-929c-99ad390a51a8">
+  <producedTypes>
+    <objectType typeId="f0dbc7ea-27fa-4c5a-be0d-1d5e3267f5d8" valueTypeId="1f25dfbb-fc1a-44ad-b426-b5ff8f6b60c0"/>
+    <managerType typeId="8cb8136a-34ff-4d01-83a0-ab3dfcc9f880" valueTypeId="ea27c5a3-20fc-451a-a04b-b7a6b87fd5ef"/>
+  </producedTypes>
+  <name>РапортНСС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рапорт НСС</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.РапортНСС.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.РапортНСС.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <attributes uuid="9c0d2b4d-ebe1-4f12-adf0-efad30565167">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0c668f0d-4b25-4ffb-afab-c10377bba6b0">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="f43efae1-c711-40ec-bab2-9cdd62c38494">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="bda0a2d3-e212-4336-a67c-405dab3144ba">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="cd0f8407-b4ed-4288-b237-82c6c0dff37e">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

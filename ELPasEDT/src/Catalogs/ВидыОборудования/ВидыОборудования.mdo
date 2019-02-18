@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="875ef0cb-cca4-4b6d-876b-030b7a32089a">
+  <producedTypes>
+    <objectType typeId="763ba564-340c-42eb-8ce7-26be1d4174a2" valueTypeId="6b25dd69-2c13-49ed-b42a-090db71af054"/>
+    <refType typeId="f7f138cd-62e6-4bf5-8fe7-6794fdf1392b" valueTypeId="9fb30caf-0874-428b-b6bc-224a19439b09"/>
+    <selectionType typeId="79046c32-9404-4a61-9f3a-eaaca772aba6" valueTypeId="da938729-0aa6-42cd-b7a0-a96742ce3279"/>
+    <listType typeId="81442a73-29cd-4b3a-9178-af4ba99bfc51" valueTypeId="86f0f42a-76fc-4d62-911a-45892a5b3d66"/>
+    <managerType typeId="c25e321e-98e8-4633-a3b3-bb669a1a55ec" valueTypeId="ddadb36e-a987-4c3d-b7f9-eec0a8a09264"/>
+  </producedTypes>
+  <name>ВидыОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды оборудования</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыОборудования.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВидыОборудования.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ВидыОборудования.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ВидыОборудования.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ВидыОборудования.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="1cdc130a-25ca-4f48-85aa-818881a0cb4b">
+    <name>НаборСвойств</name>
+    <synonym>
+      <key>ru</key>
+      <value>Набор свойств</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.НаборыДополнительныхРеквизитовИСведений</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1a337ef2-9a2e-42fe-85fb-700cbf7167ec">
+    <name>КодSAP</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код SAP</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>30</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8906af1e-a83f-496b-a8c6-dda63b637f9e">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cb164346-8d0d-438e-9e32-41292a910933">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.СтатусыЗаявок</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4739b518-1190-43fe-852a-0e784f867079">
+    <name>СсылкаДляИзменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменяем</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВидыОборудования</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="580af30b-46b2-4f0e-8907-29e281b78d38">
+    <name>Категория</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория</value>
+    </synonym>
+    <comment>Категория вида оборудования</comment>
+    <type>
+      <types>CatalogRef.КатегорииВидовОборудования</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b830d3b7-803a-437f-80dc-24ce4fb070e0">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="c7191699-3e1a-4946-823b-c56b873745ba">
+    <producedTypes>
+      <objectType typeId="362fa5b7-2d47-4ee7-b971-dba2d0499528" valueTypeId="387f0456-55b7-4455-9ed4-7452c909fa24"/>
+      <rowType typeId="2bea4a1f-a732-4d53-aac9-6ceb01ddf56b" valueTypeId="b6278f84-734c-4371-ae68-560ff7967135"/>
+    </producedTypes>
+    <name>РеквизитыДляВидаОборудования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реквизиты для вида оборудования</value>
+    </synonym>
+    <comment></comment>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <comment></comment>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="4ba83121-cebe-40ff-9c11-b0f9e0cf5666">
+      <name>Уникален</name>
+      <synonym>
+        <key>ru</key>
+        <value>Уникальность</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b6ed7e46-1380-45c9-a252-0a47f33049ac">
+      <name>ИмяРеквизита</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя реквизита</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>255</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="86d76bec-3161-4fb9-a447-44567438d122">
+      <name>ПредставлениеРеквизита</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя реквизита</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>255</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d69aedc3-024f-4e64-8d5c-c13fd1320ad1">
+      <name>ЭтоДопРеквизит</name>
+      <synonym>
+        <key>ru</key>
+        <value>Это доп реквизит</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="31426781-7cc2-47fc-86b5-36137003607d">
+      <name>ОбязателенДляЗаполнения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Заполнение</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="2d3f6655-14cd-4f67-b2f7-04c04ce4a9c0">
+      <name>ОтборПриВыборе</name>
+      <synonym>
+        <key>ru</key>
+        <value>Быстрый отбор</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="625141c6-be6f-4fb9-8e03-70ac10e2558e">
+      <name>Свойство</name>
+      <synonym>
+        <key>ru</key>
+        <value>Свойство</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="61c5ff9e-45b8-4c60-93cb-60ff7002ed82">
+      <name>ОтображатьПриСоздании</name>
+      <synonym>
+        <key>ru</key>
+        <value>Отображать при создании</value>
+      </synonym>
+      <comment>Истина - реквизит отображается в форме помощника ввода нового элемента номенклатуры, Ложь - не отображается</comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Отображать реквизит в форме помощника ввода нового элемента номенклатуры</value>
+      </toolTip>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="672b6cb2-d632-4aab-9115-d19dd8a3da6a">
+      <name>ДоступностьУникален</name>
+      <synonym>
+        <key>ru</key>
+        <value>Доступность изменения настройки уникальности</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="528c6330-5079-4e64-8df5-68231c443c2f">
+      <name>ДоступностьОбязателенДляЗаполнения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Доступность изменения настройки обязательности заполнения</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d10859bc-dd64-4a75-a39c-beeb469da830">
+      <name>ДоступностьОтображатьПриСоздании</name>
+      <synonym>
+        <key>ru</key>
+        <value>Доступность изменения настройки отображения при создании</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Отображать реквизит в форме помощника ввода нового элемента номенклатуры</value>
+      </toolTip>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="d95bfc52-4d0c-487f-8ea5-f2be62844dca">
+    <producedTypes>
+      <objectType typeId="0df07ab1-47eb-4bb2-97b6-c47525a34161" valueTypeId="bd583b90-59a1-413b-a6f8-a814f7f8ac0d"/>
+      <rowType typeId="315fc266-002f-497f-aa61-db9ff2232da8" valueTypeId="82c3fdf4-c25d-4e2d-9686-6fe0306aa2ba"/>
+    </producedTypes>
+    <name>РеквизитыПаспорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реквизиты паспорта</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="c7d2208e-774f-4e50-9211-4e697113f1e0">
+      <name>Реквизит</name>
+      <synonym>
+        <key>ru</key>
+        <value>Реквизит</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.ГруппыКолонокПаспорта</types>
+        <types>ChartOfCharacteristicTypesRef.РеквизитыПаспортовОборудования</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b97db70f-a537-4c20-be21-0e9c88e8d2ef">
+      <name>Заголовок</name>
+      <synonym>
+        <key>ru</key>
+        <value>Заголовок</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="57a1b30a-a5d8-4a6c-ac6a-60344f1588d4">
+    <producedTypes>
+      <objectType typeId="b9c344fd-95a3-47c4-a863-15205f89e573" valueTypeId="1d365632-6160-4af4-9645-4e4561ef6347"/>
+      <rowType typeId="62415c91-6ada-4ce7-8e46-36a111ae0871" valueTypeId="f56b2c57-befd-42dc-be0f-84f52912883d"/>
+    </producedTypes>
+    <name>ПоказателиОценкиСостоянияОборудования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатели оценки состояния оборудования</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="a09eff63-a59e-4536-9fb6-03d003842223">
+      <name>Показатель</name>
+      <synonym>
+        <key>ru</key>
+        <value>Показатель</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.ПоказателиОценкиСостоянияОборудования</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="712c3f6d-e042-457b-a54e-8d8c2a2cba87">
+    <producedTypes>
+      <objectType typeId="aed297a1-2a68-49c6-bfdb-be59b764c59a" valueTypeId="78e3306b-6bfd-408d-8a92-f66c1e88a627"/>
+      <rowType typeId="76cef69d-2c4e-4630-bb5b-21c0d434ced1" valueTypeId="547081d3-5f4a-4525-bab9-5f63e4736f8a"/>
+    </producedTypes>
+    <name>КритерииОценкиСостоянияОборудования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Критерии оценки состояния оборудования</value>
+    </synonym>
+    <comment></comment>
+    <attributes uuid="2c96907d-8f26-4d3f-816f-a10b542ecdc8">
+      <name>ОценкаСостояния</name>
+      <synonym>
+        <key>ru</key>
+        <value>Оценка состояния</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>EnumRef.ОценкиСостоянияОборудования</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="0f722bb2-79ef-4283-b2e7-5b45a0139c91">
+      <name>СуммарныйВесовойКэффициент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Суммарный весовой кэффициент</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="96761629-eaf5-478a-baec-28d47fe0146b">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="85c5f38e-deca-401a-b180-2f4775a4f766">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="44a48ea9-ea0d-44de-87b6-42042f8ff472">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fb44f4ad-f153-408e-bacc-d551f2d9ac5e">
+  <producedTypes>
+    <objectType typeId="a8b62a58-1d3f-4071-9ffa-b92d9335c3a4" valueTypeId="33ee6a2c-f23f-4e57-9d46-401a12730c27"/>
+    <refType typeId="d79a2367-af0a-477a-993c-271827b47e0e" valueTypeId="2f987a76-8a5a-41a6-8996-a5020a4fbceb"/>
+    <selectionType typeId="61e7ed69-4a72-4ab5-b7c8-81739019dd88" valueTypeId="f11cc4f8-6114-4fa4-9a8a-7f1629733f5e"/>
+    <listType typeId="3f4b84e5-3274-46ff-811c-27ee9dd8c134" valueTypeId="be6d782f-9c23-49e3-9175-5f5a53536142"/>
+    <managerType typeId="0fd809d8-f98f-4098-a346-dd86a75e90b8" valueTypeId="3e7a7d74-eef6-4ab6-bf27-c5f6093ffe0a"/>
+  </producedTypes>
+  <name>КатегорииВидовОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Категории видов оборудования</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.КатегорииВидовОборудования.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.КатегорииВидовОборудования.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="98032a8d-6caa-4996-911b-8b521f6b9cfc">
+    <name>НаименованиеПолное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полное наименование</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

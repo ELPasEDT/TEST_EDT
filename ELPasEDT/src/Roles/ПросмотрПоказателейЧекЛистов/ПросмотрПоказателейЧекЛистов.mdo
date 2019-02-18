@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="337c5c5e-d1d7-4558-a4f3-e30eb68f8414">
+  <name>ПросмотрПоказателейЧекЛистов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Просмотр показателей чек-листов</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e65b7997-2d82-4332-853c-d828e772d9c3">
+  <producedTypes>
+    <selectionType typeId="6fb958c0-5660-4915-baa2-344d5e24063c" valueTypeId="85fac1d6-5184-44e6-a90e-cb472d7cf999"/>
+    <listType typeId="85541470-f9b0-4129-8f4b-654a4a9db491" valueTypeId="8c7405a7-d849-40ab-b5c9-36b57c0fd4fa"/>
+    <managerType typeId="d131f699-e23b-4c62-b669-2282b4ffdd07" valueTypeId="50a79620-282c-431e-ae81-c84000d61476"/>
+    <recordSetType typeId="f67703b3-0683-4ded-93a3-0d95d6e1468f" valueTypeId="f42e76e8-f368-4608-b470-472cc7f6054e"/>
+    <recordKeyType typeId="ccb28e76-a8ff-47fe-84da-ba7c8c060336" valueTypeId="e2b7e56e-019f-4b67-a336-b60f12897f7b"/>
+    <recordType typeId="163a0c4b-92a2-44ee-ac47-b611a2c74905" valueTypeId="da5962fd-0019-4aa2-9b0e-16db1d2578e1"/>
+    <recordManagerType typeId="eda50d5b-8e3f-4378-a1be-37618ec26e18" valueTypeId="690b2c04-6fc4-494d-ab58-042cf542c300"/>
+  </producedTypes>
+  <name>АктивныеСмены</name>
+  <synonym>
+    <key>ru</key>
+    <value>Активные смены</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="9492da19-a6e4-4f12-8049-d8aff5d81c84">
+    <name>СменаОткрыта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Смена открыта</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="d510ecc0-aa6f-4fa8-aa84-d992f1b12d83">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6db6bae3-f685-4d51-9c8d-bf40704fc134">
+    <name>Смена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Смена</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Смены</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>0:c9f8abc4-2582-4d3f-ba4c-3925bcac17b8</field>
+    </choiceParameterLinks>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="588641ff-4ab2-4b53-97c1-a824fbcfed48">
+    <name>СтаршийСмены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Старший смены</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

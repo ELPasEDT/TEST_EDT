@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2bd2994c-7754-4576-8625-b6cd7246651b">
+  <name>ДоступКПодсистемеОперативныйЖурнал</name>
+  <synonym>
+    <key>ru</key>
+    <value>Доступ к подсистеме &quot;Оперативный журнал&quot;</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

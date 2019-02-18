@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1b3bdd0a-b22f-4263-957e-620ecdc3a149">
+  <producedTypes>
+    <selectionType typeId="963e21f5-fe90-4eb6-aa97-aebf115089be" valueTypeId="d12cd63b-55ef-4b4a-8e0e-5691490901d9"/>
+    <listType typeId="7cc2bdfc-fac5-405c-bb55-bc922f7e206d" valueTypeId="ca9ac357-f95c-407b-9f7a-cfb688107f01"/>
+    <managerType typeId="bdd411ff-9445-4c72-a6a0-689431f34c8b" valueTypeId="acb09897-d306-4bab-86a0-92f358e87f47"/>
+    <recordSetType typeId="34ad436a-d539-43e4-bae1-62c9b4a0379b" valueTypeId="50cf19a2-4fcb-4676-a2b7-af0907cd685c"/>
+    <recordKeyType typeId="b4a08a4f-374c-4ffe-96e6-8e2aa24c312e" valueTypeId="34f501e9-5636-4e81-ac7e-56417191ffc9"/>
+    <recordType typeId="16baab15-51d1-4735-8d4c-131103012556" valueTypeId="9845f071-eb41-4b56-a867-73e6f57d7ce1"/>
+    <recordManagerType typeId="471dbb75-637d-4d0e-bb1d-0668d0ad9503" valueTypeId="2eb9a5b5-728f-474e-a4f2-36bfc733127d"/>
+  </producedTypes>
+  <name>ЗначенияРеквизитовПаспортов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Значения реквизитов паспортов</value>
+  </synonym>
+  <comment>(ИТ-Плюс)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="bc471974-8be0-48cb-992e-0f87a41f33ca">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Characteristic.РеквизитыПаспортовОборудования</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="76d93cbb-8ab3-4066-bbee-610839a8322b">
+    <name>НетДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нет данных</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="fa40c9d6-e2c0-477d-8f13-fe77d22c2d68">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Оборудование</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="71c03e62-c77a-4d5a-94a7-7e5d0760dea5">
+    <name>Реквизит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реквизит</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.РеквизитыПаспортовОборудования</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="103aa760-99ba-4010-acc1-6ad8b37924c0">
+  <producedTypes>
+    <selectionType typeId="78a8cdaf-8815-4e46-a583-66268c1fd2c3" valueTypeId="b0c3ce51-6c58-4f82-94a3-2049491338c0"/>
+    <listType typeId="fa653561-4be2-4358-a69a-79ed0a8fed00" valueTypeId="70f2bb40-a874-4c75-a13c-edc13383e827"/>
+    <managerType typeId="eeac7b59-e588-45f7-8059-9b90909f2ca5" valueTypeId="9b61857b-e79d-4281-b36f-0d0c17ecf98c"/>
+    <recordSetType typeId="36015ed2-dd59-4fc6-9822-f2afad4ba55b" valueTypeId="28a75102-76ac-4b7e-98a2-70eaf17422c3"/>
+    <recordKeyType typeId="ac4ec392-cda9-4e24-8642-fa0f55f9d619" valueTypeId="130a0be1-b3d3-4b27-b61f-7878cf9c9fe6"/>
+    <recordType typeId="7e03d6fd-4061-40a5-ad06-803ee3ba4c7f" valueTypeId="39f07187-8c25-41e5-a1a3-a84f3ddd83bc"/>
+    <recordManagerType typeId="a70a6d12-3ef4-43df-9993-9ba810b0024d" valueTypeId="8cf5754e-f6f0-4e64-a8a9-dc35cbc63dd0"/>
+  </producedTypes>
+  <name>ВидРасходаРеагентовПоУмолчанию</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вид расхода реагентов по умолчанию</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="5dd55494-16bd-46e8-a7f6-e65811b0a6ce">
+    <name>ВидРасходаРеагентов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид расхода реагентов</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВидыРасходаРеагентов</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="1cdb65b8-aa2a-4050-83f2-f8645fcb2dcd">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организационная единицп</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

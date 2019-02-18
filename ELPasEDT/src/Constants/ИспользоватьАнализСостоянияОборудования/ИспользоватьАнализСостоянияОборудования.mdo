@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="64b8a5a5-be4e-41f0-88ec-898227483bcc">
+  <producedTypes>
+    <managerType typeId="37ed8906-47a9-45e9-bea5-13867e4d80f1" valueTypeId="0cd6130f-81cd-4873-ba1d-5aacd0d5f1bc"/>
+    <valueManagerType typeId="a24a15a3-f614-4bf9-b290-af03339f81c3" valueTypeId="d82c1fbf-92d5-4087-9666-0e508c1c0d40"/>
+  </producedTypes>
+  <name>ИспользоватьАнализСостоянияОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использовать подсистему &quot;Анализ состояния оборудования&quot;</value>
+  </synonym>
+  <comment></comment>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <mask></mask>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="38c2b4c2-2f01-4e9c-9e15-8eec30cf109a">
+  <producedTypes>
+    <objectType typeId="18235906-fb24-4b16-9627-0c3c8e1ab853" valueTypeId="b72f55e8-b134-4fb7-a352-4d882a459507"/>
+    <managerType typeId="f6e3dc5d-7c6e-4941-beff-930f5dc6c902" valueTypeId="6fa82b0b-c960-4903-bc22-8c89a8c70793"/>
+  </producedTypes>
+  <name>ЗагрузкаВидовЗаписейИСобытий_xls</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка видов записей и событий из xls</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗагрузкаВидовЗаписейИСобытий_xls.Form.Форма</defaultForm>
+  <attributes uuid="0a310383-b1fa-4268-aa86-36a2bfd5e4d0">
+    <name>Файл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Файл</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f7b46d5e-e6bc-4425-940a-bf207adeb65e">
+    <name>Фильтр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фильтр</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3efdf5d7-bbe9-4f6b-95ad-2bd48c03e167">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организационная единица</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <forms uuid="d0e0848b-2bfe-453a-8a86-cc84604662a6">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

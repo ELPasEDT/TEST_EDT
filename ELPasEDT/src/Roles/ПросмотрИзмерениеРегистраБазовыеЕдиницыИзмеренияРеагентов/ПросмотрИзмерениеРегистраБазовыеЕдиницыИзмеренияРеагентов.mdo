@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="62e037c5-90c3-43c3-bc4f-ecf277d733b2">
+  <name>ПросмотрИзмерениеРегистраБазовыеЕдиницыИзмеренияРеагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Просмотр и измерение регистра &quot;Базовые единицы измерения реагентов&quot;</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

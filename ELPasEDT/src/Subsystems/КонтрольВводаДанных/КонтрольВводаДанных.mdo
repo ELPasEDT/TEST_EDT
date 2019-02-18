@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="690a951a-f3a3-49c6-a579-0ddad283f1f0">
+  <name>КонтрольВводаДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контроль ввода данных</value>
+  </synonym>
+  <comment></comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>CommonModule.КонтрольВводаДанных</content>
+  <content>CommonModule.КонтрольВводаДанныхКлиент</content>
+  <content>Constant.ВключитьКонтрольВводаДанныхПоПаспортам</content>
+  <content>InformationRegister.КонтрольВводаДанных</content>
+  <content>Report.ЗаполнениеДанныхПоОборудованию</content>
+  <content>InformationRegister.ПланВводаДанных</content>
+  <content>Report.ПланФактВводаДанныхПоОборудованию</content>
+</mdclass:Subsystem>

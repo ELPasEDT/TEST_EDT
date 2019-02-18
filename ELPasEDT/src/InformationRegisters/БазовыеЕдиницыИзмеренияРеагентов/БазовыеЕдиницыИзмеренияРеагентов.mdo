@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="69766ee3-79eb-4458-9163-d15376675df4">
+  <producedTypes>
+    <selectionType typeId="d2b6cc6a-866b-4c81-93d0-98a2c91b594d" valueTypeId="fe8f5afe-8e84-415e-9c57-d7c98a035fca"/>
+    <listType typeId="00b91851-f8eb-4df0-a673-2da46470375a" valueTypeId="293ee872-f57a-48f1-8a87-b940f97d25c3"/>
+    <managerType typeId="ecb433f7-2546-415d-b8cf-d676bf7d9386" valueTypeId="ee5e1f36-befc-466c-b71c-cbce6863c5a3"/>
+    <recordSetType typeId="fb126d2c-52af-462a-bb72-a5bfed00d04f" valueTypeId="4f0e8388-75f4-4b45-b666-c748c05ce780"/>
+    <recordKeyType typeId="474c0fef-ae48-4aca-aa3a-1e34ba851cae" valueTypeId="5226d3a2-7af6-4204-b42a-86a6d9ac8f90"/>
+    <recordType typeId="9d2fc6dc-5a9b-455d-9eea-d8caf2046790" valueTypeId="5c08ec14-62f5-41fe-8894-dacfb4f9d5e5"/>
+    <recordManagerType typeId="185abd01-fe90-4497-86dc-05e3b6447e19" valueTypeId="947563b8-db11-4e9d-be46-e656092e89f2"/>
+  </producedTypes>
+  <name>БазовыеЕдиницыИзмеренияРеагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Базовые единицы измерения реагентов</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.БазовыеЕдиницыИзмеренияРеагентов.Form.ФормаЗаписи</defaultRecordForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="be06ffa9-9fb5-4b6f-9f06-b3b11f2b8220">
+    <name>ЕдиницаИзмеренияКоличества</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения количества</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.КлассификаторЕдиницИзмерения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="551fdfb1-58f8-4c7a-9b56-9927a89982ba">
+    <name>ЕдиницаИзмеренияКонцентрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения концентрации</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.КлассификаторЕдиницИзмерения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="36fddb95-9cfb-461c-9952-4a956774805a">
+    <name>ЕдиницаИзмеренияПлотности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения плотности</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.КлассификаторЕдиницИзмерения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="61ef7923-a05b-41c0-9e48-6a043412075c">
+    <name>БазоваяЕдиницаИзмеренияОбъема</name>
+    <synonym>
+      <key>ru</key>
+      <value>Базовая единица измерения объема</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.КлассификаторЕдиницИзмерения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="5252b1e5-3932-4de7-b161-bd634566af54">
+    <name>ВидРеагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид реагента</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.ВидыРеагентов</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="6e90c72e-8d99-421c-8339-1ee592e50e27">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="bcfab228-0590-4738-98dd-9b0187a7cb80">
+    <name>ОткрытьСписокНастроек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Базовые единицы измерения реагентов</value>
+    </synonym>
+    <comment></comment>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
+</mdclass:InformationRegister>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCharacteristicTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0aa7c924-9c41-4125-b988-9375ca114d90">
+  <producedTypes>
+    <objectType typeId="222a5189-28e6-44d7-ab0e-4f8996f6a21d" valueTypeId="403a0020-aca7-4edf-9f9d-23a8916dfe7c"/>
+    <refType typeId="ac97148d-a33b-4ac7-816c-b2a97d002481" valueTypeId="6fdfff2a-3e5a-40e2-854b-9991ce9d6aed"/>
+    <selectionType typeId="9ba3bc65-7e77-4158-bd37-ff1d5a87bb04" valueTypeId="fcf9d37c-2e16-4777-bc19-e3d65afab037"/>
+    <listType typeId="45a8b06a-23cd-4699-a830-c574c0750cdc" valueTypeId="bb564053-0888-46c6-84ac-c7e84b698926"/>
+    <managerType typeId="abcdc563-8995-47f6-ae92-9dd9ec748cb8" valueTypeId="addafa95-7f4a-428b-9679-463ff68f257a"/>
+    <containerType typeId="aa8ed49a-a29f-4b04-be33-21f2f46e2e93" valueTypeId="155efc2c-ad38-4e0b-ac90-233cec0d8c7d"/>
+  </producedTypes>
+  <name>РеквизитыПаспортовОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Реквизиты паспортов оборудования</value>
+  </synonym>
+  <comment>(ИТ-Плюс)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCharacteristicTypes.РеквизитыПаспортовОборудования.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfCharacteristicTypes.РеквизитыПаспортовОборудования.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Реквизит паспорта</value>
+  </objectPresentation>
+  <characteristicExtValues>Catalog.ЗначенияРеквизитовПаспортов</characteristicExtValues>
+  <type>
+    <types>CatalogRef.ЗаводыИзготовители</types>
+    <types>String</types>
+    <types>Date</types>
+    <types>Number</types>
+    <types>CatalogRef.ЗначенияРеквизитовПаспортов</types>
+    <numberQualifiers>
+      <precision>15</precision>
+      <scale>2</scale>
+    </numberQualifiers>
+    <stringQualifiers>
+      <length>100</length>
+    </stringQualifiers>
+    <dateQualifiers>
+      <dateFractions>Date</dateFractions>
+    </dateQualifiers>
+  </type>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>150</descriptionLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>ChartOfCharacteristicTypes.РеквизитыПаспортовОборудования.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>ChartOfCharacteristicTypes.РеквизитыПаспортовОборудования.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>ChartOfCharacteristicTypes.РеквизитыПаспортовОборудования.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="00ba34c1-86ac-42db-bad4-ac62a67011d7">
+    <name>Периодический</name>
+    <synonym>
+      <key>ru</key>
+      <value>Периодический</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7fc4df33-8ab3-45e0-b4f2-7eef9d49d769">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.КлассификаторЕдиницИзмерения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="bf3cbb4d-c005-4456-acaf-de745cad748d">
+    <name>Заявка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7e463377-0948-415a-8ee9-3eb14263123e">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.СтатусыЗаявок</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="39cf7079-b788-4c0e-95c5-a66272313341">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="cf44d0aa-6419-4e56-afc8-4938c15c694d">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="75665eae-10e1-4427-bb47-e5801c2c7791">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a76e9467-7119-4f13-8a27-63943fb790b6">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ChartOfCharacteristicTypes>

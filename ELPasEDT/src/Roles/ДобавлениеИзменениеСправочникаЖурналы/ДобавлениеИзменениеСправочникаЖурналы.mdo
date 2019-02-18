@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="19433c34-4585-4fc6-ad8d-4093fba86f3e">
+  <name>ДобавлениеИзменениеСправочникаЖурналы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Добавление и изменение элементов справочника &quot;Журналы&quot;</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

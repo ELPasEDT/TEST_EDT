@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="78d6d5a2-0293-4e73-a0ce-4534ae31c250">
+  <producedTypes>
+    <objectType typeId="4f9e7e3c-2961-4904-a7b1-a0a29211cf97" valueTypeId="5804557a-c7b0-4bc7-9f02-1faa47430621"/>
+    <managerType typeId="9a1d1724-8889-4093-b593-87f8a5f09b83" valueTypeId="b76a97ca-a141-4d7a-a9a2-85e8233a540c"/>
+  </producedTypes>
+  <name>АнализСостоянияОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ состояния оборудования</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.АнализСостоянияОборудования.Form.Форма</defaultForm>
+  <forms uuid="9a5989df-5c04-4c8d-badb-634d0923889d">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

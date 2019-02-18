@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6d61bfab-da8f-45b8-9abd-c5eaebe729ad">
+  <name>ПросмотрОтчетаПоРасходуРеагенитовИФильтрующихМатериалов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Просмотр отчета по расходу реагенитов и фильтрующих материалов</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

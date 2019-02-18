@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a27fa267-32e5-44e1-9c89-9fd24ad9275b">
+  <producedTypes>
+    <objectType typeId="dc5c935a-5073-4f90-bfdd-39f41a90892a" valueTypeId="bca97951-f041-4ef6-918a-47c42b1ed3ca"/>
+    <managerType typeId="98bf67c9-74c8-452a-9ae6-f1c93681f987" valueTypeId="d5818016-cfa7-41df-957b-70bc389821d3"/>
+  </producedTypes>
+  <name>ОборудованиеНаКонтроле</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оборудование на контроле</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОборудованиеНаКонтроле.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="cc3d735a-03ff-4d85-8c6d-6e8dbb80a602">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

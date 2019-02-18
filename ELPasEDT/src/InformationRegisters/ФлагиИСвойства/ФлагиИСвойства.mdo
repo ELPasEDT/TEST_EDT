@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6ecec678-c118-47e0-afb2-e8781647ebac">
+  <producedTypes>
+    <selectionType typeId="7d938058-a2cc-4e49-b3e7-687339839a9c" valueTypeId="0753e000-aecd-4f55-b6a4-019752956123"/>
+    <listType typeId="2877df74-a67c-48ae-a515-030400eca5dc" valueTypeId="089f727d-ce77-436b-a33e-c0fa54b84d5a"/>
+    <managerType typeId="aaf0a94b-3f0d-4421-87d5-2bf1174a4dfc" valueTypeId="0380170c-dc22-403a-be43-7a7d6150bf6b"/>
+    <recordSetType typeId="63d50573-9b8d-4ba9-903f-c7e97a3f910f" valueTypeId="3b4d0996-715f-49f8-bc24-376588996cd7"/>
+    <recordKeyType typeId="0399e48f-a6c2-4947-9a15-a2744d7dc4a1" valueTypeId="aa2e93d3-6429-4908-85f2-19f6d9179f12"/>
+    <recordType typeId="66e1c887-0569-43ad-8159-ba306f406239" valueTypeId="80794c07-217d-440a-8f9d-ebcdf2dea732"/>
+    <recordManagerType typeId="22e6410d-5273-48ec-8a73-9c90016d601d" valueTypeId="307e001c-8994-4938-904b-a64b6fa90e0d"/>
+  </producedTypes>
+  <name>ФлагиИСвойства</name>
+  <synonym>
+    <key>ru</key>
+    <value>Флаги и свойства</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="aeed709f-59b7-4b8b-9555-4ed3dfb56c7b">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+      <types>String</types>
+      <types>Date</types>
+      <types>Number</types>
+      <types>DocumentRef</types>
+      <types>EnumRef</types>
+      <types>ChartOfCharacteristicTypesRef</types>
+      <types>CatalogRef</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="b1128921-b559-4305-9f47-64e9643bf9f7">
+    <name>ИмяСвойства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя свойства</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

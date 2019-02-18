@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9105c9d0-c012-4521-9ff5-260c5836207f">
+  <producedTypes>
+    <refType typeId="2f0fb3c8-04c2-4fcd-8d8f-c09534721530" valueTypeId="baedac7f-3342-43ff-bd01-d7d10c9ee1b8"/>
+    <listType typeId="c3f42721-52b9-461f-90c3-820df794b0cc" valueTypeId="c3d0af0f-d83c-4187-a788-0a6de9ab5c72"/>
+    <managerType typeId="72c30d2a-90ea-4850-8daa-8f86d8766dd7" valueTypeId="b14027f0-916e-40ab-8091-e8f4b5e7ad21"/>
+  </producedTypes>
+  <name>ТипыДатчиков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы датчиков</value>
+  </synonym>
+  <comment></comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <listPresentation>
+    <key>ru</key>
+    <value>Тип датчика</value>
+  </listPresentation>
+  <enumValues uuid="f6f633e3-ffa3-43e4-b475-92b804d15e2e">
+    <name>ДатчикУровня</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уровень</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="fd4d3309-c7df-4ddc-b03d-77923f7848f8">
+    <name>ДатчикКонцентрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Концентрация</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

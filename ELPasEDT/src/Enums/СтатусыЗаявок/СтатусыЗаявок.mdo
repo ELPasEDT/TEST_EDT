@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="13908498-d4a6-4267-8886-8a4cfe11bd35">
+  <producedTypes>
+    <refType typeId="6626433d-7db1-4820-a92c-8227aceecaad" valueTypeId="5cbdc0bd-ef89-4cff-a254-5878f9cbd118"/>
+    <listType typeId="587daf79-3e75-4ce3-8bef-9e12c207df50" valueTypeId="f35119af-f1ba-4a23-800f-95e83214d568"/>
+    <managerType typeId="1f07209d-0090-4f43-90af-0ae367b1fe03" valueTypeId="c58b6f62-a865-4ba2-a24a-43527bc94861"/>
+  </producedTypes>
+  <name>СтатусыЗаявок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы заявок</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="ce7a5ea7-bd5d-445f-b7ce-a5bd16bba82b">
+    <name>НаРассмотрении</name>
+    <synonym>
+      <key>ru</key>
+      <value>На рассмотрении</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="a6984638-09fc-4b6e-887f-8c613c43f8b0">
+    <name>СогласованаПлощадкой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Согласовано на площадке</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="bdff7c10-ae1f-4017-a27f-466f543f747e">
+    <name>Согласована</name>
+    <synonym>
+      <key>ru</key>
+      <value>Согласовано на филиале</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="b3981c44-20f4-45e9-9047-b084352cf0e2">
+    <name>Утверждена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Утверждена администратором НСИ</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="3110ed17-200b-4ed6-90db-163b6ba8ded8">
+    <name>Отклонена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отклонена</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

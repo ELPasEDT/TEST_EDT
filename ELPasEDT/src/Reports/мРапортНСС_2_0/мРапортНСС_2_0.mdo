@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1e9aa78e-cff0-43ed-b2eb-47350c210b6f">
+  <producedTypes>
+    <objectType typeId="375263d2-f131-4ab8-857c-84231812d7b5" valueTypeId="a684738f-ea21-40ac-aff5-ed3505102c1b"/>
+    <managerType typeId="7554b7cb-6fba-44d7-85ff-c7f30ae1b14a" valueTypeId="7218274f-e2c7-4e30-8948-13f469851345"/>
+  </producedTypes>
+  <name>мРапортНСС_2_0</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рапорт НСС</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.мРапортНСС_2_0.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.мРапортНСС_2_0.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <attributes uuid="6eeb8381-f8d0-4eb7-b7c7-d69470b9c3bd">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e7f4c7d7-239e-4002-9e2b-6e51c6924810">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="5325b5fc-872b-4030-91c9-4a77adf4beab">
+    <producedTypes>
+      <objectType typeId="5613298b-7215-4c2b-8fd7-00d5dc6b5611" valueTypeId="e7fd17fa-b730-4d79-a1d7-1e9676a5b5ff"/>
+      <rowType typeId="9e295f8c-52a3-4dc0-ac40-ba22a832316f" valueTypeId="6a2e3195-d6d1-4735-9531-b984199cc90c"/>
+    </producedTypes>
+    <name>ДанныеРегистраНастроекКотлы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные регистра настроек котлы</value>
+    </synonym>
+    <comment></comment>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <comment></comment>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="6ac74410-14bd-447d-a2ad-0139287f5faf">
+      <name>ЗначениеПоказателя</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение показателя</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>20</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="ac64baa7-41c3-4c2d-a485-596dad0d7ccf">
+      <name>Синоним</name>
+      <synonym>
+        <key>ru</key>
+        <value>Синоним</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>20</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="299e7f0f-364e-4df4-a127-17c06eb54dd0">
+    <producedTypes>
+      <objectType typeId="fc466cec-976c-4257-8137-7102dca45e3c" valueTypeId="b8aba22d-47b1-478f-a1bc-70631c788b59"/>
+      <rowType typeId="40824f3a-4dd0-46cf-89f7-b5785b2ad261" valueTypeId="720a11bd-47f2-4064-9960-5573a84e8bcb"/>
+    </producedTypes>
+    <name>ДанныеРегистраНастроекТурбины</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные регистра настроек турбины</value>
+    </synonym>
+    <comment></comment>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <comment></comment>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="24fe7a4a-d6f4-4e4c-b2fe-a6ad70bd7cd1">
+      <name>ЗначениеПоказателя</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение показателя</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>20</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="143a486d-a413-4c1b-a112-11df023e7a5d">
+      <name>Синоним</name>
+      <synonym>
+        <key>ru</key>
+        <value>Синоним</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>20</length>
+        </stringQualifiers>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
+  <forms uuid="f9715e94-bb8c-44d1-9c08-e94e96a1f34f">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="b5406443-9411-43d9-82c0-f9575167504f">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="c866baaa-cc5d-43fd-a81b-db81d0806cec">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

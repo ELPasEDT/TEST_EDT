@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a0306f6d-b44c-4d9e-b9ed-f982631506da">
+  <producedTypes>
+    <objectType typeId="80bdf6cd-48ba-4afb-adb1-10b80c26cfd0" valueTypeId="bbfbe8fe-3d2b-4acf-92d5-edf9333b79ba"/>
+    <managerType typeId="87c4851b-5e8b-4e16-9ed7-15759ab1f275" valueTypeId="579f1585-1c88-4c98-8f35-1b14e62098cd"/>
+  </producedTypes>
+  <name>КонсольЗапросов_82</name>
+  <synonym>
+    <key>ru</key>
+    <value>Консоль запросов 8.2</value>
+  </synonym>
+  <comment>Консоль повторяет интерфейс и основные возможности Консоли запросов 8.1, а также позволяет получать результаты пакетных запросов и временных таблиц</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.КонсольЗапросов_82.Form.Форма</defaultForm>
+  <auxiliaryForm>DataProcessor.КонсольЗапросов_82.Form.Форма</auxiliaryForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="35f1b7d6-2f40-4dc9-928f-ddb1b9f9c555">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b4c80df1-bee3-445c-af15-5467495a294e">
+    <name>ФормаВложеннойТаблицы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма вложенной таблицы</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8ca34be6-caea-4aad-8dc6-ab195924973c">
+    <name>ФормаОсобогоТипа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма особого типа</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="2bdec45c-bd9f-4a3a-a013-7abe72e89926">
+    <name>МакетРезультата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет результата</value>
+    </synonym>
+    <comment></comment>
+  </templates>
+</mdclass:DataProcessor>

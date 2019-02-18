@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cfdc0a06-3298-4f2e-a074-7a0e25aa3911">
+  <producedTypes>
+    <refType typeId="60544790-c089-4ae3-983e-f9db7f41fac4" valueTypeId="e881619f-b2ff-428c-9ff5-21129d087a59"/>
+    <listType typeId="54b52fbb-1e0c-4e44-8680-08a78ede5eb7" valueTypeId="741db148-3267-46ca-8966-505e21bcc9f9"/>
+    <managerType typeId="597fddcc-b34d-48ec-88ac-8319776b0170" valueTypeId="aca879b1-2aee-4a63-a238-c4721558f9bc"/>
+  </producedTypes>
+  <name>ТипыЗаявок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы заявок</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="3dd87ee3-95a6-4e7f-8213-c9e7b4b5a9b2">
+    <name>НаДобавление</name>
+    <synonym>
+      <key>ru</key>
+      <value>На добавление</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="26f58faf-3fe8-4787-a769-6789839c1199">
+    <name>НаИзменение</name>
+    <synonym>
+      <key>ru</key>
+      <value>На изменение</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

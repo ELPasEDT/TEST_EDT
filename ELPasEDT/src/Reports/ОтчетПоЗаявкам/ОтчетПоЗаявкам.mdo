@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6f6a610b-c55c-407c-a734-0b78ac2ea88a">
+  <producedTypes>
+    <objectType typeId="0aa90a6a-ac1f-4029-aebb-e20723ef5fd1" valueTypeId="1638ef10-452c-4283-aff0-c4ac57d4b7c3"/>
+    <managerType typeId="4d26f08d-9982-477a-bdc4-259efc031f1e" valueTypeId="9ae4592f-e44b-4406-bda4-e94870dad1a9"/>
+  </producedTypes>
+  <name>ОтчетПоЗаявкам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по заявкам</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ОтчетПоЗаявкам.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ОтчетПоЗаявкам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <attributes uuid="6a90195a-8d9c-48c8-92ac-caa59d0ae14d">
+    <name>ПоказатьВсеЗаявки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показать все заявки</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="74c0aa62-1b6c-40a1-8999-f6d5e31a3024">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="33247c9f-de48-4085-a47a-8d7c09391746">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9bb9514e-068a-4641-9130-4eb7bda2217f">
+  <producedTypes>
+    <objectType typeId="2d8007e8-c6ba-434e-a84a-0f4fcfea2933" valueTypeId="b5eaf644-a072-4e3a-b197-50ce2d391c03"/>
+    <refType typeId="b93afa00-248f-4d3e-bea2-25b610124174" valueTypeId="001e3011-b028-474c-8be1-218d01df3885"/>
+    <selectionType typeId="f67160e0-ddda-44c8-ab6b-f3dd4e229f65" valueTypeId="8b9adc30-2680-4f0c-93f1-aa1e4ff767f6"/>
+    <listType typeId="5a3f3f5c-e64a-491b-a4a4-7b37a20b23c0" valueTypeId="11e6a104-9274-43ba-b752-6a16ccf679f4"/>
+    <managerType typeId="64397505-5c13-4fd1-a0e3-738da2d6a13b" valueTypeId="6f28bd42-9442-44df-b528-2a9481a88b6e"/>
+  </producedTypes>
+  <name>ВидыЗаписей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды записей</value>
+  </synonym>
+  <comment>(ПОГ и ЭЖ)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыЗаписей.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВидыЗаписей.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <comment></comment>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <comment></comment>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <comment></comment>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Вид записи</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="ff4cbbc5-0856-4886-bb52-77413f2d92c0">
+      <name>Авария</name>
+      <description>Авария</description>
+      <code xsi:type="core:StringValue">
+        <value>000000016</value>
+      </code>
+    </items>
+    <items id="be187723-6cfa-4cc6-bea7-72a469a728b7">
+      <name>Включение</name>
+      <description>Включение</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="c734b2e3-b0d2-4a06-9955-6c3da82c77ed">
+      <name>ДополнениеВСоставСмены</name>
+      <description>Дополнение в состав смены</description>
+      <code xsi:type="core:StringValue">
+        <value>000000014</value>
+      </code>
+    </items>
+    <items id="064f297e-f5af-4905-a0e4-bbc31fa4677b">
+      <name>ИзменениеРежимаРаботыОборудования</name>
+      <description>Изменение режима работы оборудования</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+    <items id="12f700bf-40b7-4406-9d65-502421fcb024">
+      <name>КонтрольВнешний</name>
+      <description>Контроль внешний</description>
+      <code xsi:type="core:StringValue">
+        <value>000000006</value>
+      </code>
+    </items>
+    <items id="4ef176eb-2f5c-41aa-b1ec-372717c51647">
+      <name>КонтрольЖурнала</name>
+      <description>Контроль журнала</description>
+      <code xsi:type="core:StringValue">
+        <value>000000007</value>
+      </code>
+    </items>
+    <items id="888cace2-4e59-491e-8424-04f0caae38d8">
+      <name>КонтрольОборудования</name>
+      <description>Контроль оборудования</description>
+      <code xsi:type="core:StringValue">
+        <value>000000008</value>
+      </code>
+    </items>
+    <items id="bd652ba9-2649-4ac4-b88f-cf3fcaf6cb43">
+      <name>Неисправность</name>
+      <description>Неисправность</description>
+      <code xsi:type="core:StringValue">
+        <value>000000009</value>
+      </code>
+    </items>
+    <items id="169d75ef-a190-46ad-bac3-a5f720cab8fe">
+      <name>Обращение</name>
+      <description>Обращение</description>
+      <code xsi:type="core:StringValue">
+        <value>000000017</value>
+      </code>
+    </items>
+    <items id="d5e32a08-1983-4478-b4a5-b0bcf3c803d1">
+      <name>ОперативныеПереговоры</name>
+      <description>Оперативные переговоры</description>
+      <code xsi:type="core:StringValue">
+        <value>000000010</value>
+      </code>
+    </items>
+    <items id="8064269e-8c47-45a5-8d0e-029d0ceac0a8">
+      <name>ОтклонениеПараметров</name>
+      <description>Отклонение параметров</description>
+      <code xsi:type="core:StringValue">
+        <value>000000011</value>
+      </code>
+    </items>
+    <items id="615df5e7-1bb2-4322-8102-ae434b2e6382">
+      <name>Отключение</name>
+      <description>Отключение</description>
+      <code xsi:type="core:StringValue">
+        <value>000000012</value>
+      </code>
+    </items>
+    <items id="a35febbc-2c18-4d32-933d-c9eaa551b2f1">
+      <name>ПередачаСмены</name>
+      <description>Передача смены</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="1067ae4f-3093-484a-9674-f19b2e08d403">
+      <name>Прочее</name>
+      <description>Прочее</description>
+      <code xsi:type="core:StringValue">
+        <value>000000018</value>
+      </code>
+    </items>
+    <items id="3fb6d989-96c9-47bb-ace5-d644abdfc741">
+      <name>РаспоряжениеНСС</name>
+      <description>Распоряжение НСС</description>
+      <code xsi:type="core:StringValue">
+        <value>000000015</value>
+      </code>
+    </items>
+    <items id="5dc25768-8c65-447f-9aa2-70690694cfa1">
+      <name>РемонтОборудования</name>
+      <description>Ремонт оборудования</description>
+      <code xsi:type="core:StringValue">
+        <value>000000013</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ВидыЗаписей.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ВидыЗаписей.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ВидыЗаписей.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="badfc1d2-7a48-4d39-bc91-168e57ad4290">
+    <name>ЗаполнятьТЧСотрудников</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заполнять таб. часть &quot;Сотрудники&quot; (удалить)</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="19ba3895-a0aa-4e43-94cc-93fefcd82329">
+    <name>ЗаполнятьТЧОборудования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заполнять таб. часть &quot;Оборудование&quot; (удалить)</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e420f10c-3b4a-4fb7-b2bb-6058166e18b8">
+    <name>УдалитьСобытиеПоУмолчанию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить событие по умолчанию (удалить)</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.События</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Отбор.Организация</name>
+      <field>Catalog.ВидыЗаписей.Attribute.УдалитьОрганизация</field>
+    </choiceParameterLinks>
+    <choiceParameters>
+      <name>Отбор.ПометкаУдаления</name>
+      <value xsi:type="core:BooleanValue"/>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f6ab8ef8-1361-4d92-9fcb-2f417c1b6e47">
+    <name>ПодписыватьЭЦП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подписывать цифровой подписью</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2c6e3984-1f18-4f3a-a0a0-6a4285e1dd63">
+    <name>УдалитьОрганизация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организационная единица (удалить)</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="32ca7e05-62d0-4cef-acaa-f8a4ea95f529">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="22cf7c6e-8004-4a12-b8eb-1bfb9091a9e5">
+    <producedTypes>
+      <objectType typeId="06079125-c662-4c92-86f0-02fca588df89" valueTypeId="de241c2e-4b64-4061-93af-f6701235ab1f"/>
+      <rowType typeId="40120801-1a94-400f-953d-66c41484ae94" valueTypeId="49034f73-6c16-443b-a50a-893a51fd4170"/>
+    </producedTypes>
+    <name>УдалитьСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>События (удалить)</value>
+    </synonym>
+    <comment></comment>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <comment></comment>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="4871893e-b8c8-4206-8be4-8eea14d6c572">
+      <name>Событие</name>
+      <synonym>
+        <key>ru</key>
+        <value>Событие</value>
+      </synonym>
+      <comment></comment>
+      <type>
+        <types>CatalogRef.События</types>
+      </type>
+      <mask></mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Организация</name>
+        <field>Catalog.ВидыЗаписей.Attribute.УдалитьОрганизация</field>
+      </choiceParameterLinks>
+      <choiceParameters>
+        <name>Отбор.ПометкаУдаления</name>
+        <value xsi:type="core:BooleanValue"/>
+      </choiceParameters>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="fd5d3433-a1ed-4252-aaf8-7ea246419af8">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b0275780-a61e-4e45-9a91-4a2917709ced">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a1d1f46f-5036-481f-a420-930466656e0b">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2dca6ce3-612e-4d2b-9592-6d633f4ceaa1">
+    <name>ФормаВыбораВидыЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбора вида записи</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

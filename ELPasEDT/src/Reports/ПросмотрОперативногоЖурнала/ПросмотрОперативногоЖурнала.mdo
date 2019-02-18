@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b0b47056-9a21-4173-9db2-ce87f185c86d">
+  <producedTypes>
+    <objectType typeId="9c5672cb-e345-4397-a244-4cc9895dfb92" valueTypeId="dcd13f1f-6574-4ca0-8c91-84703995fe0a"/>
+    <managerType typeId="1ed010af-942a-4565-acdd-e1dd93710079" valueTypeId="5cce31fb-6b8e-453c-917a-91a918301a28"/>
+  </producedTypes>
+  <name>ПросмотрОперативногоЖурнала</name>
+  <synonym>
+    <key>ru</key>
+    <value>Просмотр оперативного журнала</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ПросмотрОперативногоЖурнала.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ПросмотрОперативногоЖурнала.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <attributes uuid="db1fd39d-b285-4cd4-b672-b8cb1fd80efc">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+  </attributes>
+  <attributes uuid="79749557-c9c6-4471-8266-799f84fe0197">
+    <name>ПериодОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период отчета</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>StandardPeriod</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="b4728230-d543-41f6-b0e7-d62df9d842b7">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="d6d53643-d087-443e-b839-1e9b87741578">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

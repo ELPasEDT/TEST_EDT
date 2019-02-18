@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8ff1ef13-d64c-42ff-82eb-56c6e0f45547">
+  <producedTypes>
+    <selectionType typeId="176f8507-c2e2-4c49-a6c7-7b9fdf5db04d" valueTypeId="fac896f2-4e81-4781-8be5-d8de5c7512d1"/>
+    <listType typeId="1ca68580-9aef-4d8f-801f-f9ced99978e7" valueTypeId="f9c5db1c-e254-4204-8185-776b059a5975"/>
+    <managerType typeId="c8bf204a-a942-47ca-b74a-745f8fa249ee" valueTypeId="87396791-5b6a-4ffd-b524-bf6cba111392"/>
+    <recordSetType typeId="009e895e-f40c-40ee-ad05-783a09f4307c" valueTypeId="6f035204-c8d4-48c8-89a2-3879fe35ad5b"/>
+    <recordKeyType typeId="34ac0b72-79a4-4c99-98ab-bcad4dfa62f3" valueTypeId="8cd36543-d6da-4dcd-8e78-38c2e87c3839"/>
+    <recordType typeId="ba31b8dd-a4d5-4106-830c-8e0c08a28e27" valueTypeId="2a05cc8b-dfca-4f65-961d-4ad88fe7739d"/>
+    <recordManagerType typeId="dc202888-9a83-416a-8b61-ec755739c3de" valueTypeId="797499f9-faa0-400a-bb28-ac34d35e2051"/>
+  </producedTypes>
+  <name>КонтрольВводаДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контроль ввода данных</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="84ac8026-eaa6-4e85-bb4a-8204c62917cb">
+    <name>Заполнен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заполнен</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="1d0a22a7-ca4e-492c-a034-332f49d3727e">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Оборудование</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2b3dfd06-b2c7-4cf5-96bd-9d5ac69cb98d">
+    <name>Разделитель1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разделитель1</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>256</length>
+      </stringQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

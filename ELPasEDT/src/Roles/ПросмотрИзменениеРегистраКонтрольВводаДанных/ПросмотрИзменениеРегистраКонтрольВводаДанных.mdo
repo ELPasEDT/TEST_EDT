@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f4863aa5-62b4-4f3c-b237-a52b0cca2fc6">
+  <name>ПросмотрИзменениеРегистраКонтрольВводаДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Просмотр и изменение регистра Контроль ввода данных</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f1ff6b4f-1842-4184-8551-35b5f32843b5">
+  <producedTypes>
+    <refType typeId="4a59e90e-7817-494c-a807-09cde6443085" valueTypeId="9b826938-7a11-47e9-8c30-268aa6afe90d"/>
+    <listType typeId="742f3dac-e6bc-4326-a265-d5f232ff3aba" valueTypeId="735b99a2-2032-4af2-ba60-cfb2515443fd"/>
+    <managerType typeId="32c33455-70e8-4202-9760-03a1f7f3e0d9" valueTypeId="0d54d52c-2c4c-4040-971a-942fddbd9cfa"/>
+  </producedTypes>
+  <name>ВидыРеагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды реагентов</value>
+  </synonym>
+  <comment></comment>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="8e973c22-5e84-470b-b870-30a7b741a88a">
+    <name>Известь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Известь</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="b8f2a406-e954-4bfd-8333-536a8ef7e582">
+    <name>Коагулянт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коагулянт</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="789e64bf-da90-4dee-996d-8dca9009e5a4">
+    <name>Соль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Соль</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="14fa12fc-8279-447b-93f7-7b9124bd1666">
+    <name>Кислота</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кислота</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+  <enumValues uuid="b4bc15ae-c2de-4108-9ff2-895f5ce7f9a4">
+    <name>Щелочь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Щелочь</value>
+    </synonym>
+    <comment></comment>
+  </enumValues>
+</mdclass:Enum>

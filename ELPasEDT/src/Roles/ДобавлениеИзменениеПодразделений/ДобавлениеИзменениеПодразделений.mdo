@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d4efd9e7-9d1e-4e58-bd68-7cfe117cbc1e">
+  <name>ДобавлениеИзменениеПодразделений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Добавление изменение подразделений</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

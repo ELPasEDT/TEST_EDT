@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="365f66f6-3271-4a50-8888-6f0b540503bc">
+  <name>ИспользованиеАРМаУчетаРеагентов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использование АРМа учета реагентов</value>
+  </synonym>
+  <comment></comment>
+</mdclass:Role>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a3095975-84c7-4ead-afd4-67e42cdd9e3d">
+  <producedTypes>
+    <objectType typeId="0a6b8350-1b61-4d2b-bf35-73069175b06a" valueTypeId="f7ca768f-9ce4-4867-b612-9b2680456efd"/>
+    <managerType typeId="41c945cd-3d5a-41ec-a8a5-392664301c33" valueTypeId="cfb80ef4-a06d-4861-81bb-6ae041630901"/>
+  </producedTypes>
+  <name>ЗаполнениеДанныхПоОборудованию</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заполнение данных по единицам оборудования</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ЗаполнениеДанныхПоОборудованию.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="2058e950-f2fc-4ae1-b243-48507e569603">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

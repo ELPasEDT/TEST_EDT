@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bed3a831-a58a-494c-b8e4-5d3fed1ca62a">
+  <producedTypes>
+    <selectionType typeId="62ec5e3e-e6fa-4e49-9430-282b73d355be" valueTypeId="ffa0b2a1-7004-40c6-bfeb-a11f8a4c5aec"/>
+    <listType typeId="628f80c2-9fcf-47f7-b566-7f50eea1b5d7" valueTypeId="93146b45-f1e3-43ef-be6a-71237482a20b"/>
+    <managerType typeId="41985195-e7b0-44a5-b252-f3eecead3e95" valueTypeId="dca753b7-2c5f-4cde-ac7a-954bb0064e5c"/>
+    <recordSetType typeId="5964b741-d609-40ac-a9fd-cc419f433436" valueTypeId="25bcabaa-1747-4825-a42e-a75c4bb96c1e"/>
+    <recordKeyType typeId="48ed748d-e494-4140-812c-f6b59abcb37f" valueTypeId="36854104-0ca0-49f0-b8dd-6cd5056c5ca1"/>
+    <recordType typeId="4d7f8768-b9a4-400a-9816-ec1b1081d1e2" valueTypeId="65f0832f-ff1e-428e-8ef1-6218b2a373e0"/>
+    <recordManagerType typeId="4d36877c-6264-4822-8ca0-5962e131ccd6" valueTypeId="296f790d-11a5-4bf2-ab7c-8378d4a9dc95"/>
+  </producedTypes>
+  <name>СогласованиеЗаявокПоКатегорям</name>
+  <synonym>
+    <key>ru</key>
+    <value>Согласование заявок по категорям</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="62a81873-b339-40ce-a5e7-36a8cb3f044e">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>EnumRef.СтатусыЗаявок</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="977b92a2-7bd6-4c6e-8375-b76fa8d6394e">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="43f365e5-b5a9-4786-a7f7-0080fb81d378">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="197ba821-7475-4a0a-8e14-b09d39f6cec2">
+    <name>КатегорияВидовОборудования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория видов оборудования</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.КатегорииВидовОборудования</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

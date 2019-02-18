@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="136bde5c-5c14-4dfd-9e90-31c1bc0f7651">
+  <producedTypes>
+    <selectionType typeId="55d130b6-22a6-4119-9bff-98136ba684ca" valueTypeId="29439912-9768-46da-bc8b-beaa7a02d722"/>
+    <listType typeId="76f6991c-cbd5-4355-9801-6165779867cb" valueTypeId="41f86949-8671-4c70-bd2e-6d4b071e1806"/>
+    <managerType typeId="dcde52fc-3176-497e-8524-778ae2cf6991" valueTypeId="f7482595-012e-4efa-8e01-af8c44b9b152"/>
+    <recordSetType typeId="cf467137-12b8-4d49-b0a5-56c4fb360068" valueTypeId="8d6c4785-b5f8-47b8-ac81-227f0befdf3f"/>
+    <recordKeyType typeId="20c378dc-5013-4610-8704-7a2b2c1db96b" valueTypeId="4edc1785-543a-4de7-a834-2687c61fd84f"/>
+    <recordType typeId="cb62f242-80ea-4751-89f0-743761b356c1" valueTypeId="5a916483-9b85-4966-b876-7f5ae3d39023"/>
+    <recordManagerType typeId="5143699b-07ea-43ce-af58-7703cbb676d9" valueTypeId="9f9e4cf9-8645-4190-b1f5-df462f4d3d2e"/>
+  </producedTypes>
+  <name>ПланВводаДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>План ввода данных</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ПланВводаДанных.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ПланВводаДанных.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c7c81602-b170-42db-8710-de50888cbd48">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="4ee83daa-d33c-476e-a98b-47e1cee26415">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="96a2466b-be81-4347-813a-c84d8d8f55cf">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ac1b424c-3d62-4e77-93d6-2a8f58ba3d44">
+    <name>Разделитель1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид оборудования</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВидыОборудования</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ac7f94d8-fbb0-416a-9745-824a7ddc67a9">
+    <name>УдалитьПодразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить подразделение</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="b8ccb814-3b2c-4f11-b485-119c9d235668">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="679981d9-39b4-4451-9b70-ec066b9ae101">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

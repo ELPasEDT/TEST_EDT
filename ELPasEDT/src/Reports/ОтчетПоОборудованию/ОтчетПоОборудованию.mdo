@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4026c46c-7fb3-414e-9f82-ae3504bddc38">
+  <producedTypes>
+    <objectType typeId="0c8f2b9a-bef5-4372-95a9-6f1e75b0a56f" valueTypeId="db202cdc-5182-4d91-80c7-64a25be9b309"/>
+    <managerType typeId="3e451fd2-a154-4456-8ccc-4f8aa6b9c2af" valueTypeId="34264d1d-7350-4b44-a2fd-67780463b1fc"/>
+  </producedTypes>
+  <name>ОтчетПоОборудованию</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчет по оборудованию</value>
+  </synonym>
+  <comment></comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ОтчетПоОборудованию.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ОтчетПоОборудованию.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <attributes uuid="fd028072-72ba-4ba0-aa5a-3571e84c7c0a">
+    <name>ВидОборудования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид оборудования</value>
+    </synonym>
+    <comment></comment>
+    <type>
+      <types>CatalogRef.ВидыОборудования</types>
+    </type>
+    <mask></mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <forms uuid="4205b430-91ae-4e19-bf16-1ceb0c77751e">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <comment></comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="626a9d7c-134c-40cf-a8b6-5c5aba2bc29b">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <comment></comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>
