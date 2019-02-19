@@ -733,6 +733,7 @@
   <commonModules>CommonModule.ПоискИУдалениеДублейКлиент</commonModules>
   <commonModules>CommonModule.ПоискИУдалениеДублейПереопределяемый</commonModules>
   <commonModules>CommonModule.ЗагрузкаСотрудниковИзЕСС</commonModules>
+  <commonModules>CommonModule.ТестЕДТ</commonModules>
   <exchangePlans>ExchangePlan.ОбновлениеИнформационнойБазы</exchangePlans>
   <xDTOPackages>XDTOPackage.ApdexExport</xDTOPackages>
   <xDTOPackages>XDTOPackage.ApdexExport_1_0_0_2</xDTOPackages>
