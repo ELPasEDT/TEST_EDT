@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="335df13a-ede3-4c5a-b7ab-b26f34959fc2">
+  <name>EDT_TEST2</name>
+  <synonym>
+    <key>ru</key>
+    <value>EDT TEST2</value>
+  </synonym>
+  <comment>Для теста</comment>
+  <server>true</server>
+</mdclass:CommonModule>
