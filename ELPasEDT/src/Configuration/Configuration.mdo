@@ -733,7 +733,11 @@
   <commonModules>CommonModule.ПоискИУдалениеДублейКлиент</commonModules>
   <commonModules>CommonModule.ПоискИУдалениеДублейПереопределяемый</commonModules>
   <commonModules>CommonModule.ЗагрузкаСотрудниковИзЕСС</commonModules>
+<<<<<<< HEAD
   <commonModules>CommonModule.EDT_TEST2</commonModules>
+=======
+  <commonModules>CommonModule.ТестЕДТ</commonModules>
+>>>>>>> branch 'master' of https://github.com/ELPasEDT/TEST_EDT
   <exchangePlans>ExchangePlan.ОбновлениеИнформационнойБазы</exchangePlans>
   <xDTOPackages>XDTOPackage.ApdexExport</xDTOPackages>
   <xDTOPackages>XDTOPackage.ApdexExport_1_0_0_2</xDTOPackages>
