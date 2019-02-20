@@ -5,7 +5,7 @@
     <key>ru</key>
     <value>Нормативно-справочтая информация</value>
   </synonym>
-  <comment></comment>
+  <comment>MDM</comment>
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Catalog.Вахты</content>
